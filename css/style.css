@@ -83,12 +83,6 @@ header {
   transition-duration: 0.4s;
   cursor: pointer;
 }
-
-.button:hover {
-  background-color: rgb(41, 119, 125);
-  border: solid rgb(255, 255, 255) 1px;
-  color: rgb(255, 255, 255);
-}
 /* fin buscador */
 
 /* inico menu */
@@ -114,20 +108,37 @@ header {
   font-size: 30px;
 }
 
-.containerMenu li:hover {
-  text-decoration: underline;
-}
-
 .containerMenu li a {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
 /* fin menu */
 
-.headerImg {
+/*inicio slider*/
+.slider {
   width: 100%;
-  height: 400px;
+  overflow: hidden;
 }
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation-name: changeImg;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+}
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+.slider img {
+  width: 100%;
+  height: 500px;
+}
+/*fin de slider*/
 
 /* inicio seccion videos */
 .sectionVideo {
@@ -173,10 +184,6 @@ header {
   transition: transform 0.5s;
 }
 
-.videoExample:hover {
-  transform: scale(1.2);
-  z-index: 5;
-}
 /* fin seccion videos */
 
 /* inicio lado mapa */
@@ -382,9 +389,14 @@ footer div div {
   width: 20%;
   height: 20%;
   background-color: rgb(41, 119, 125);
-  border: solid rgb(255, 255, 255) 3px;
   border-radius: 5px;
   text-align: center;
+  animation-name: colorLoop;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 5s;
+  animation-delay: 0;
+  animation-direction: alternate;
 }
 
 .teamContainer div p {
@@ -700,7 +712,7 @@ footer div div {
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
-  .headerImg {
+  header .slider img {
     height: 300px;
   }
   .titleNeon {
@@ -846,7 +858,7 @@ footer div div {
   .containerMenu li {
     margin: 0;
   }
-  .headerImg {
+  header .slider img {
     height: 230px;
   }
   .titleNeon {
@@ -964,5 +976,93 @@ footer div div {
   .contenedorContacto .containerMensaje .formButton {
     display: flex;
     justify-content: space-around;
+  }
+}
+/*----------------- ANIMACIONES----------------- */
+.containerMenu li:hover {
+  text-decoration: underline;
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: transform 1s;
+}
+.headerLogo:hover {
+  transform: rotatez(360deg);
+  cursor: pointer;
+  transition: transform 2s;
+}
+.button:hover {
+  background-color: rgb(41, 119, 125);
+  border: solid rgb(255, 255, 255) 1px;
+  color: rgb(255, 255, 255);
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.videoExample:hover {
+  transform: scale(1.2);
+  z-index: 5;
+}
+
+@keyframes textUs {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes colorLoop {
+  0% {
+    /* background-color: red; */
+    border: solid rgb(0, 77, 82) 5px;
+  }
+  20% {
+    /* background-color: brown; */
+    border: solid rgb(0, 87, 51) 5px;
+  }
+  40% {
+    /* background-color: orangered; */
+    border: solid rgb(0, 42, 60) 5px;
+  }
+  60% {
+    /* background-color: orange; */
+    border: solid rgb(36, 0, 60) 5px;
+  }
+  80% {
+    /* background-color: yellow; */
+    border: solid rgb(0, 101, 103) 5px;
+  }
+  100% {
+    /* background-color: red; */
+    border: solid rgb(0, 67, 82) 5px;
+  }
+}
+@keyframes changeImg {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
   }
 }
