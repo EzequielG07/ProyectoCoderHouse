@@ -721,6 +721,16 @@ footer div div {
   .textVideo {
     font-size: 25px;
   }
+  .videoContainer {
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 20px 0;
+    align-items: center;
+  }
+  .videoExample {
+    width: 65%;
+    height: 50%;
+  }
   .titleMap {
     font-size: 30px;
   }
@@ -729,18 +739,20 @@ footer div div {
     height: 480px;
   }
   .gallery {
-    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 20px;
     align-items: center;
-    justify-content: space-around;
+    padding: 20px 0;
   }
   .gallery div {
-    width: 45%;
-    height: 45%;
+    width: 60%;
+    height: 60%;
     margin: 0;
   }
   .gallery p {
     margin: 0;
-    font-size: 15px;
+    font-size: 20px;
+    text-align: center;
   }
   footer {
     flex-direction: column;
@@ -875,7 +887,7 @@ footer div div {
     height: 320px;
   }
   .gallery p {
-    font-size: 10px;
+    font-size: 15px;
   }
 
   /*----------------- NOSOTROS MOBILE----------------- */
