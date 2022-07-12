@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Anima Print 3D</title>
+   <link rel="shortcut icon" href="../img/favicon.png">
+   <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+
+   <header>
+
+      <div class="containerLogo">
+
+         <a href="../index.html">
+            <img src="../img/img_logo.png" alt="Logo de 3D Print" class="headerLogo" />
+         </a>
+
+         <!-- inicio buscador -->
+         <div class="searchBox">
+            <label for="site-search"></label>
+            <input type="search" id="site-search" placeholder="Que busca?...." class="inputSearch" />
+            <input type="submit" value="BUSCAR" class="button" />
+         </div>
+         <!-- fin buscador -->
+
+      </div>
+
+      <!-- inicio menu -->
+      <nav class="containerMenu">
+         <ul>
+            <li>
+               <a href="nosotros.html">Nosotros</a>
+            </li>
+            <li>
+               <a href="proyectos.html">Proyectos</a>
+            </li>
+            <li>
+               <a href="productos.html">Productos</a>
+            </li>
+            <li>
+               <a href="contacto.html">Contacto</a>
+            </li>
+         </ul>
+      </nav>
+      <!-- fin menu -->
+
+      <img src="../img/img_header.png" alt="Imagen de encabezado" class="headerImg">
+
+   </header>
+
+   <main class="contenedorContacto">
+
+      <h1 class=" titleNeon nosotrosTitle" id="titleC">CONTACTO</h1>
+
+      <!-- inicio formulario -->
+      <section class="containerMensaje" id="mensaje">
+         <form action="solicitud.php">
+
+            <div>
+               <label for="name">Nombre y Apellido: </label>
+               <input type="text" id="name" placeholder="example: Ezequiel Guaymas" class="inputUser" />
+            </div>
+
+            <div>
+               <label for="email">Email: </label>
+               <input type="email" id="email" placeholder="example@gmail.com" class="inputUser" />
+            </div>
+
+            <div>
+               <label for="phone">Celular: </label>
+               <input type="tel" id="phone" class="inputUser" />
+            </div>
+
+            <div>
+               <label for="subject">Asunto</label>
+               <select name="" id="" class="selectAsunto">
+                  <option value="questions">Consulta</option>
+                  <option value="send">Envio</option>
+                  <option value="info">Informacion</option>
+                  <option value="offers">Promociones</option>
+               </select>
+            </div>
+
+            <div>
+               <fieldset class="questionBorder">
+                  <legend>Tiene pedido pendiente?</legend>
+                  <label for="yes">Si</label>
+                  <input type="radio" id="yes" value="si" name="Pendiente">
+                  <label for="no">No</label>
+                  <input type="radio" id="no" value="no" name="Pendiente">
+               </fieldset>
+            </div>
+
+            <div>
+               <label for="archive">Adjunte su diseño</label>
+               <input type="file" id="archive" name="adjunto" accept=".pdf,.jpg,.png" multiple class="selectFile" />
+            </div>
+
+            <div>
+               <label for=" detalles" class="labelDetalles">Deje los detalles para el diseño:</label>
+               <textarea name="" id="detalles" cols="30" rows="10" placeholder="Detalles...."
+                  class="textDetalles"></textarea>
+            </div>
+
+            <div class="formButton">
+               <input type="reset" value="Cancelar" class="button" />
+               <input type="submit" value="Enviar" class="button" />
+            </div>
+         </form>
+      </section>
+      <!-- fin formulario -->
+
+   </main>
+
+   <!-- inicio pie de pagina -->
+   <footer>
+
+      <div class="infoFooter">
+         <h4>Info</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      </div>
+
+      <div class="contactFooter">
+         <h4>Contacto</h4>
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+      </div>
+
+      <div class="redesFooter">
+         <h4>Redes</h4>
+
+         <div>
+            <a href="https://es-la.facebook.com" target="_blank">
+               <img src="../img/icon_face.png" alt="facebook" />
+            </a>
+
+            <a href="https://www.instagram.com" target="_blank">
+               <img src="../img/icon_ig.png" alt="instagram" />
+            </a>
+
+            <a href="https://www.youtube.com" target="_blank">
+               <img src="../img/icon_youtube.png" alt="youtube" />
+            </a>
+         </div>
+
+      </div>
+
+   </footer>
+
+   <!-- fin pie de pagina -->
+
+</body>
+
+</html>
