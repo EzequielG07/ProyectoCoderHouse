@@ -355,12 +355,16 @@ footer div div {
   font-style: italic;
   font-size: 40px;
   text-align: left;
+  animation-name: textUs;
+  animation-duration: 5s;
 }
 
 .sectionNosotros article p {
   font-family: "Ubuntu", sans-serif;
   font-size: 35px;
   text-align: justify;
+  animation-name: textUs;
+  animation-duration: 5s;
 }
 /* fin seccion articulos */
 
@@ -493,7 +497,13 @@ footer div div {
   width: 100%;
   height: auto;
   padding: 0 3%;
-  background-color: rgba(0, 253, 181, 0.146);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    45deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 253, 181, 1) 55%,
+    rgba(0, 212, 255, 1) 100%
+  );
   border: solid rgb(0, 56, 60) 5px;
   font-family: "Ubuntu", sans-serif;
   font-style: italic;
@@ -799,6 +809,15 @@ footer div div {
       "titleP"
       "filter"
       "catalogue";
+  }
+  .contenedorProductos .filtros {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      -45deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(0, 253, 181, 1) 55%,
+      rgba(0, 212, 255, 1) 100%
+    );
   }
   .contenedorProductos .catalogo {
     column-gap: 10px;
