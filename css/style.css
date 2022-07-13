@@ -1044,27 +1044,21 @@ footer div div {
 }
 @keyframes colorLoop {
   0% {
-    /* background-color: red; */
     border: solid rgb(0, 77, 82) 5px;
   }
   20% {
-    /* background-color: brown; */
     border: solid rgb(0, 87, 51) 5px;
   }
   40% {
-    /* background-color: orangered; */
     border: solid rgb(0, 42, 60) 5px;
   }
   60% {
-    /* background-color: orange; */
     border: solid rgb(36, 0, 60) 5px;
   }
   80% {
-    /* background-color: yellow; */
     border: solid rgb(0, 101, 103) 5px;
   }
   100% {
-    /* background-color: red; */
     border: solid rgb(0, 67, 82) 5px;
   }
 }
