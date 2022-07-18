@@ -94,32 +94,102 @@ fin menu -->
    <main class="contenedorProductos">
 
       <h1 class=" titleNeon nosotrosTitle" id="titleP">PRODUCTOS</h1>
-      <!-- UTILIZAR OFFCANVAS Y VER PAGINATION CON 3 ARTICULOS -->
+
       <!-- inicio filtros -->
       <fieldset class="filtros" id="filter">
 
          <legend>FILTROS</legend>
          <div class="filtrosContainer">
-            <div>
-               <input type="checkbox" id="accesorios">
-               <label for="accesorios">Accesorios</label>
-            </div>
 
-            <div>
-               <input type="checkbox" id="decos">
-               <label for="decos">Decos</label>
-            </div>
+            <div class="filtrosChecks">
+               <div>
+                  <input type="checkbox" id="accesorios">
+                  <label for="accesorios">Accesorios</label>
+               </div>
 
-            <div>
-               <input type="checkbox" id="figuras" value="quiere velas">
-               <label for="figuras">Figuras</label>
-            </div>
+               <div>
+                  <input type="checkbox" id="decos">
+                  <label for="decos">Decos</label>
+               </div>
 
-            <div>
-               <input type="checkbox" id="juguetes">
-               <label for="juguetes">Juguetes</label>
+               <div>
+                  <input type="checkbox" id="figuras" value="quiere velas">
+                  <label for="figuras">Figuras</label>
+               </div>
+
+               <div>
+                  <input type="checkbox" id="juguetes">
+                  <label for="juguetes">Juguetes</label>
+               </div>
             </div>
+            <!-- boton 1 -->
+            <div class="dropdown">
+               <button class="btn dropdown-toggle btn-lg dropdownEsmerald" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Mas relevantes
+               </button>
+               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item text-white" href="#">Mas relevantes</a></li>
+                  <li><a class="dropdown-item text-white" href="#">Mayor precio</a></li>
+                  <li><a class="dropdown-item text-white" href="#">Menor precio</a></li>
+               </ul>
+            </div>
+            <!-- boton 1 -->
+            <!-- canvas -->
+            <a class="btn dropdownEsmerald" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+               aria-controls="offcanvasExample">
+               Formas de pago
+            </a>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+               aria-labelledby="offcanvasExampleLabel">
+               <div class="offcanvas-header  offcanvasTitle">
+                  <h3 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h3>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+               </div>
+               <div class="offcanvas-body offcanvasEdit">
+                  <div class="filtrosChecks">
+                     <div>
+                        <input type="checkbox" id="accesorios">
+                        <label for="accesorios">Efectivo</label>
+                     </div>
+
+                     <div>
+                        <input type="checkbox" id="decos">
+                        <label for="decos">Tarjeta debito</label>
+                     </div>
+
+                     <div>
+                        <input type="checkbox" id="figuras" value="quiere velas">
+                        <label for="figuras">T. crdito Visa</label>
+                     </div>
+
+                     <div>
+                        <input type="checkbox" id="juguetes">
+                        <label for="juguetes">T. credito Mastercard</label>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- canvas -->
          </div>
+
+
+         <!-- 
+               <div class="dropdown mt-3">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                     data-bs-toggle="dropdown">
+                     Dropdown button
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                     <li><a class="dropdown-item" href="#">Action</a></li>
+                     <li><a class="dropdown-item" href="#">Another action</a></li>
+                     <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+               </div>
+                  -->
+         <!-- canvas -->
+
 
       </fieldset>
       <!-- fin filtros -->
