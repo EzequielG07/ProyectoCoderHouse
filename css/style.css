@@ -95,7 +95,11 @@ header {
   list-style: none;
   text-align: center;
 }
-
+.pruebaContainer {
+  height: 200px;
+  font-size: 50px;
+  overflow-y: scroll;
+}
 .containerMenu li {
   position: relative;
   display: inline-block;
@@ -475,24 +479,24 @@ footer div div {
 /*----------------- PROYECTOS----------------- */
 
 .articlesProyecto {
-  display: flex;
+  /*display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: center;*/
   width: 100%;
-  height: 400px;
-  margin: 10px 0;
+  /*height: 400px;*/
+  /*margin: 10px 0;*/
   background-color: rgba(0, 253, 181, 0.146);
   border: solid rgba(23, 75, 61, 0.352) 10px;
   border-radius: 10px;
 }
-
+/*
 .reverse {
   flex-direction: row-reverse;
 }
-
+*/
 .articlesProyecto p {
-  width: 600px;
+  /*width: 600px;*/
   height: 350px;
   background-color: rgb(196, 235, 196);
   border: solid rgb(41, 119, 125) 5px;
@@ -503,7 +507,7 @@ footer div div {
 }
 
 .articlesImg {
-  width: 600px;
+  /* width: 600px;*/
   height: 350px;
   display: flex;
   justify-content: center;
