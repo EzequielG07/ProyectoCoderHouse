@@ -681,11 +681,21 @@ footer div div {
 
 .containerMensaje {
   width: 100%;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;*/
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: rgb(41, 119, 125);
+  border: solid rgb(4, 62, 57) 5px;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
 }
-
+/*
 .containerMensaje div {
   width: 100%;
   margin-top: 10px;
@@ -700,15 +710,16 @@ footer div div {
   font-size: 30px;
   color: rgb(255, 255, 255);
 }
-
+*/
 .questionBorder {
   border: solid rgb(41, 119, 125);
 }
 
 .inputUser {
-  position: relative;
+  /* position: relative;
   display: inline-block;
-  width: 300px;
+  width: 300px;*/
+  margin: 10px 0;
   height: 50px;
   background-color: rgba(255, 255, 255, 0.713);
   font-family: "Heebo", sans-serif;
@@ -716,7 +727,7 @@ footer div div {
 }
 
 .selectAsunto {
-  width: 160px;
+  /*width: 160px;*/
   height: 50px;
   border: solid rgb(143, 143, 143) 1px;
   border-radius: 5px;
@@ -728,7 +739,7 @@ footer div div {
 }
 
 .selectFile {
-  width: 350px;
+  /*width: 350px;*/
   height: 32px;
   padding: 1px;
   border: solid rgb(4, 62, 57) 1px;
