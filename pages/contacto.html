@@ -100,37 +100,31 @@
 
       <!-- inicio formulario -->
       <section class="containerMensaje" id="mensaje">
-         <form action="solicitud.php">
+         <form class="container-fluid" action="solicitud.php">
 
             <!-- form BS -->
             <div class="row">
-               <div class="col">
+               <div class="col-lg-6">
                   <input type="text" class="form-control inputUser" placeholder="Nombre" aria-label="First name">
                </div>
-               <div class="col">
+               <div class="col-lg-6">
                   <input type="text" class="form-control inputUser" placeholder="Apellido" aria-label="Last name">
                </div>
             </div>
             <div class="row">
-               <div class="col">
+               <div class="col-lg-6">
                   <input type="email" class="form-control inputUser" placeholder="example@gmail.com"
                      aria-label="example@gmail.com">
                </div>
-               <div class="col">
+               <div class="col-lg-6">
                   <input type="tel" class="form-control inputUser" placeholder="Celular" aria-label="phone">
                </div>
             </div>
 
-            <select class="form-select form-select-lg mb-3 selectAsunto" aria-label=".form-select-lg example">
-               <option selected>Consulta</option>
-               <option value="1">Envio</option>
-               <option value="2">Informacion</option>
-               <option value="3">Promociones</option>
-            </select>
-
             <fieldset class="row mb-3">
-               <legend class="col-form-label col-sm-2 pt-0">Tiene pedido pendiente?</legend>
-               <div class="col-sm-10">
+               <legend class="col-form-label col-sm-2 col-lg-3 pt-0">Tiene
+                  pedido pendiente?</legend>
+               <div class="col-sm-10 col-lg-1">
                   <div class="form-check">
                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="si" checked>
                      <label class="form-check-label" for="gridRadios1">
@@ -144,16 +138,24 @@
                      </label>
                   </div>
                </div>
+               <div class="col-lg-8 mb-3">
+                  <label for="formFile" class="form-label">Adjunte su diseño</label>
+                  <input class="form-control selectFile" type="file" id="formFile">
+               </div>
             </fieldset>
 
-            <div class="mb-3">
-               <label for="formFile" class="form-label">Adjunte su diseño</label>
-               <input class="form-control selectFile" type="file" id="formFile">
-            </div>
+
+            <select class="form-select form-select-lg mb-3 selectAsunto" aria-label=".form-select-lg example">
+               <option selected>Consulta</option>
+               <option value="1">Envio</option>
+               <option value="2">Informacion</option>
+               <option value="3">Promociones</option>
+            </select>
 
             <div class="mb-3">
-               <label for="exampleFormControlTextarea1" class="form-label">Deje los detalles para el diseño:</label>
-               <textarea class="form-control" id="exampleFormControlTextarea1 textDetalles" rows="3"></textarea>
+               <label for="exampleFormControlTextarea1" class="form-label">Deje los detalles para el
+                  diseño:</label>
+               <textarea class="form-control textDetalles" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             <!-- form BS -->
             <!-- 
@@ -196,21 +198,21 @@
                <label for="archive">Adjunte su diseño</label>
                <input type="file" id="archive" name="adjunto" accept=".pdf,.jpg,.png" multiple class="selectFile" />
             </div>
-
+            
             <div>
                <label for=" detalles" class="labelDetalles">Deje los detalles para el diseño:</label>
                <textarea name="" id="detalles" cols="30" rows="10" placeholder="Detalles...."
                   class="textDetalles"></textarea>
-            </div>
-
-         -->
-            <div class="formButton">
-               <input type="reset" value="Cancelar" class="button" />
-               <input type="submit" value="Enviar" class="button" />
-            </div>
-         </form>
-      </section>
-      <!-- fin formulario -->
+               </div>
+               
+               <div class="formButton">
+                  <input type="reset" value="Cancelar" class="button" />
+                  <input type="submit" value="Enviar" class="button" />
+               </div>
+            </form>
+         </section>
+      -->
+            <!-- fin formulario -->
 
    </main>
 
