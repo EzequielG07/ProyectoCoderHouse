@@ -273,6 +273,7 @@ div .btn-esmerald {
   color: rgb(255, 255, 255);
 }
 div .card-esmerald {
+  width: 22rem;
   border: solid rgb(16, 84, 89) 2px;
   background-color: rgb(41, 119, 125);
   font-family: "Heebo", sans-serif;
@@ -799,11 +800,13 @@ footer div div {
     align-self: center;
     margin: 0 0 10px 0;
   }
+
   .containerMenu ul {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
+
   header .slider img {
     height: 300px;
   }
@@ -813,15 +816,16 @@ footer div div {
   .textVideo {
     font-size: 25px;
   }
+  /*
   .videoContainer {
     flex-direction: column;
     row-gap: 20px;
     padding: 20px 0;
     align-items: center;
   }
+  */
   .videoExample {
     width: 65%;
-    height: 50%;
   }
   .titleMap {
     font-size: 30px;
@@ -846,6 +850,10 @@ footer div div {
     font-size: 20px;
     text-align: center;
   }
+  div .card-esmerald {
+    width: 34rem;
+  }
+
   footer {
     flex-direction: column;
     align-items: center;
@@ -963,11 +971,7 @@ footer div div {
   button {
     width: 30%;
   }
-  .containerMenu ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+
   .containerMenu li {
     margin: 0;
   }
@@ -980,6 +984,9 @@ footer div div {
   .textVideo {
     font-size: 15px;
   }
+  .videoExample {
+    width: 100%;
+  }
   .titleMap {
     font-size: 20px;
   }
@@ -989,6 +996,9 @@ footer div div {
   }
   .gallery p {
     font-size: 15px;
+  }
+  div .card-esmerald {
+    width: 26rem;
   }
 
   /*----------------- NOSOTROS MOBILE----------------- */
