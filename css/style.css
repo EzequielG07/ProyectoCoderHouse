@@ -96,10 +96,6 @@ header {
   text-align: center;
 }
 .containerMenu li {
-  /*  position: relative;
-  display: inline-block;
-  width: 230px;
-   padding: 5px 0px;*/
   margin: 0px 70px;
   background-color: rgb(41, 119, 125);
   font-family: "Ubuntu", sans-serif;
@@ -496,13 +492,6 @@ footer div div {
   flex-direction: column;
 }
 
-.filtrosChecks div {
-  display: flex;
-  flex-direction: row;
-  padding-left: 1px;
-  margin: 5px;
-}
-
 .filtrosContainer label {
   display: block;
   font-size: 24px;
@@ -511,17 +500,8 @@ footer div div {
 }
 
 .filtrosContainer input {
-  display: block;
-  margin-top: 2px;
   margin-right: 5px;
   cursor: pointer;
-  height: 20px;
-  width: 20px;
-}
-
-.filtrosContainer input:checked {
-  width: 23px;
-  height: 23px;
 }
 
 .dropdownEsmerald {
@@ -555,6 +535,20 @@ footer div div {
     rgba(0, 212, 255, 1) 100%
   );
   font-size: 10px;
+}
+
+.filtrosChecks div {
+  display: flex;
+  flex-direction: row;
+  padding-left: 1px;
+  margin: 5px;
+}
+
+.switchBox {
+  width: 90%;
+  background-color: rgb(16, 84, 89);
+  border-radius: 5px;
+  margin: 5px 0;
 }
 /* fin seccion filtros */
 
@@ -642,7 +636,6 @@ footer div div {
 }
 
 .selectAsunto {
-  /*width: 160px;*/
   height: 50px;
   border: solid rgb(143, 143, 143) 1px;
   border-radius: 5px;
@@ -654,7 +647,6 @@ footer div div {
 }
 
 .selectFile {
-  /*width: 350px;*/
   height: 32px;
   padding: 1px;
   border: solid rgb(4, 62, 57) 1px;
@@ -695,18 +687,9 @@ footer div div {
 #mensaje {
   grid-area: mensaje;
 }
-/*----------------- INDEX AJUSTES----------------- */
+
 @media (min-width: 768px) and (max-width: 1200px) {
   /*----------------- INDEX AJUSTES----------------- */
-
-  /* .contenedor {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas:
-      "videos"
-      "map"
-      "news";
-  }*/
   .containerMenu li {
     margin: 0 10px;
   }
@@ -726,7 +709,15 @@ footer div div {
     font-size: 15px;
     overflow: hidden;
   }
+  .switchBox {
+    width: 100%;
+    font-size: 20px;
+  }
+  .switchBox label {
+    font-size: 15px;
+  }
 }
+
 @media (max-width: 768px) {
   /*----------------- INDEX TABLET----------------- */
   .contenedor {
@@ -745,13 +736,11 @@ footer div div {
     align-self: center;
     margin: 0 0 10px 0;
   }
-
   .containerMenu ul {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   header .slider img {
     height: 300px;
   }
@@ -785,7 +774,6 @@ footer div div {
   div .card-esmerald {
     width: 34rem;
   }
-
   footer {
     flex-direction: column;
     align-items: center;
@@ -813,7 +801,6 @@ footer div div {
     column-gap: 20px;
     padding: 5px;
   }
-
   .articlesProyecto p {
     font-size: 35px;
   }
@@ -854,6 +841,10 @@ footer div div {
   .dropdownEsmerald {
     width: 100%;
   }
+  .switchBox {
+    width: 100%;
+  }
+
   /*----------------- CONTACTO TABLET----------------- */
   .containerMensaje {
     font-size: 23px;
@@ -895,7 +886,6 @@ footer div div {
   button {
     width: 30%;
   }
-
   .containerMenu li {
     margin: 0;
   }
@@ -1010,12 +1000,7 @@ footer div div {
   transition-duration: 0.4s;
   cursor: pointer;
 }
-/*
-.videoExample:hover {
-  transform: scale(1.2);
-  z-index: 5;
-}
-*/
+
 @keyframes textUs {
   from {
     opacity: 0;

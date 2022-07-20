@@ -131,30 +131,40 @@
                   <div class="offcanvas-body offcanvasEdit">
                      <div class="filtrosChecks">
                         <div>
-                           <input type="checkbox" id="accesorios">
-                           <label for="accesorios">Efectivo</label>
+                           <input type="checkbox" id="efectivo">
+                           <label for="efectivo">Efectivo</label>
                         </div>
 
                         <div>
-                           <input type="checkbox" id="decos">
-                           <label for="decos">Tarjeta debito</label>
+                           <input type="checkbox" id="debito">
+                           <label for="debito">Tarjeta debito</label>
                         </div>
 
                         <div>
-                           <input type="checkbox" id="figuras" value="quiere velas">
-                           <label for="figuras">T. credito Visa</label>
+                           <input type="checkbox" id="figuras" value="visa">
+                           <label for="visa">T. credito Visa</label>
                         </div>
 
                         <div>
-                           <input type="checkbox" id="juguetes">
-                           <label for="juguetes">T. credito Mastercard</label>
+                           <input type="checkbox" id="mastercard">
+                           <label for="mastercard">T. credito Mastercard</label>
                         </div>
                      </div>
                   </div>
                </div>
                <!-- fin canvas BS -->
-            </div> <!-- fin contenedor botones BS-->
 
+            </div>
+            <!-- inicio boton switch BS -->
+            <div class="form-check form-switch switchBox">
+               <input class="form-check-input my-3" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+               <label class="form-check-label my-3" for="flexSwitchCheckDefault">Llegan hoy</label>
+            </div>
+            <div class="form-check form-switch switchBox">
+               <input class="form-check-input my-3" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+               <label class="form-check-label my-3" for="flexSwitchCheckChecked">Envio gratis</label>
+            </div>
+            <!-- fin boton switch BS -->
          </div>
 
       </fieldset>
@@ -162,7 +172,6 @@
 
       <!-- inicio catalogo -->
       <section class="catalogo" id="catalogue">
-
          <figure>
             <img src="../products/product-homero.jpeg" alt="">
             <figcaption>Deco Homero Fit</figcaption>
@@ -179,11 +188,6 @@
             <p>$1.000</p>
          </figure>
          <figure>
-            <img src="../products/product-deco-cat.jpeg" alt="">
-            <figcaption>Deco Cat</figcaption>
-            <p>$1.000</p>
-         </figure>
-         <figure>
             <img src="../products/product-deco-figures.jpeg" alt="">
             <figcaption>Deco Paper Figures</figcaption>
             <p>$1.000</p>
@@ -191,6 +195,11 @@
          <figure>
             <img src="../products/product-deco-fox.jpeg" alt="">
             <figcaption>Deco Fox</figcaption>
+            <p>$1.000</p>
+         </figure>
+         <figure>
+            <img src="../products/product-deco-cat.jpeg" alt="">
+            <figcaption>Deco Cat</figcaption>
             <p>$1.000</p>
          </figure>
          <figure>
@@ -234,7 +243,6 @@
             </figcaption>
             <p>$1.000</p>
          </figure>
-
       </section>
       <!-- fin catalogo -->
 
