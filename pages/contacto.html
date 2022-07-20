@@ -34,26 +34,7 @@
 
       </div>
 
-      <!-- inicio menu 
-      <nav class="containerMenu">
-         <ul>
-            <li>
-               <a href="nosotros.html">Nosotros</a>
-            </li>
-            <li>
-               <a href="proyectos.html">Proyectos</a>
-            </li>
-            <li>
-               <a href="productos.html">Productos</a>
-            </li>
-            <li>
-               <a href="contacto.html">Contacto</a>
-            </li>
-         </ul>
-      </nav>
- fin menu -->
-
-      <!-- inicia nav bootstrap -->
+      <!-- inicio menu BS -->
       <nav class="navbar navbar-expand-lg containerMenu">
          <div class="container-fluid ">
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
@@ -79,7 +60,7 @@
             </div>
          </div>
       </nav>
-      <!-- fin nav bootstrap -->
+      <!-- fin menu BS -->
 
       <!-- inicio slider -->
       <div class="slider">
@@ -92,7 +73,6 @@
       </div>
       <!-- fin slider -->
    </header>
-
 
    <main class="contenedorContacto">
 
@@ -122,9 +102,10 @@
             </div>
 
             <fieldset class="row mb-3">
-               <legend class="col-form-label col-sm-2 col-lg-3 pt-0">Tiene
+               <legend class="col-form-label col-sm-6 col-lg-3 text-sm-end">
+                  Tiene
                   pedido pendiente?</legend>
-               <div class="col-sm-10 col-lg-1">
+               <div class="col-sm-6 col-lg-3 my-2">
                   <div class="form-check">
                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="si" checked>
                      <label class="form-check-label" for="gridRadios1">
@@ -138,7 +119,7 @@
                      </label>
                   </div>
                </div>
-               <div class="col-lg-8 mb-3">
+               <div class="col-sm-12 col-lg-6 mb-3">
                   <label for="formFile" class="form-label">Adjunte su diseño</label>
                   <input class="form-control selectFile" type="file" id="formFile">
                </div>
@@ -158,61 +139,14 @@
                <textarea class="form-control textDetalles" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             <!-- form BS -->
-            <!-- 
-   <div>
-      <label for="name">Nombre y Apellido: </label>
-      <input type="text" id="name" placeholder="example: Ezequiel Guaymas" class="inputUser" />
-   </div>
-
-            <div>
-               <label for="email">Email: </label>
-               <input type="email" id="email" placeholder="example@gmail.com" class="inputUser" />
+         
+            <div class="formButton">
+               <input type="reset" value="Cancelar" class="button" />
+               <input type="submit" value="Enviar" class="button" />
             </div>
-
-            <div>
-               <label for="phone">Celular: </label>
-               <input type="tel" id="phone" class="inputUser" />
-            </div>
-            
-            <div>
-               <label for="subject">Asunto</label>
-               <select name="" id="" class="selectAsunto">
-                  <option value="questions">Consulta</option>
-                  <option value="send">Envio</option>
-                  <option value="info">Informacion</option>
-                  <option value="offers">Promociones</option>
-               </select>
-            </div>
-            
-            <div>
-               <fieldset class="questionBorder">
-                  <legend>Tiene pedido pendiente?</legend>
-                  <label for="yes">Si</label>
-                  <input type="radio" id="yes" value="si" name="Pendiente">
-                  <label for="no">No</label>
-                  <input type="radio" id="no" value="no" name="Pendiente">
-               </fieldset>
-            </div>
-            
-            <div>
-               <label for="archive">Adjunte su diseño</label>
-               <input type="file" id="archive" name="adjunto" accept=".pdf,.jpg,.png" multiple class="selectFile" />
-            </div>
-            
-            <div>
-               <label for=" detalles" class="labelDetalles">Deje los detalles para el diseño:</label>
-               <textarea name="" id="detalles" cols="30" rows="10" placeholder="Detalles...."
-                  class="textDetalles"></textarea>
-               </div>
-               
-               <div class="formButton">
-                  <input type="reset" value="Cancelar" class="button" />
-                  <input type="submit" value="Enviar" class="button" />
-               </div>
-            </form>
-         </section>
-      -->
-            <!-- fin formulario -->
+         </form>
+      </section>
+      <!-- fin formulario -->
 
    </main>
 

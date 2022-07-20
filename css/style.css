@@ -612,10 +612,8 @@ footer div div {
 /*----------------- CONTACTO----------------- */
 
 .containerMensaje {
-  /* width: 100%;*/
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;*/
+  width: 90%;
+  margin-left: 5%;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
@@ -626,31 +624,9 @@ footer div div {
   font-weight: bold;
   font-size: 30px;
   color: rgb(255, 255, 255);
-}
-/*
-.containerMensaje div {
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 10px;
-  text-align: right;
-  background-color: rgb(41, 119, 125);
-  border: solid rgb(4, 62, 57) 5px;
-  border-radius: 10px;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 30px;
-  color: rgb(255, 255, 255);
-}
-*/
-.questionBorder {
-  border: solid rgb(41, 119, 125);
 }
 
 .inputUser {
-  /* position: relative;
-  display: inline-block;
-  width: 300px;*/
   margin: 10px 0;
   height: 50px;
   background-color: rgba(255, 255, 255, 0.713);
@@ -766,14 +742,6 @@ footer div div {
   .textVideo {
     font-size: 25px;
   }
-  /*
-  .videoContainer {
-    flex-direction: column;
-    row-gap: 20px;
-    padding: 20px 0;
-    align-items: center;
-  }
-  */
   .videoExample {
     width: 65%;
   }
@@ -789,12 +757,7 @@ footer div div {
     row-gap: 20px;
     align-items: center;
     padding: 20px 0;
-  } /*
-  .gallery div {
-    width: 60%;
-    height: 60%;
-    margin: 0;
-  }*/
+  }
   .gallery p {
     margin: 0;
     font-size: 20px;
@@ -871,22 +834,14 @@ footer div div {
   }
 
   /*----------------- CONTACTO TABLET----------------- */
-  .contenedorContacto .containerMensaje {
-    padding: 10px;
-  }
-  .contenedorContacto .containerMensaje div {
-    font-size: 25px;
-    text-align: left;
+  .containerMensaje {
+    font-size: 23px;
   }
   .contenedorContacto .inputUser {
-    display: block;
-    height: 35px;
+    height: 40px;
     width: 100%;
   }
-  .contenedorContacto .selectFile {
-    width: 100%;
-  }
-  .contenedorContacto .containerMensaje .formButton {
+  .formButton {
     display: flex;
     justify-content: space-around;
   }
@@ -966,7 +921,8 @@ footer div div {
     font-size: 25px;
   }
   .imgProyecto {
-    width: 100%;
+    width: 90%;
+    height: 70%;
   }
 
   /*----------------- PRODUCTOS MOBILE----------------- */
@@ -1005,27 +961,14 @@ footer div div {
   }
 
   /*----------------- CONTACTO MOBILE----------------- */
-  .contenedorContacto .containerMensaje {
-    height: 800px;
+  .containerMensaje {
+    height: 600px;
     padding: 10px;
+    font-size: 20px;
     overflow: auto;
   }
-  .contenedorContacto .containerMensaje div {
-    font-size: 20px;
-    text-align: left;
-  }
-  .contenedorContacto .inputUser {
-    display: block;
-    height: 30px;
-  }
-  .contenedorContacto .selectFile {
-    width: 100%;
-  }
-  .contenedorContacto .containerMensaje .formButton {
-    display: flex;
-    justify-content: space-around;
-  }
 }
+
 /*----------------- ANIMACIONES----------------- */
 .containerMenu li:hover {
   text-decoration: underline;
