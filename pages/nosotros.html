@@ -13,13 +13,10 @@
 </head>
 
 <body>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"></script>
+
    <header>
 
       <div class="containerLogo">
-
          <a href="../index.html">
             <img src="../img/img_logo.png" alt="Logo de 3D Print" class="headerLogo" />
          </a>
@@ -34,25 +31,7 @@
 
       </div>
 
-      <!-- inicio menu
-      <nav class="containerMenu">
-         <ul>
-            <li>
-               <a href="nosotros.html">Nosotros</a>
-            </li>
-            <li>
-               <a href="proyectos.html">Proyectos</a>
-            </li>
-            <li>
-               <a href="productos.html">Productos</a>
-            </li>
-            <li>
-               <a href="contacto.html">Contacto</a>
-            </li>
-         </ul>
-      </nav>
- fin menu -->
-      <!-- inicia nav bootstrap -->
+      <!-- inicio menu BS -->
       <nav class="navbar navbar-expand-lg containerMenu">
          <div class="container-fluid ">
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
@@ -78,7 +57,8 @@
             </div>
          </div>
       </nav>
-      <!-- fin nav bootstrap -->
+      <!-- fin menu BS -->
+
       <!-- inicio slider -->
       <div class="slider">
          <ul>
@@ -92,15 +72,16 @@
    </header>
 
    <main class="contenedorNosotros">
-      <!-- UTILIZAR ACCORDION CON 3 ARTICULOS -->
+
       <!-- inicio seccion articulos -->
       <section class="sectionNosotros" id="us">
          <h1 class=" titleNeon nosotrosTitle">NOSOTROS</h1>
+
          <!-- inicio acordeon BS -->
          <article>
             <div class="accordion accordion-flush" id="accordionFlushExample">
                <div class="accordion-flush">
-                  <h2 class="accordion-header" id="flush-headingOne">
+                  <h2 class="accordion-header prueba" id="flush-headingOne">
                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                         About Us
@@ -119,7 +100,7 @@
                   <h2 class="accordion-header" id="flush-headingTwo">
                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        Mission
+                        Missions
                      </button>
                   </h2>
                   <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
@@ -148,25 +129,9 @@
                   </div>
                </div>
             </div>
-         </article>
-         <!-- fin acordeon BS -->
-         <!--  
+            <!-- fin acordeon BS -->
 
-            <article>
-               <h2>About us:</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
-               esse deleniti, expedita id architecto
-               consectetur asperiores, quas amet voluptatum dignissimos beatae corporis dolorem quasi! Iusto autem nam
-               consequatur quis. Odit.</p>
          </article>
-         <article>
-            <h2>Missions:</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi inventore
-               quis nam culpa nesciunt ea
-               impedit? Enim eveniet ex, nulla at error fugiat maxime dolore similique modi eos doloremque fuga.</p>
-            </article>
-         </section>
-      -->
          <!-- fin seccion articulos -->
 
          <!-- inicio seccion team -->
@@ -174,13 +139,13 @@
             <h3 class="titleNeon">TEAM:</h3>
             <div class="teamContainer">
 
-               <!-- inicio team con BS -->
-               <div class="card mb-3 profileCard">
+               <!-- inicio cards con BS -->
+               <div class="card m-3 profileCard">
                   <div class="row g-0">
-                     <div class="col-md-4">
-                        <img src="../img/profile.jpg" class="img-fluid rounded-start profile" alt="perfil1">
+                     <div class="col-lg-4 col-md-4 col-sm-4">
+                        <img src="../img/profile.jpg" class="img-fluid rounded-start" alt="perfil1">
                      </div>
-                     <div class="col-md-8">
+                     <div class="col-lg-8 col-md-8 col-sm-8">
                         <div class="card-body">
                            <h5 class="card-title">Fundador</h5>
                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
@@ -190,13 +155,12 @@
                      </div>
                   </div>
                </div>
-
-               <div class="card mb-3 profileCard">
+               <div class="card m-3 profileCard">
                   <div class="row g-0">
-                     <div class="col-md-4">
-                        <img src="../img/profile.jpg" class="img-fluid rounded-start profile" alt="perfil2">
+                     <div class="col-lg-4 col-md-4 col-sm-4">
+                        <img src="../img/profile.jpg" class="img-fluid rounded-start" alt="perfil2">
                      </div>
-                     <div class="col-md-8">
+                     <div class="col-lg-8 col-md-8 col-sm-8">
                         <div class="card-body">
                            <h5 class="card-title">Diseñador</h5>
                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
@@ -206,13 +170,12 @@
                      </div>
                   </div>
                </div>
-
-               <div class="card mb-3 profileCard">
+               <div class="card m-3 profileCard">
                   <div class="row g-0">
-                     <div class="col-md-4">
-                        <img src="../img/profile.jpg" class="img-fluid rounded-start profile" alt="perfil3">
+                     <div class="col-lg-4 col-md-4 col-sm-4">
+                        <img src="../img/profile.jpg" class="img-fluid rounded-start" alt="perfil3">
                      </div>
-                     <div class="col-md-8">
+                     <div class="col-lg-8 col-md-8 col-sm-8">
                         <div class="card-body">
                            <h5 class="card-title">Marketing</h5>
                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
@@ -222,31 +185,11 @@
                      </div>
                   </div>
                </div>
+               <!-- fin cards con BS -->
 
-               <!-- fin team con BS -->
-
-
-               <!--
-                <div>
-           <img src="../img/profile.jpg" alt="perfil1" class="profile">
-           <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-
-        <div>
-           <img src="../img/profile.jpg" alt="perfil1" class="profile">
-           <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-
-        <div>
-           <img src="../img/profile.jpg" alt="perfil1" class="profile">
-           <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-            -->
             </div>
          </section>
-
          <!-- fin seccion team -->
-
 
    </main>
 
@@ -283,9 +226,11 @@
       </div>
 
    </footer>
-
    <!-- fin pie de pagina -->
 
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
