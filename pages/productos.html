@@ -12,9 +12,6 @@
 </head>
 
 <body>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"></script>
 
    <header>
 
@@ -34,25 +31,7 @@
 
       </div>
 
-      <!-- inicio menu
-      <nav class="containerMenu">
-         <ul>
-            <li>
-               <a href="nosotros.html">Nosotros</a>
-            </li>
-            <li>
-               <a href="proyectos.html">Proyectos</a>
-            </li>
-            <li>
-               <a href="productos.html">Productos</a>
-            </li>
-            <li>
-               <a href="contacto.html">Contacto</a>
-            </li>
-         </ul>
-      </nav>
-fin menu -->
-      <!-- inicia nav bootstrap -->
+      <!-- inicio menu BS -->
       <nav class="navbar navbar-expand-lg containerMenu">
          <div class="container-fluid ">
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
@@ -78,7 +57,8 @@ fin menu -->
             </div>
          </div>
       </nav>
-      <!-- fin nav bootstrap -->
+      <!-- fin menu BS -->
+
       <!-- inicio slider -->
       <div class="slider">
          <ul>
@@ -122,74 +102,60 @@ fin menu -->
                   <label for="juguetes">Juguetes</label>
                </div>
             </div>
-            <!-- boton 1 -->
-            <div class="dropdown">
-               <button class="btn dropdown-toggle btn-lg dropdownEsmerald" type="button" id="dropdownMenuButton1"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  Mas relevantes
-               </button>
-               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item text-white" href="#">Mas relevantes</a></li>
-                  <li><a class="dropdown-item text-white" href="#">Mayor precio</a></li>
-                  <li><a class="dropdown-item text-white" href="#">Menor precio</a></li>
-               </ul>
-            </div>
-            <!-- boton 1 -->
-            <!-- canvas -->
-            <a class="btn dropdownEsmerald" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-               aria-controls="offcanvasExample">
-               Formas de pago
-            </a>
-
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-               aria-labelledby="offcanvasExampleLabel">
-               <div class="offcanvas-header  offcanvasTitle">
-                  <h3 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h3>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="container-fluid">
+               <!-- inicio dropdown BS -->
+               <div class="dropdown">
+                  <button class="btn dropdown-toggle dropdownEsmerald" type="button" id="dropdownMenuButton1"
+                     data-bs-toggle="dropdown" aria-expanded="false">
+                     Mas relevantes
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                     <li><a class="dropdown-item text-white" href="#">Mas relevantes</a></li>
+                     <li><a class="dropdown-item text-white" href="#">Mayor precio</a></li>
+                     <li><a class="dropdown-item text-white" href="#">Menor precio</a></li>
+                  </ul>
                </div>
-               <div class="offcanvas-body offcanvasEdit">
-                  <div class="filtrosChecks">
-                     <div>
-                        <input type="checkbox" id="accesorios">
-                        <label for="accesorios">Efectivo</label>
-                     </div>
+               <!-- fin dropdown BS -->
+               <!-- inicio canvas BS -->
+               <a class="btn col-12 mx-auto dropdownEsmerald" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                  role="button" aria-controls="offcanvasExample">
+                  Formas de pago
+               </a>
 
-                     <div>
-                        <input type="checkbox" id="decos">
-                        <label for="decos">Tarjeta debito</label>
-                     </div>
+               <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                  aria-labelledby="offcanvasExampleLabel">
+                  <div class="offcanvas-header offcanvasHead">
+                     <h3 class="offcanvas-title" id="offcanvasExampleLabel">Opciones</h3>
+                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body offcanvasEdit">
+                     <div class="filtrosChecks">
+                        <div>
+                           <input type="checkbox" id="accesorios">
+                           <label for="accesorios">Efectivo</label>
+                        </div>
 
-                     <div>
-                        <input type="checkbox" id="figuras" value="quiere velas">
-                        <label for="figuras">T. crdito Visa</label>
-                     </div>
+                        <div>
+                           <input type="checkbox" id="decos">
+                           <label for="decos">Tarjeta debito</label>
+                        </div>
 
-                     <div>
-                        <input type="checkbox" id="juguetes">
-                        <label for="juguetes">T. credito Mastercard</label>
+                        <div>
+                           <input type="checkbox" id="figuras" value="quiere velas">
+                           <label for="figuras">T. credito Visa</label>
+                        </div>
+
+                        <div>
+                           <input type="checkbox" id="juguetes">
+                           <label for="juguetes">T. credito Mastercard</label>
+                        </div>
                      </div>
                   </div>
                </div>
-            </div>
-            <!-- canvas -->
+               <!-- fin canvas BS -->
+            </div> <!-- fin contenedor botones BS-->
+
          </div>
-
-
-         <!-- 
-               <div class="dropdown mt-3">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                     data-bs-toggle="dropdown">
-                     Dropdown button
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                     <li><a class="dropdown-item" href="#">Action</a></li>
-                     <li><a class="dropdown-item" href="#">Another action</a></li>
-                     <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-               </div>
-                  -->
-         <!-- canvas -->
-
 
       </fieldset>
       <!-- fin filtros -->
@@ -310,6 +276,9 @@ fin menu -->
 
    <!-- fin pie de pagina -->
 
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
