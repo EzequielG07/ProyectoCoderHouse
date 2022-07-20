@@ -423,24 +423,13 @@ footer div div {
 /*----------------- PROYECTOS----------------- */
 
 .articlesProyecto {
-  /*display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;*/
-  width: 100%;
-  /*height: 400px;*/
-  /*margin: 10px 0;*/
+  width: 90%;
   background-color: rgba(0, 253, 181, 0.146);
   border: solid rgba(23, 75, 61, 0.352) 10px;
   border-radius: 10px;
 }
-/*
-.reverse {
-  flex-direction: row-reverse;
-}
-*/
+
 .articlesProyecto p {
-  /*width: 600px;*/
   height: 350px;
   background-color: rgb(196, 235, 196);
   border: solid rgb(41, 119, 125) 5px;
@@ -451,7 +440,6 @@ footer div div {
 }
 
 .articlesImg {
-  /* width: 600px;*/
   height: 350px;
   display: flex;
   justify-content: center;
@@ -462,8 +450,8 @@ footer div div {
 }
 
 .imgProyecto {
-  width: 450px;
-  height: 300px;
+  width: 80%;
+  height: 80%;
 }
 
 .contenedorProyectos {
@@ -843,16 +831,12 @@ footer div div {
     column-gap: 20px;
     padding: 5px;
   }
-  .contenedorProyectos .articlesProyecto p {
-    width: 100%;
-    font-size: 30px;
+
+  .articlesProyecto p {
+    font-size: 35px;
   }
-  .contenedorProyectos .articlesProyecto .articlesImg {
-    width: 100%;
-  }
-  .contenedorProyectos .articlesProyecto .imgProyecto {
-    width: 95%;
-    height: 75%;
+  .imgProyecto {
+    width: 90%;
   }
 
   /*----------------- PRODUCTOS TABLET----------------- */
@@ -978,29 +962,11 @@ footer div div {
   }
 
   /*----------------- PROYECTOS MOBILE----------------- */
-  .contenedorProyectos section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .articlesProyecto p {
+    font-size: 25px;
   }
-  .contenedorProyectos .articlesProyecto {
-    flex-direction: column;
-    align-items: center;
-    row-gap: 20px;
-    width: 90%;
-    height: auto;
-    padding: 10px;
-  }
-  .contenedorProyectos .articlesProyecto p {
+  .imgProyecto {
     width: 100%;
-    font-size: 30px;
-  }
-  .contenedorProyectos .articlesProyecto .articlesImg {
-    width: 100%;
-  }
-  .contenedorProyectos .articlesProyecto .imgProyecto {
-    width: 90%;
-    height: 70%;
   }
 
   /*----------------- PRODUCTOS MOBILE----------------- */
