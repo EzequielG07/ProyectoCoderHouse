@@ -594,15 +594,15 @@ footer div div {
   grid-template-columns: 1fr 4fr;
   grid-template-rows: repeat(3, auto);
   grid-template-areas:
-    "titleP titleP "
+    "productos productos "
     "filter catalogue "
     "filter catalogue ";
 }
 #catalogue {
   grid-area: catalogue;
 }
-#titleP {
-  grid-area: titleP;
+#productos {
+  grid-area: productos;
 }
 #filter {
   grid-area: filter;
@@ -674,12 +674,12 @@ footer div div {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
   grid-template-areas:
-    "titleC"
+    "contacto"
     "mensaje";
 }
 
-#titleC {
-  grid-area: titleC;
+#contacto {
+  grid-area: contacto;
 }
 
 #mensaje {
@@ -814,7 +814,7 @@ footer div div {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
-      "titleP"
+      "productos"
       "filter"
       "catalogue";
   }
@@ -942,7 +942,7 @@ footer div div {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
-      "titleP"
+      "productos"
       "filter"
       "catalogue";
   }
