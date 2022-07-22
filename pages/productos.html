@@ -74,16 +74,7 @@
       </div>
       <!-- fin slider -->
    </header>
-      <!-- inicio boton switch BS -->
-      <div class="form-check form-switch container-fluid ms-5 w-50 switchBox-prueba">
-         <input class="form-check-input my-3" type="checkbox" role="switch" id="flexSwitchCheckDefault1">
-         <label class="form-check-label my-3" for="flexSwitchCheckDefault1">Llegan hoy</label>
-      </div>
-      <div class="form-check form-switch switchBox-prueba">
-         <input class="form-check-input my-3" type="checkbox" role="switch" id="flexSwitchCheckDefault2">
-         <label class="form-check-label my-3" for="flexSwitchCheckDefault2">Envio gratis</label>
-      </div>
-      <!-- fin boton switch BS -->
+
    <main class="contenedorProductos">
 
       <h1 class=" titleNeon nosotrosTitle" id="productos">PRODUCTOS</h1>
@@ -115,70 +106,75 @@
                   <label for="juguetes">Juguetes</label>
                </div>
             </div>
-            <div class="container-fluid">
+
+            <div class="filtrosBotones">
+               <!-- inicio boton switch BS -->
+               <div class="form-check form-switch container-fluid ms-1 my-2 switchBox-prueba">
+
+                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault1">
+                  <label class="form-check-label ms-3" for="flexSwitchCheckDefault1">Llegan hoy</label>
+               </div>
+
+               <div class="form-check form-switch container-fluid ms-1 my-2 switchBox-prueba">
+
+                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault2">
+                  <label class="form-check-label ms-3" for="flexSwitchCheckDefault2">Envio gratis</label>
+
+               </div>
+               <!-- fin boton switch BS -->
+
                <!-- inicio dropdown BS -->
-               <div class="dropdown">
-                  <button class="btn dropdown-toggle dropdownEsmerald" type="button" id="dropdownMenuButton1"
-                     data-bs-toggle="dropdown" aria-expanded="false">
+               <div class="dropdown ms-1 my-2 drop-prueba">
+                  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                     aria-expanded="false">
                      Mas relevantes
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                     <li><a class="dropdown-item text-white" href="#">Mas relevantes</a></li>
-                     <li><a class="dropdown-item text-white" href="#">Mayor precio</a></li>
-                     <li><a class="dropdown-item text-white" href="#">Menor precio</a></li>
+                     <li><a class="dropdown-item text-white fw-bold" href="#">Mas relevantes</a></li>
+                     <li><a class="dropdown-item text-white fw-bold" href="#">Mayor precio</a></li>
+                     <li><a class="dropdown-item text-white fw-bold" href="#">Menor precio</a></li>
                   </ul>
                </div>
                <!-- fin dropdown BS -->
+
                <!-- inicio canvas BS -->
-               <a class="btn col-12 mx-auto dropdownEsmerald" data-bs-toggle="offcanvas" href="#offcanvasExample"
+               <a class="btn ms-1 my-2 btnoffcanvas-prueba" data-bs-toggle="offcanvas" href="#offcanvasExample"
                   role="button" aria-controls="offcanvasExample">
                   Formas de pago
                </a>
 
-               <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+               <div class="offcanvas offcanvas-start offcanvas-prueba" tabindex="-1" id="offcanvasExample"
                   aria-labelledby="offcanvasExampleLabel">
-                  <div class="offcanvas-header offcanvasHead">
+                  <div class="offcanvas-header offcanvas-prueba1">
                      <h3 class="offcanvas-title" id="offcanvasExampleLabel">Opciones</h3>
                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
-                  <div class="offcanvas-body offcanvasEdit">
-                     <div class="filtrosChecks">
-                        <div>
-                           <input type="checkbox" id="efectivo">
-                           <label for="efectivo">Efectivo</label>
-                        </div>
+                  <div class="offcanvas-body offcanvas-prueba2">
+                     <div>
+                        <input type="checkbox" id="efectivo">
+                        <label for="efectivo">Efectivo</label>
+                     </div>
 
-                        <div>
-                           <input type="checkbox" id="debito">
-                           <label for="debito">Tarjeta debito</label>
-                        </div>
+                     <div>
+                        <input type="checkbox" id="debito">
+                        <label for="debito">Tarjeta debito</label>
+                     </div>
 
-                        <div>
-                           <input type="checkbox" id="figuras" value="visa">
-                           <label for="visa">T. credito Visa</label>
-                        </div>
+                     <div>
+                        <input type="checkbox" id="figuras" value="visa">
+                        <label for="visa">T. credito Visa</label>
+                     </div>
 
-                        <div>
-                           <input type="checkbox" id="mastercard">
-                           <label for="mastercard">T. credito Mastercard</label>
-                        </div>
+                     <div>
+                        <input type="checkbox" id="mastercard">
+                        <label for="mastercard">T. credito Mastercard</label>
                      </div>
                   </div>
                </div>
-               <!-- fin canvas BS -->
+            </div>
 
-            </div>
-            <!-- inicio boton switch BS -->
-            <div class="form-check form-switch switchBox">
-               <input class="form-check-input my-3" type="checkbox" role="switch" id="flexSwitchCheckDefault1">
-               <label class="form-check-label my-3" for="flexSwitchCheckDefault1">Llegan hoy</label>
-            </div>
-            <div class="form-check form-switch switchBox">
-               <input class="form-check-input my-3" type="checkbox" role="switch" id="flexSwitchCheckDefault2">
-               <label class="form-check-label my-3" for="flexSwitchCheckDefault2">Envio gratis</label>
-            </div>
-            <!-- fin boton switch BS -->
          </div>
+
 
       </fieldset>
       <!-- fin filtros -->

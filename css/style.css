@@ -474,14 +474,14 @@ footer div div {
     rgba(0, 212, 255, 1) 100%
   );
   border: solid rgb(0, 56, 60) 5px;
-  font-family: "Ubuntu", sans-serif;
-  font-style: italic;
-  font-size: 40px;
-  color: rgb(0, 56, 60);
 }
 
 .filtros legend {
-  font-size: 55px;
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic;
+  font-size: 6em;
+  color: rgb(0, 56, 60);
+  border: solid brown 3px;
 }
 .filtrosContainer {
   top: 30px;
@@ -491,51 +491,6 @@ footer div div {
   flex-direction: column;
 }
 
-.filtrosContainer label {
-  display: block;
-  font-size: 24px;
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 2px rgb(128, 128, 128);
-}
-
-.filtrosContainer input {
-  margin-right: 5px;
-  cursor: pointer;
-}
-
-.dropdownEsmerald {
-  width: 90%;
-  background-color: rgb(16, 84, 89);
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  font-style: italic;
-}
-
-.dropdown ul {
-  font-size: 20px;
-  background-color: rgb(41, 119, 125);
-  border: solid rgb(255, 255, 255) 2px;
-}
-
-.offcanvasHead {
-  background-color: rgb(16, 84, 89);
-  color: rgb(255, 255, 255);
-}
-
-.offcanvasHead h3 {
-  font-size: 40px;
-}
-
-.offcanvasEdit {
-  background: linear-gradient(
-    45deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(0, 253, 181, 1) 55%,
-    rgba(0, 212, 255, 1) 100%
-  );
-  font-size: 10px;
-}
-
 .filtrosChecks div {
   display: flex;
   flex-direction: row;
@@ -543,23 +498,118 @@ footer div div {
   margin: 5px;
 }
 
-.switchBox {
-  width: 90%;
-  background-color: rgb(16, 84, 89);
-  border-radius: 5px;
-  margin: 5px 0;
+.filtrosChecks input {
+  border: solid pink 2px;
+  transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
 }
+
+.filtrosChecks label {
+  border: solid khaki 2px;
+  font-size: 2em;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px rgb(94, 94, 94);
+}
+
 /* ------------------------prueba----------------------- */
 .switchBox-prueba {
   border: solid red 2px;
-  padding-left: 50px;
+  background-color: rgb(16, 84, 89);
+  border-radius: 5px;
+  width: 65%;
+  height: 50px;
+  padding-left: 60px;
+  display: flex;
+  align-items: center;
 }
 .switchBox-prueba input {
   border: solid blue 2px;
+  height: 25px;
+  font-size: 2em;
+  cursor: pointer;
 }
 .switchBox-prueba label {
   border: solid green 2px;
+  font-size: 2em;
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 }
+.drop-prueba {
+  border: solid red 2px;
+  background-color: rgb(16, 84, 89);
+  border-radius: 5px;
+  width: 65%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.drop-prueba button {
+  border: solid orange 2px;
+  font-size: 2em;
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(255, 255, 255);
+}
+.drop-prueba ul {
+  font-size: 2em;
+  background-color: rgb(41, 119, 125);
+  border: solid rgb(255, 255, 255) 2px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px rgb(94, 94, 94);
+}
+.btnoffcanvas-prueba {
+  border: solid orangered 2px;
+  background-color: rgb(16, 84, 89);
+  border-radius: 5px;
+  width: 65%;
+  height: 50px;
+  padding: auto;
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 500;
+}
+.offcanvas-prueba {
+  border: solid deeppink 2px;
+}
+.offcanvas-prueba1 {
+  background-color: rgb(16, 84, 89);
+  font-size: 45px;
+}
+.offcanvas-prueba1 h3 {
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+}
+.offcanvas-prueba2 {
+  background: linear-gradient(
+    45deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 253, 181, 1) 55%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.offcanvas-prueba2 div input {
+  border: solid pink 2px;
+  transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  padding: 10px;
+  margin: 5px;
+}
+.offcanvas-prueba2 div label {
+  border: solid khaki 2px;
+  font-size: 2em;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px rgb(94, 94, 94);
+}
+
 /* fin seccion filtros */
 
 /* inicio seccion catalogo */
@@ -698,7 +748,7 @@ footer div div {
   grid-area: mensaje;
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1300px) {
   /*----------------- INDEX AJUSTES----------------- */
   .containerMenu li {
     margin: 0 10px;
@@ -714,17 +764,22 @@ footer div div {
   .filtrosContainer label {
     font-size: 20px;
   }
-  .dropdownEsmerald {
-    width: 100%;
-    font-size: 15px;
+  .switchBox-prueba {
+    width: 90%;
+  }
+  .switchBox-prueba label {
+    font-size: 1.5em;
+  }
+  .drop-prueba {
+    width: 90%;
+  }
+  .drop-prueba button {
+    font-size: 1.5em;
     overflow: hidden;
   }
-  .switchBox {
-    width: 100%;
-    font-size: 20px;
-  }
-  .switchBox label {
-    font-size: 15px;
+  .btnoffcanvas-prueba {
+    width: 90%;
+    font-size: 1.5em;
   }
 }
 
@@ -839,6 +894,7 @@ footer div div {
       rgba(0, 212, 255, 1) 100%
     );
   }
+
   .contenedorProductos .catalogo {
     column-gap: 10px;
     justify-content: center;
@@ -850,12 +906,6 @@ footer div div {
     width: 235px;
     height: 355px;
     font-size: 15px;
-  }
-  .dropdownEsmerald {
-    width: 100%;
-  }
-  .switchBox {
-    width: 100%;
   }
 
   /*----------------- CONTACTO TABLET----------------- */
