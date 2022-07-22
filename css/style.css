@@ -549,6 +549,17 @@ footer div div {
   border-radius: 5px;
   margin: 5px 0;
 }
+/* ------------------------prueba----------------------- */
+.switchBox-prueba {
+  border: solid red 2px;
+  padding-left: 50px;
+}
+.switchBox-prueba input {
+  border: solid blue 2px;
+}
+.switchBox-prueba label {
+  border: solid green 2px;
+}
 /* fin seccion filtros */
 
 /* inicio seccion catalogo */
