@@ -316,11 +316,11 @@ footer div div {
   font-style: italic;
 }
 
-.sectionNosotros {
+.sectionUs {
   padding: 5px 20px;
 }
 
-.sectionNosotros article {
+.sectionUs article {
   padding: 5px;
   margin: 20px 0;
   background-color: rgba(0, 253, 181, 0.146);
@@ -328,7 +328,7 @@ footer div div {
   border-radius: 5px;
 }
 
-.sectionNosotros article button {
+.sectionUs button {
   font-family: "Heebo", sans-serif;
   font-style: italic;
   font-size: 40px;
@@ -340,7 +340,7 @@ footer div div {
   border: solid rgb(255, 255, 255) 1px;
 }
 
-.sectionNosotros article p {
+.sectionUs p {
   font-family: "Ubuntu", sans-serif;
   font-size: 35px;
   text-align: justify;
@@ -382,14 +382,14 @@ footer div div {
   animation-direction: alternate;
 }
 
-.teamContainer div h5 {
+.profileCard h5 {
   color: rgb(255, 255, 255);
   font-family: "Ubuntu", sans-serif;
   font-size: 20px;
   background-color: rgb(0, 56, 60);
 }
 
-.teamContainer div p {
+.profileCard p {
   padding: 2px;
   margin-top: 5px;
   font-family: "Ubuntu", sans-serif;
@@ -417,14 +417,14 @@ footer div div {
 
 /*----------------- PROYECTOS----------------- */
 
-.articlesProyecto {
+.proyectContainer {
   width: 90%;
   background-color: rgba(0, 253, 181, 0.146);
   border: solid rgba(23, 75, 61, 0.352) 10px;
   border-radius: 10px;
 }
 
-.articlesProyecto p {
+.proyectContainer p {
   height: 350px;
   background-color: rgb(196, 235, 196);
   border: solid rgb(41, 119, 125) 5px;
@@ -434,7 +434,7 @@ footer div div {
   overflow: auto;
 }
 
-.articlesImg {
+.proyectPicture {
   height: 350px;
   display: flex;
   justify-content: center;
@@ -444,7 +444,7 @@ footer div div {
   border-radius: 5px;
 }
 
-.imgProyecto {
+.proyectPicture img {
   width: 80%;
   height: 80%;
 }
@@ -615,7 +615,7 @@ footer div div {
 /* fin seccion filtros */
 
 /* inicio seccion catalogo */
-.catalogo {
+.catalogueArea {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -625,7 +625,7 @@ footer div div {
   padding-bottom: 20px;
 }
 
-.catalogo figure {
+.catalogueArea figure {
   width: 300px;
   height: 420px;
   padding: 10px 10px 70px 10px;
@@ -640,14 +640,14 @@ footer div div {
   color: rgb(0, 0, 0);
 }
 
-.catalogo figure p {
+.catalogueArea figure p {
   background-color: rgb(0, 56, 60);
   font-family: "Ubuntu", sans-serif;
   font-size: 20px;
   color: rgb(255, 255, 255);
 }
 
-.catalogo figure img {
+.catalogueArea figure img {
   width: 100%;
   height: 100%;
 }
@@ -674,7 +674,7 @@ footer div div {
 
 /*----------------- CONTACTO----------------- */
 
-.containerMensaje {
+.formContainer {
   width: 90%;
   margin-left: 5%;
   margin-top: 10px;
@@ -689,7 +689,7 @@ footer div div {
   color: rgb(255, 255, 255);
 }
 
-.inputUser {
+.clientData input {
   margin: 10px 0;
   height: 50px;
   background-color: rgba(255, 255, 255, 0.713);
@@ -697,18 +697,7 @@ footer div div {
   font-size: large;
 }
 
-.selectAsunto {
-  height: 50px;
-  border: solid rgb(143, 143, 143) 1px;
-  border-radius: 5px;
-  background-color: rgb(4, 62, 57);
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  color: rgb(255, 255, 255);
-}
-
-.selectFile {
+.selectFile input {
   height: 32px;
   padding: 1px;
   border: solid rgb(4, 62, 57) 1px;
@@ -719,12 +708,18 @@ footer div div {
   color: rgb(255, 255, 255);
 }
 
-.labelDetalles {
-  display: block;
-  margin-bottom: 10px;
+.selectMatter {
+  height: 50px;
+  border: solid rgb(143, 143, 143) 1px;
+  border-radius: 5px;
+  background-color: rgb(4, 62, 57);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
 }
 
-.textDetalles {
+.textDetails textarea {
   width: 100%;
   margin-bottom: 5px;
   border-radius: 3px;
@@ -857,32 +852,27 @@ footer div div {
   }
 
   /*----------------- NOSOTROS TABLET----------------- */
-  .contenedorNosotros .sectionNosotros article h2 {
+  .sectionUs button {
     font-size: 30px;
   }
-  .contenedorNosotros .sectionNosotros article p {
+  .sectionUs p {
     font-size: 25px;
   }
-
-  .contenedorNosotros .teamContainer {
+  .teamContainer {
     flex-direction: column;
     align-items: center;
   }
 
   /*----------------- PROYECTOS TABLET----------------- */
-  .contenedorProyectos .articlesProyecto {
-    column-gap: 20px;
-    padding: 5px;
-  }
-  .articlesProyecto p {
+  .proyectContainer p {
     font-size: 35px;
   }
-  .imgProyecto {
+  .proyectPicture img {
     width: 90%;
   }
 
   /*----------------- PRODUCTOS TABLET----------------- */
-  body .contenedorProductos {
+  .contenedorProductos {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
@@ -890,7 +880,7 @@ footer div div {
       "filter"
       "catalogue";
   }
-  .contenedorProductos .filterArea {
+  .filterArea {
     background: rgb(2, 0, 36);
     background: linear-gradient(
       -45deg,
@@ -918,13 +908,13 @@ footer div div {
     width: 100%;
   }
 
-  .contenedorProductos .catalogo {
+  .contenedorProductos .catalogueArea {
     column-gap: 10px;
     justify-content: center;
     overflow: auto;
     height: 800px;
   }
-  .contenedorProductos .catalogo figure {
+  .contenedorProductos .catalogueArea figure {
     margin: 20px 0;
     width: 235px;
     height: 355px;
@@ -932,10 +922,10 @@ footer div div {
   }
 
   /*----------------- CONTACTO TABLET----------------- */
-  .containerMensaje {
+  .formContainer {
     font-size: 23px;
   }
-  .contenedorContacto .inputUser {
+  .clientData input {
     height: 40px;
     width: 100%;
   }
@@ -1002,22 +992,18 @@ footer div div {
   }
 
   /*----------------- NOSOTROS MOBILE----------------- */
-  .contenedorNosotros .sectionNosotros article h2 {
+  .sectionUs button {
     font-size: 20px;
   }
-  .contenedorNosotros .sectionNosotros article p {
+  .sectionUs p {
     font-size: 20px;
-  }
-  .contenedorNosotros .teamContainer {
-    flex-direction: column;
-    align-items: center;
   }
 
   /*----------------- PROYECTOS MOBILE----------------- */
-  .articlesProyecto p {
+  .proyectContainer p {
     font-size: 25px;
   }
-  .imgProyecto {
+  .proyectPicture img {
     width: 90%;
     height: 70%;
   }
@@ -1043,6 +1029,9 @@ footer div div {
   .offcanvasButtonLink {
     font-size: 1.5em;
   }
+  .offcanvasChecks {
+    text-align: left;
+  }
   .contenedorProductos .filterArea {
     text-align: center;
     margin: 10px 0;
@@ -1051,7 +1040,7 @@ footer div div {
   .contenedorProductos .filterContainer label {
     font-size: 20px;
   }
-  .contenedorProductos .catalogo {
+  .contenedorProductos .catalogueArea {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -1059,19 +1048,19 @@ footer div div {
     height: 500px;
     overflow: auto;
   }
-  .contenedorProductos .catalogo figure {
+  .contenedorProductos .catalogueArea figure {
     margin: 20px 0;
     width: 260px;
     height: 380px;
     font-size: 16px;
   }
-  .contenedorProductos .catalogo figure p {
+  .contenedorProductos .catalogueArea figure p {
     margin-top: 5px;
     font-size: 18px;
   }
 
   /*----------------- CONTACTO MOBILE----------------- */
-  .containerMensaje {
+  .formContainer {
     padding: 10px;
     font-size: 20px;
   }

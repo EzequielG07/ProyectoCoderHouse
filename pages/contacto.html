@@ -81,25 +81,26 @@
       <h1 class=" titleNeon nosotrosTitle" id="contacto">CONTACTO</h1>
 
       <!-- inicio formulario -->
-      <section class="containerMensaje" id="mensaje">
+      <section class="formContainer" id="mensaje">
          <form class="container-fluid" action="solicitud.php">
 
             <!-- form BS -->
-            <div class="row">
+            <div class="row clientData">
                <div class="col-lg-6">
-                  <input type="text" class="form-control inputUser" placeholder="Nombre" aria-label="First name">
+                  <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
                </div>
                <div class="col-lg-6">
-                  <input type="text" class="form-control inputUser" placeholder="Apellido" aria-label="Last name">
+                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
                </div>
             </div>
-            <div class="row">
+
+            <div class="row clientData">
                <div class="col-lg-6">
-                  <input type="email" class="form-control inputUser" placeholder="example@gmail.com"
+                  <input type="email" class="form-control" placeholder="example@gmail.com"
                      aria-label="example@gmail.com">
                </div>
                <div class="col-lg-6">
-                  <input type="tel" class="form-control inputUser" placeholder="Celular" aria-label="phone">
+                  <input type="tel" class="form-control" placeholder="Celular" aria-label="phone">
                </div>
             </div>
 
@@ -121,24 +122,25 @@
                      </label>
                   </div>
                </div>
-               <div class="col-sm-12 col-lg-6 mb-3">
+
+               <div class="col-sm-12 col-lg-6 mb-3 selectFile">
                   <label for="formFile" class="form-label">Adjunte su diseño</label>
                   <input class="form-control selectFile" type="file" id="formFile">
                </div>
             </fieldset>
 
 
-            <select class="form-select form-select-lg mb-3 selectAsunto" aria-label=".form-select-lg example">
+            <select class="form-select form-select-lg mb-3 selectMatter" aria-label=".form-select-lg example">
                <option selected>Consulta</option>
                <option value="1">Envio</option>
                <option value="2">Informacion</option>
                <option value="3">Promociones</option>
             </select>
 
-            <div class="mb-3">
+            <div class="mb-3 textDetails">
                <label for="exampleFormControlTextarea1" class="form-label">Deje los detalles para el
                   diseño:</label>
-               <textarea class="form-control textDetalles" id="exampleFormControlTextarea1" rows="3"></textarea>
+               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             <!-- form BS -->
 
