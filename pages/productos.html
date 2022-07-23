@@ -80,12 +80,12 @@
       <h1 class=" titleNeon nosotrosTitle" id="productos">PRODUCTOS</h1>
 
       <!-- inicio filtros -->
-      <fieldset class="filtros" id="filter">
+      <fieldset class="filterArea" id="filter">
 
          <legend>FILTROS</legend>
-         <div class="filtrosContainer">
+         <div class="filterContainer">
 
-            <div class="filtrosChecks">
+            <div class="filterChecks">
                <div>
                   <input type="checkbox" id="accesorios">
                   <label for="accesorios">Accesorios</label>
@@ -107,7 +107,7 @@
                </div>
             </div>
 
-            <div class="filtrosBotones">
+            <div class="filterButtons">
                <!-- inicio boton switch BS -->
                <div class="form-check form-switch container-fluid ms-1 my-2 switchBox-prueba">
 
@@ -138,18 +138,18 @@
                <!-- fin dropdown BS -->
 
                <!-- inicio canvas BS -->
-               <a class="btn ms-1 my-2 btnoffcanvas-prueba" data-bs-toggle="offcanvas" href="#offcanvasExample"
+               <a class="btn ms-1 my-2 offcanvasButtonLink" data-bs-toggle="offcanvas" href="#offcanvasExample"
                   role="button" aria-controls="offcanvasExample">
                   Formas de pago
                </a>
 
-               <div class="offcanvas offcanvas-start offcanvas-prueba" tabindex="-1" id="offcanvasExample"
+               <div class="offcanvas offcanvas-start offcanvasOpen" tabindex="-1" id="offcanvasExample"
                   aria-labelledby="offcanvasExampleLabel">
-                  <div class="offcanvas-header offcanvas-prueba1">
+                  <div class="offcanvas-header offcanvasName">
                      <h3 class="offcanvas-title" id="offcanvasExampleLabel">Opciones</h3>
                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
-                  <div class="offcanvas-body offcanvas-prueba2">
+                  <div class="offcanvas-body offcanvasChecks">
                      <div>
                         <input type="checkbox" id="efectivo">
                         <label for="efectivo">Efectivo</label>
@@ -171,10 +171,10 @@
                      </div>
                   </div>
                </div>
+               <!-- inicio canvas BS -->
             </div>
 
          </div>
-
 
       </fieldset>
       <!-- fin filtros -->

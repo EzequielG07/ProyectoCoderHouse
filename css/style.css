@@ -462,7 +462,7 @@ footer div div {
 
 /*----------------- PRODUCTOS----------------- */
 /* inicio seccion filtros */
-.filtros {
+.filterArea {
   width: 100%;
   height: auto;
   padding: 0 2%;
@@ -476,14 +476,14 @@ footer div div {
   border: solid rgb(0, 56, 60) 5px;
 }
 
-.filtros legend {
+.filterArea legend {
   font-family: "Ubuntu", sans-serif;
   font-style: italic;
   font-size: 6em;
   color: rgb(0, 56, 60);
-  border: solid brown 3px;
 }
-.filtrosContainer {
+
+.filterContainer {
   top: 30px;
   position: sticky;
   height: auto;
@@ -491,15 +491,14 @@ footer div div {
   flex-direction: column;
 }
 
-.filtrosChecks div {
+.filterChecks div {
   display: flex;
   flex-direction: row;
   padding-left: 1px;
   margin: 5px;
 }
 
-.filtrosChecks input {
-  border: solid pink 2px;
+.filterChecks input {
   transform: scale(1.5);
   -ms-transform: scale(1.5);
   -webkit-transform: scale(1.5);
@@ -508,17 +507,14 @@ footer div div {
   cursor: pointer;
 }
 
-.filtrosChecks label {
-  border: solid khaki 2px;
+.filterChecks label {
   font-size: 2em;
   font-weight: bold;
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 2px rgb(94, 94, 94);
 }
 
-/* ------------------------prueba----------------------- */
 .switchBox-prueba {
-  border: solid red 2px;
   background-color: rgb(16, 84, 89);
   border-radius: 5px;
   width: 80%;
@@ -527,21 +523,21 @@ footer div div {
   display: flex;
   align-items: center;
 }
+
 .switchBox-prueba input {
-  border: solid blue 2px;
   height: 25px;
   font-size: 2em;
   cursor: pointer;
 }
+
 .switchBox-prueba label {
-  border: solid green 2px;
   font-size: 2em;
   font-family: "Ubuntu", sans-serif;
   color: rgb(255, 255, 255);
   cursor: pointer;
 }
+
 .drop-prueba {
-  border: solid red 2px;
   background-color: rgb(16, 84, 89);
   border-radius: 5px;
   width: 80%;
@@ -549,12 +545,13 @@ footer div div {
   display: flex;
   align-items: center;
 }
+
 .drop-prueba button {
-  border: solid orange 2px;
   font-size: 2em;
   font-family: "Ubuntu", sans-serif;
   color: rgb(255, 255, 255);
 }
+
 .drop-prueba ul {
   font-size: 2em;
   background-color: rgb(41, 119, 125);
@@ -562,8 +559,8 @@ footer div div {
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 2px rgb(94, 94, 94);
 }
-.btnoffcanvas-prueba {
-  border: solid orangered 2px;
+
+.offcanvasButtonLink {
   background-color: rgb(16, 84, 89);
   border-radius: 5px;
   width: 80%;
@@ -575,35 +572,40 @@ footer div div {
   font-size: 20px;
   font-weight: 500;
 }
-.offcanvas-prueba {
-  border: solid deeppink 2px;
+
+.offcanvasOpen {
+  border: solid rgb(255, 255, 255) 1px;
 }
-.offcanvas-prueba1 {
+
+.offcanvasName {
   background-color: rgb(16, 84, 89);
   font-size: 45px;
 }
-.offcanvas-prueba1 h3 {
+
+.offcanvasName h3 {
   font-size: 1em;
   color: rgb(255, 255, 255);
 }
-.offcanvas-prueba2 {
+
+.offcanvasChecks {
   background: linear-gradient(
-    45deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(0, 253, 181, 1) 55%,
-    rgba(0, 212, 255, 1) 100%
-  );
+      45deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(0, 253, 181, 1) 55%,
+      rgba(0, 212, 255, 1) 100%
+    )
+    2px;
 }
-.offcanvas-prueba2 div input {
-  border: solid pink 2px;
+
+.offcanvasChecks div input {
   transform: scale(1.5);
   -ms-transform: scale(1.5);
   -webkit-transform: scale(1.5);
   padding: 10px;
   margin: 5px;
 }
-.offcanvas-prueba2 div label {
-  border: solid khaki 2px;
+
+.offcanvasChecks div label {
   font-size: 2em;
   font-weight: bold;
   color: rgb(255, 255, 255);
@@ -748,7 +750,7 @@ footer div div {
   grid-area: mensaje;
 }
 
-@media (min-width: 768px) and (max-width: 1470px) {
+@media (min-width: 768px) and (max-width: 1350px) {
   /*----------------- INDEX AJUSTES----------------- */
   .containerMenu li {
     margin: 0 10px;
@@ -758,14 +760,17 @@ footer div div {
     align-items: center;
   }
   /*----------------- PRODUCTOS AJUSTES----------------- */
-  .filtros legend {
+  .filterArea legend {
     font-size: 30px;
   }
-  .filtrosContainer label {
+  .filterContainer label {
     font-size: 20px;
   }
   .switchBox-prueba {
     width: 90%;
+  }
+  .switchBox-prueba input {
+    font-size: 2.5em;
   }
   .switchBox-prueba label {
     font-size: 1.5em;
@@ -777,7 +782,7 @@ footer div div {
     font-size: 1.5em;
     overflow: hidden;
   }
-  .btnoffcanvas-prueba {
+  .offcanvasButtonLink {
     width: 90%;
     font-size: 1.5em;
   }
@@ -885,7 +890,7 @@ footer div div {
       "filter"
       "catalogue";
   }
-  .contenedorProductos .filtros {
+  .contenedorProductos .filterArea {
     background: rgb(2, 0, 36);
     background: linear-gradient(
       -45deg,
@@ -893,6 +898,24 @@ footer div div {
       rgba(0, 253, 181, 1) 55%,
       rgba(0, 212, 255, 1) 100%
     );
+  }
+
+  .filterContainer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .filterArea legend {
+    font-size: 4em;
+  }
+  .switchBox-prueba {
+    width: 100%;
+  }
+  .drop-prueba {
+    width: 100%;
+  }
+  .offcanvasButtonLink {
+    width: 100%;
   }
 
   .contenedorProductos .catalogo {
@@ -1008,11 +1031,24 @@ footer div div {
       "filter"
       "catalogue";
   }
-  .contenedorProductos .filtros {
+  .drop-prueba button {
+    width: 100%;
+  }
+  .filterContainer .filterButtons .switchBox-prueba label {
+    font-size: 1.5em;
+  }
+  .drop-prueba button {
+    font-size: 1.5em;
+  }
+  .offcanvasButtonLink {
+    font-size: 1.5em;
+  }
+  .contenedorProductos .filterArea {
     text-align: center;
     margin: 10px 0;
   }
-  .contenedorProductos .filtrosContainer label {
+
+  .contenedorProductos .filterContainer label {
     font-size: 20px;
   }
   .contenedorProductos .catalogo {
