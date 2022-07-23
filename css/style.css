@@ -521,9 +521,9 @@ footer div div {
   border: solid red 2px;
   background-color: rgb(16, 84, 89);
   border-radius: 5px;
-  width: 65%;
+  width: 80%;
   height: 50px;
-  padding-left: 60px;
+  padding-left: 65px;
   display: flex;
   align-items: center;
 }
@@ -544,7 +544,7 @@ footer div div {
   border: solid red 2px;
   background-color: rgb(16, 84, 89);
   border-radius: 5px;
-  width: 65%;
+  width: 80%;
   height: 50px;
   display: flex;
   align-items: center;
@@ -566,7 +566,7 @@ footer div div {
   border: solid orangered 2px;
   background-color: rgb(16, 84, 89);
   border-radius: 5px;
-  width: 65%;
+  width: 80%;
   height: 50px;
   padding: auto;
   display: flex;
@@ -748,7 +748,7 @@ footer div div {
   grid-area: mensaje;
 }
 
-@media (min-width: 768px) and (max-width: 1300px) {
+@media (min-width: 768px) and (max-width: 1470px) {
   /*----------------- INDEX AJUSTES----------------- */
   .containerMenu li {
     margin: 0 10px;
