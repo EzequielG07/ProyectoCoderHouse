@@ -67,9 +67,10 @@ header {
   font-size: large;
 }
 
-.button {
+.buttonsEffect {
   width: 70px;
   height: 45px;
+  padding: 0 2px;
   margin-left: 20px;
   border: solid rgb(143, 143, 143) 1px;
   border-radius: 5px;
@@ -145,15 +146,7 @@ header {
   background-color: rgba(184, 248, 248, 0.323);
 }
 
-.titleNeon {
-  font-family: "Fredoka One", cursive;
-  font-size: 80px;
-  color: rgb(4, 62, 57);
-  text-shadow: 0 0 0.4em rgb(92, 254, 71);
-  text-align: center;
-}
-
-.textVideo {
+.sectionVideo p {
   margin-top: 20px;
   font-family: "Roboto", sans-serif;
   font-size: x-large;
@@ -162,20 +155,34 @@ header {
   text-align: center;
 }
 
-.videoContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 10px;
+.titleNeon {
+  font-family: "Fredoka One", cursive;
+  font-size: 80px;
+  color: rgb(4, 62, 57);
+  text-shadow: 0 0 0.4em rgb(92, 254, 71);
+  text-align: center;
 }
 
-.videoExample {
+.videoExample video {
   width: 100%;
   height: 500px;
   border: solid rgb(41, 119, 125);
   border-radius: 3px;
   transition: transform 0.5s;
+}
+.videoExample h5 {
+  font-family: "Fredoka One", cursive;
+  text-shadow: 2px 2px 2px rgb(94, 94, 94);
+  font-size: large;
+}
+.videoExample p {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgb(94, 94, 94);
 }
 
 /* fin seccion videos */
@@ -189,7 +196,7 @@ header {
   height: auto;
 }
 
-.containerMap {
+.sectionMap div {
   width: 500px;
   height: 500px;
   background-color: rgb(250, 235, 215);
@@ -198,7 +205,7 @@ header {
   overflow: hidden;
 }
 
-.titleMap {
+.sectionMap h2 {
   margin-bottom: 20px;
   font-size: xx-large;
   text-decoration: underline;
@@ -223,13 +230,7 @@ header {
   justify-content: space-around;
   margin: 20px 0;
 }
-
-div .btn-esmerald {
-  background-color: rgb(16, 84, 89);
-  color: rgb(255, 255, 255);
-}
-
-div .card-esmerald {
+.cardNews {
   width: 22rem;
   border: solid rgb(16, 84, 89) 2px;
   background-color: rgb(41, 119, 125);
@@ -238,6 +239,10 @@ div .card-esmerald {
   text-align: justify;
 }
 
+.cardNews a {
+  background-color: rgb(16, 84, 89);
+  color: rgb(255, 255, 255);
+}
 /* fin nuevos ingresos */
 
 /* inicio pie de pagina */
@@ -479,7 +484,7 @@ footer div div {
 .filterArea legend {
   font-family: "Ubuntu", sans-serif;
   font-style: italic;
-  font-size: 6em;
+  font-size: 5.5em;
   color: rgb(0, 56, 60);
 }
 
@@ -569,7 +574,7 @@ footer div div {
   display: flex;
   align-items: center;
   color: rgb(255, 255, 255);
-  font-size: 20px;
+  font-size: 2em;
   font-weight: 500;
 }
 
@@ -745,7 +750,7 @@ footer div div {
   grid-area: mensaje;
 }
 
-@media (min-width: 768px) and (max-width: 1350px) {
+@media (min-width: 768px) and (max-width: 1450px) {
   /*----------------- INDEX AJUSTES----------------- */
   .containerMenu li {
     margin: 0 10px;
@@ -756,30 +761,30 @@ footer div div {
   }
   /*----------------- PRODUCTOS AJUSTES----------------- */
   .filterArea legend {
-    font-size: 30px;
+    font-size: 35px;
   }
   .filterContainer label {
     font-size: 20px;
   }
   .switchBox-prueba {
-    width: 90%;
+    width: 95%;
   }
   .switchBox-prueba input {
-    font-size: 2.5em;
+    font-size: 2em;
   }
   .switchBox-prueba label {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   .drop-prueba {
-    width: 90%;
+    width: 95%;
   }
   .drop-prueba button {
-    font-size: 1.5em;
+    font-size: 1.2em;
     overflow: hidden;
   }
   .offcanvasButtonLink {
-    width: 90%;
-    font-size: 1.5em;
+    width: 95%;
+    font-size: 1.2em;
   }
 }
 
@@ -812,18 +817,24 @@ footer div div {
   .titleNeon {
     font-size: 60px;
   }
-  .textVideo {
+  .sectionVideo p {
     font-size: 25px;
   }
-  .videoExample {
+  .videoExample video {
     width: 65%;
   }
-  .titleMap {
-    font-size: 30px;
+  .videoExample h5 {
+    font-size: medium;
   }
-  .containerMap {
+  .videoExample p {
+    font-size: small;
+  }
+  .sectionMap div {
     width: 480px;
     height: 480px;
+  }
+  .sectionMap h2 {
+    font-size: 30px;
   }
   .sectionMap {
     margin: 30px 0;
@@ -839,7 +850,7 @@ footer div div {
     font-size: 20px;
     text-align: center;
   }
-  div .card-esmerald {
+  .cardNews {
     width: 34rem;
   }
   footer {
@@ -964,6 +975,7 @@ footer div div {
   }
   .containerMenu li {
     margin: 0;
+    font-size: 25px;
   }
   header .slider img {
     height: 230px;
@@ -971,24 +983,30 @@ footer div div {
   .titleNeon {
     font-size: 50px;
   }
-  .textVideo {
+  .sectionVideo p {
     font-size: 15px;
   }
-  .videoExample {
+  .videoExample video {
     width: 100%;
   }
-  .titleMap {
-    font-size: 20px;
+  .videoExample h5 {
+    font-size: small;
   }
-  .containerMap {
+  .videoExample p {
+    font-size: xx-small;
+  }
+  .sectionMap div {
     width: 320px;
     height: 320px;
+  }
+  .sectionMap h2 {
+    font-size: 20px;
   }
   .gallery p {
     font-size: 15px;
   }
-  div .card-esmerald {
-    width: 26rem;
+  .cardNews {
+    width: 25rem;
   }
 
   /*----------------- NOSOTROS MOBILE----------------- */
@@ -1009,7 +1027,7 @@ footer div div {
   }
 
   /*----------------- PRODUCTOS MOBILE----------------- */
-  body .contenedorProductos {
+  .contenedorProductos {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
@@ -1017,17 +1035,21 @@ footer div div {
       "filter"
       "catalogue";
   }
-  .drop-prueba button {
-    width: 100%;
+  .switchBox-prueba {
+    width: 95%;
   }
   .filterContainer .filterButtons .switchBox-prueba label {
-    font-size: 1.5em;
+    font-size: 1.2em;
+  }
+  .drop-prueba {
+    width: 95%;
   }
   .drop-prueba button {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   .offcanvasButtonLink {
-    font-size: 1.5em;
+    width: 95%;
+    font-size: 1.2em;
   }
   .offcanvasChecks {
     text-align: left;
@@ -1069,6 +1091,7 @@ footer div div {
 /*----------------- ANIMACIONES----------------- */
 .containerMenu li:hover {
   text-decoration: underline;
+  border-radius: 10px;
   transform: scale(1.2);
   cursor: pointer;
   transition: transform 1s;
@@ -1078,7 +1101,7 @@ footer div div {
   cursor: pointer;
   transition: transform 2s;
 }
-.button:hover {
+.buttonsEffect:hover {
   background-color: rgb(41, 119, 125);
   border: solid rgb(255, 255, 255) 1px;
   color: rgb(255, 255, 255);
