@@ -616,6 +616,9 @@ footer div div {
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 2px rgb(94, 94, 94);
 }
+.offcanvasChecks div img {
+  vertical-align: bottom;
+}
 
 /* fin seccion filtros */
 
