@@ -1,26 +1,35 @@
 $mainColor: rgb(41, 119, 125);
+$borderMainColor: solid rgb(4, 62, 57) 5px;
+$imputBgColor: rgba(255, 255, 255, 0.713);
 
-$borderColor: solid rgb(4, 62, 57) 5px;
 $borderButtonColor: solid rgb(143, 143, 143) 1px;
 
-$imputBgColor: rgba(255, 255, 255, 0.713);
 $imputTextColor: rgb(143, 143, 143);
+$btnBgColor: rgb(4, 62, 57);
+$textBtnColor: rgb(143, 143, 143);
+$textMenuColor: rgb(255, 255, 255);
 $separationColor: solid rgb(255, 255, 255) 1px;
 
-$textMenuColor: rgb(255, 255, 255);
-
+$sepatarionFootColor: solid rgb(255, 255, 255) 2px;
 $footerBgColor: rgba(4, 62, 57, 0.531);
 $copyrightBgColor: rgba(4, 62, 57, 0.679);
 $footerTextColor: rgb(219, 219, 219);
+
+$textShadows: 2px 2px 2px rgb(94, 94, 94);
+
 $videoBgColor: rgba(184, 248, 248, 0.323);
 $mainTitlesColor: rgb(4, 62, 57);
 $neonEffect: 0 0 0.4em rgb(92, 254, 71);
-$textShadows: 2px 2px 2px rgb(94, 94, 94);
+$videoBorderColor: solid rgb(41, 119, 125);
 $mapBgColor: rgb(250, 235, 215);
-$cardsBgColor: rgb(16, 84, 89); //no a todos
+$borderMap: dashed rgb(41, 119, 125) 2px;
+$cardsBorderColor: solid rgb(16, 84, 89) 2px;
+$cardsBgColor: rgb(41, 119, 125);
+$cardsBtnColor: rgb(16, 84, 89);
+
 $articlesBgColor: rgba(0, 253, 181, 0.146);
 $mainDarkColor: rgb(0, 56, 60);
 $containerBgProyect: rgba(0, 253, 181, 0.146);
 $textBgProyect: rgb(196, 235, 196);
-$btnFilterColor: rgb(16, 84, 89); //no a todos
+$btnFilterColor: rgb(16, 84, 89);
 $textProductColor: rgb(0, 0, 0);

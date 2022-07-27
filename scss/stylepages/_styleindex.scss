@@ -1,3 +1,4 @@
+/*----------------- INDEX----------------- */
 /* inicio seccion videos */
 .sectionVideo {
   display: flex;
@@ -6,46 +7,39 @@
   height: auto;
   padding: 0 20px;
   border-radius: 5px;
-  background-color: rgba(184, 248, 248, 0.323);
+  background-color: $videoBgColor;
+  p {
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: x-large;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+  }
 }
 
-.sectionVideo p {
-  margin-top: 20px;
-  font-family: "Roboto", sans-serif;
-  font-size: x-large;
-  font-style: italic;
-  font-weight: bold;
-  text-align: center;
-}
-
-.titleNeon {
-  font-family: "Fredoka One", cursive;
-  font-size: 80px;
-  color: rgb(4, 62, 57);
-  text-shadow: 0 0 0.4em rgb(92, 254, 71);
-  text-align: center;
-}
-
-.videoExample video {
-  width: 100%;
-  height: 500px;
-  border: solid rgb(41, 119, 125);
-  border-radius: 3px;
-  transition: transform 0.5s;
-}
-.videoExample h5 {
-  font-family: "Fredoka One", cursive;
-  text-shadow: 2px 2px 2px rgb(94, 94, 94);
-  font-size: large;
-}
-.videoExample p {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-  font-size: medium;
-  font-style: normal;
-  font-weight: 500;
-  text-align: center;
-  text-shadow: 2px 2px 2px rgb(94, 94, 94);
+.videoExample {
+  video {
+    width: 100%;
+    height: 500px;
+    border: $videoBorderColor;
+    border-radius: 3px;
+    transition: transform 0.5s;
+  }
+  h5 {
+    font-family: "Fredoka One", cursive;
+    text-shadow: $textShadows;
+    font-size: large;
+  }
+  p {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: medium;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: $textShadows;
+  }
 }
 
 /* fin seccion videos */
@@ -57,21 +51,19 @@
   align-items: center;
   width: 100%;
   height: auto;
-}
-
-.sectionMap div {
-  width: 500px;
-  height: 500px;
-  background-color: rgb(250, 235, 215);
-  border: dashed rgb(41, 119, 125) 2px;
-  border-radius: 3px;
-  overflow: hidden;
-}
-
-.sectionMap h2 {
-  margin-bottom: 20px;
-  font-size: xx-large;
-  text-decoration: underline;
+  div {
+    width: 500px;
+    height: 500px;
+    background-color: $mapBgColor;
+    border: $borderMap;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  h2 {
+    margin-bottom: 20px;
+    font-size: xx-large;
+    text-decoration: underline;
+  }
 }
 /* fin lado mapa */
 
@@ -86,7 +78,6 @@
 .titleNews {
   margin-top: 5px;
 }
-
 .gallery {
   display: flex;
   flex-direction: row;
@@ -95,16 +86,15 @@
 }
 .cardNews {
   width: 22rem;
-  border: solid rgb(16, 84, 89) 2px;
-  background-color: rgb(41, 119, 125);
+  border: $cardsBorderColor;
+  background-color: $cardsBgColor;
   font-family: "Heebo", sans-serif;
   font-size: 1.5em;
   text-align: justify;
-}
-
-.cardNews a {
-  background-color: rgb(16, 84, 89);
-  color: rgb(255, 255, 255);
+  a {
+    background-color: $cardsBtnColor;
+    color: rgb(255, 255, 255);
+  }
 }
 /* fin nuevos ingresos */
 

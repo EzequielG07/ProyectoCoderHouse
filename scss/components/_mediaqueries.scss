@@ -1,7 +1,9 @@
 @media (min-width: 768px) and (max-width: 1450px) {
   /*----------------- INDEX AJUSTES----------------- */
-  .containerMenu li {
-    margin: 0 10px;
+  .containerMenu {
+    li {
+      margin: 0 10px;
+    }
   }
   .contenedorNosotros .teamContainer {
     flex-direction: column;
@@ -46,70 +48,82 @@
       "map"
       "news";
   }
-  .containerLogo {
-    flex-direction: column;
-    justify-content: space-evenly;
+  header {
+    .containerLogo {
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
   }
   .searchBox {
     align-self: center;
     margin: 0 0 10px 0;
   }
-  .containerMenu ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .containerMenu {
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
-  header .slider img {
-    height: 300px;
+  .slider {
+    img {
+      height: 300px;
+    }
   }
   .titleNeon {
     font-size: 60px;
   }
-  .sectionVideo p {
-    font-size: 25px;
+  .sectionVideo {
+    p {
+      font-size: 25px;
+    }
   }
-  .videoExample video {
-    width: 65%;
+  .videoExample {
+    video {
+      width: 65%;
+    }
+    h5 {
+      font-size: medium;
+    }
+    p {
+      font-size: small;
+    }
   }
-  .videoExample h5 {
-    font-size: medium;
-  }
-  .videoExample p {
-    font-size: small;
-  }
-  .sectionMap div {
-    width: 480px;
-    height: 480px;
-  }
-  .sectionMap h2 {
-    font-size: 30px;
-  }
+
   .sectionMap {
     margin: 30px 0;
+    div {
+      width: 480px;
+      height: 480px;
+    }
+    h2 {
+      font-size: 30px;
+    }
   }
   .gallery {
     flex-direction: column;
     row-gap: 20px;
     align-items: center;
     padding: 20px 0;
+    p {
+      margin: 0;
+      font-size: 20px;
+      text-align: center;
+    }
   }
-  .gallery p {
-    margin: 0;
-    font-size: 20px;
-    text-align: center;
-  }
+
   .cardNews {
     width: 34rem;
   }
   .footArea {
     height: auto;
-  }
-  .footData {
-    flex-direction: column;
-    align-items: center;
-  }
-  .contactFooter {
-    margin: 10px 0;
+    .footData {
+      flex-direction: column;
+      align-items: center;
+      .contactFooter {
+        margin: 10px 0;
+      }
+    }
   }
 
   /*----------------- NOSOTROS TABLET----------------- */
@@ -223,9 +237,11 @@
   button {
     width: 30%;
   }
-  .containerMenu li {
-    margin: 0;
-    font-size: 25px;
+  .containerMenu {
+    li {
+      margin: 0;
+      font-size: 25px;
+    }
   }
   header .slider img {
     height: 230px;
@@ -233,27 +249,35 @@
   .titleNeon {
     font-size: 50px;
   }
-  .sectionVideo p {
-    font-size: 15px;
+  .sectionVideo {
+    p {
+      font-size: 15px;
+    }
   }
-  .videoExample video {
-    width: 100%;
+  .videoExample {
+    video {
+      width: 100%;
+    }
+    h5 {
+      font-size: small;
+    }
+    p {
+      font-size: xx-small;
+    }
   }
-  .videoExample h5 {
-    font-size: small;
+  .sectionMap {
+    div {
+      width: 320px;
+      height: 320px;
+    }
+    h2 {
+      font-size: 20px;
+    }
   }
-  .videoExample p {
-    font-size: xx-small;
-  }
-  .sectionMap div {
-    width: 320px;
-    height: 320px;
-  }
-  .sectionMap h2 {
-    font-size: 20px;
-  }
-  .gallery p {
-    font-size: 15px;
+  .gallery {
+    p {
+      font-size: 15px;
+    }
   }
   .cardNews {
     width: 25rem;
@@ -339,27 +363,6 @@
 }
 
 /*----------------- ANIMACIONES----------------- */
-.containerMenu li:hover {
-  text-decoration: underline;
-  border-radius: 10px;
-  transform: scale(1.2);
-  cursor: pointer;
-  transition: transform 1s;
-}
-.headerLogo:hover {
-  transform: rotatez(360deg);
-  cursor: pointer;
-  transition: transform 2s;
-}
-.buttonsEffect:hover {
-  background-color: rgb(41, 119, 125);
-  border: solid rgb(255, 255, 255) 1px;
-  color: rgb(255, 255, 255);
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-
 @keyframes textUs {
   from {
     opacity: 0;

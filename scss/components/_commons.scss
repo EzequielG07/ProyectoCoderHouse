@@ -1,0 +1,31 @@
+.buttonsEffect {
+  width: 70px;
+  height: 45px;
+  padding: 0 2px;
+  margin-left: 20px;
+  border: $borderButtonColor;
+  border-radius: 5px;
+  background-color: $btnBgColor;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: $textBtnColor;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(41, 119, 125);
+    border: solid rgb(255, 255, 255) 1px;
+    color: rgb(255, 255, 255);
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+}
+.titleNeon {
+  font-family: "Fredoka One", cursive;
+  font-size: 80px;
+  color: $mainTitlesColor;
+  text-shadow: $neonEffect;
+  text-align: center;
+}
