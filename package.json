@@ -1,0 +1,25 @@
+{
+  "name": "proyectocoderhouse",
+  "version": "1.0.0",
+  "description": "Anima3dPrint+Guaymas\r Bienvenido al primer repositorio de mi clase de desarrollo web subido a github",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EzequielG07/ProyectoCoderHouse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EzequielG07/ProyectoCoderHouse/issues"
+  },
+  "homepage": "https://github.com/EzequielG07/ProyectoCoderHouse#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

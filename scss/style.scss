@@ -1,0 +1,15 @@
+//Utilities
+@import "utilities/font";
+@import "utilities/variables";
+//Reset
+@import "base/reset";
+//Components
+@import "components/header";
+@import "components/footer";
+@import "components/mediaqueries";
+//Pages
+@import "stylepages/styleindex";
+@import "stylepages/stylenosotros";
+@import "stylepages/styleproyectos";
+@import "stylepages/styleproductos";
+@import "stylepages/stylecontacto";

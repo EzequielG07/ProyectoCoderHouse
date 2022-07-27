@@ -1,0 +1,76 @@
+/* inicio pie de pagina */
+.footArea {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding-top: 15px;
+  border-top: solid rgb(255, 255, 255) 2px;
+  background-color: rgba(4, 62, 57, 0.531);
+}
+
+.footData {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footCopyright {
+  margin-top: 20px;
+  padding-top: 10px;
+  background-color: rgba(4, 62, 57, 0.679);
+  text-align: center;
+}
+
+.footCopyright p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: rgb(219, 219, 219);
+}
+
+.infoFooter {
+  width: 250px;
+  height: auto;
+  padding: 0 2px;
+}
+
+.infoFooter li {
+  font-family: "Quantico", sans-serif;
+  font-size: 20px;
+  text-align: left;
+  color: rgb(219, 219, 219);
+}
+
+.contactFooter {
+  width: 250px;
+  height: auto;
+  padding: 0 2px;
+}
+
+.contactFooter li {
+  font-family: "Quantico", sans-serif;
+  font-size: 20px;
+  text-align: left;
+  color: rgb(219, 219, 219);
+}
+
+.redesFooter {
+  width: 250px;
+  height: auto;
+  padding: 0 2px;
+}
+
+.footData div h4 {
+  width: 100%;
+  margin-bottom: 5px;
+  font-family: "Quantico", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px rgb(94, 94, 94);
+}
+
+.footData div div {
+  display: flex;
+  justify-content: space-around;
+}
+/* fin pie de pagina */

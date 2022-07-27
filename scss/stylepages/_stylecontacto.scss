@@ -1,0 +1,72 @@
+/*----------------- CONTACTO----------------- */
+
+.formContainer {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: rgb(41, 119, 125);
+  border: solid rgb(4, 62, 57) 5px;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+
+.clientData input {
+  margin: 10px 0;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.713);
+  font-family: "Heebo", sans-serif;
+  font-size: large;
+}
+
+.selectFile input {
+  height: 32px;
+  padding: 1px;
+  border: solid rgb(4, 62, 57) 1px;
+  border-radius: 5px;
+  background-color: rgb(4, 62, 57);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+}
+
+.selectMatter {
+  height: 50px;
+  border: solid rgb(143, 143, 143) 1px;
+  border-radius: 5px;
+  background-color: rgb(4, 62, 57);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.textDetails textarea {
+  width: 100%;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  font-family: "Heebo", sans-serif;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.713);
+}
+
+.contenedorContacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    "contacto"
+    "mensaje";
+}
+
+#contacto {
+  grid-area: contacto;
+}
+
+#mensaje {
+  grid-area: mensaje;
+}

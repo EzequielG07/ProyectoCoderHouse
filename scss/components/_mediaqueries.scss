@@ -1,0 +1,419 @@
+@media (min-width: 768px) and (max-width: 1450px) {
+  /*----------------- INDEX AJUSTES----------------- */
+  .containerMenu li {
+    margin: 0 10px;
+  }
+  .contenedorNosotros .teamContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  /*----------------- PRODUCTOS AJUSTES----------------- */
+  .filterArea legend {
+    font-size: 35px;
+  }
+  .filterContainer label {
+    font-size: 20px;
+  }
+  .switchBox-prueba {
+    width: 95%;
+  }
+  .switchBox-prueba input {
+    font-size: 2em;
+  }
+  .switchBox-prueba label {
+    font-size: 1.3em;
+  }
+  .drop-prueba {
+    width: 95%;
+  }
+  .drop-prueba button {
+    font-size: 1.2em;
+    overflow: hidden;
+  }
+  .offcanvasButtonLink {
+    width: 95%;
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 768px) {
+  /*----------------- INDEX TABLET----------------- */
+  .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "videos"
+      "map"
+      "news";
+  }
+  .containerLogo {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .searchBox {
+    align-self: center;
+    margin: 0 0 10px 0;
+  }
+  .containerMenu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header .slider img {
+    height: 300px;
+  }
+  .titleNeon {
+    font-size: 60px;
+  }
+  .sectionVideo p {
+    font-size: 25px;
+  }
+  .videoExample video {
+    width: 65%;
+  }
+  .videoExample h5 {
+    font-size: medium;
+  }
+  .videoExample p {
+    font-size: small;
+  }
+  .sectionMap div {
+    width: 480px;
+    height: 480px;
+  }
+  .sectionMap h2 {
+    font-size: 30px;
+  }
+  .sectionMap {
+    margin: 30px 0;
+  }
+  .gallery {
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .gallery p {
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+  }
+  .cardNews {
+    width: 34rem;
+  }
+  .footArea {
+    height: auto;
+  }
+  .footData {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactFooter {
+    margin: 10px 0;
+  }
+
+  /*----------------- NOSOTROS TABLET----------------- */
+  .sectionUs button {
+    font-size: 30px;
+  }
+  .sectionUs p {
+    font-size: 25px;
+  }
+  .teamContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*----------------- PROYECTOS TABLET----------------- */
+  .proyectContainer p {
+    font-size: 35px;
+  }
+  .proyectPicture img {
+    width: 90%;
+  }
+
+  /*----------------- PRODUCTOS TABLET----------------- */
+  .contenedorProductos {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "productos"
+      "filter"
+      "catalogue";
+  }
+  .filterArea {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      -45deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(0, 253, 181, 1) 55%,
+      rgba(0, 212, 255, 1) 100%
+    );
+  }
+
+  .filterContainer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .filterArea legend {
+    font-size: 4em;
+  }
+  .switchBox-prueba {
+    width: 100%;
+  }
+  .drop-prueba {
+    width: 100%;
+  }
+  .offcanvasButtonLink {
+    width: 100%;
+  }
+
+  .contenedorProductos .catalogueArea {
+    column-gap: 10px;
+    justify-content: center;
+    overflow: auto;
+    height: 800px;
+  }
+  .contenedorProductos .catalogueArea figure {
+    margin: 20px 0;
+    width: 235px;
+    height: 355px;
+    font-size: 15px;
+  }
+
+  /*----------------- CONTACTO TABLET----------------- */
+  .formContainer {
+    font-size: 23px;
+  }
+  .clientData input {
+    height: 40px;
+    width: 100%;
+  }
+  .formButton {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /*----------------- INDEX MOBILE----------------- */
+  .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "videos"
+      "map"
+      "news";
+  }
+  .containerLogo {
+    align-items: center;
+  }
+  .headerLogo {
+    width: 250px;
+    height: 250px;
+    margin: 30px 0;
+  }
+  .searchBox {
+    width: 320px;
+  }
+  .inputSearch {
+    width: 70%;
+  }
+  button {
+    width: 30%;
+  }
+  .containerMenu li {
+    margin: 0;
+    font-size: 25px;
+  }
+  header .slider img {
+    height: 230px;
+  }
+  .titleNeon {
+    font-size: 50px;
+  }
+  .sectionVideo p {
+    font-size: 15px;
+  }
+  .videoExample video {
+    width: 100%;
+  }
+  .videoExample h5 {
+    font-size: small;
+  }
+  .videoExample p {
+    font-size: xx-small;
+  }
+  .sectionMap div {
+    width: 320px;
+    height: 320px;
+  }
+  .sectionMap h2 {
+    font-size: 20px;
+  }
+  .gallery p {
+    font-size: 15px;
+  }
+  .cardNews {
+    width: 25rem;
+  }
+
+  /*----------------- NOSOTROS MOBILE----------------- */
+  .sectionUs button {
+    font-size: 20px;
+  }
+  .sectionUs p {
+    font-size: 20px;
+  }
+
+  /*----------------- PROYECTOS MOBILE----------------- */
+  .proyectContainer p {
+    font-size: 25px;
+  }
+  .proyectPicture img {
+    width: 90%;
+    height: 70%;
+  }
+
+  /*----------------- PRODUCTOS MOBILE----------------- */
+  .contenedorProductos {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "productos"
+      "filter"
+      "catalogue";
+  }
+  .switchBox-prueba {
+    width: 95%;
+  }
+  .filterContainer .filterButtons .switchBox-prueba label {
+    font-size: 1.2em;
+  }
+  .drop-prueba {
+    width: 95%;
+  }
+  .drop-prueba button {
+    font-size: 1.2em;
+  }
+  .offcanvasButtonLink {
+    width: 95%;
+    font-size: 1.2em;
+  }
+  .offcanvasChecks {
+    text-align: left;
+  }
+  .contenedorProductos .filterArea {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .contenedorProductos .filterContainer label {
+    font-size: 20px;
+  }
+  .contenedorProductos .catalogueArea {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 500px;
+    overflow: auto;
+  }
+  .contenedorProductos .catalogueArea figure {
+    margin: 20px 0;
+    width: 260px;
+    height: 380px;
+    font-size: 16px;
+  }
+  .contenedorProductos .catalogueArea figure p {
+    margin-top: 5px;
+    font-size: 18px;
+  }
+
+  /*----------------- CONTACTO MOBILE----------------- */
+  .formContainer {
+    padding: 10px;
+    font-size: 20px;
+  }
+}
+
+/*----------------- ANIMACIONES----------------- */
+.containerMenu li:hover {
+  text-decoration: underline;
+  border-radius: 10px;
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: transform 1s;
+}
+.headerLogo:hover {
+  transform: rotatez(360deg);
+  cursor: pointer;
+  transition: transform 2s;
+}
+.buttonsEffect:hover {
+  background-color: rgb(41, 119, 125);
+  border: solid rgb(255, 255, 255) 1px;
+  color: rgb(255, 255, 255);
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+@keyframes textUs {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes colorLoop {
+  0% {
+    border: solid rgb(0, 77, 82) 5px;
+  }
+  20% {
+    border: solid rgb(0, 87, 51) 5px;
+  }
+  40% {
+    border: solid rgb(0, 42, 60) 5px;
+  }
+  60% {
+    border: solid rgb(36, 0, 60) 5px;
+  }
+  80% {
+    border: solid rgb(0, 101, 103) 5px;
+  }
+  100% {
+    border: solid rgb(0, 67, 82) 5px;
+  }
+}
+@keyframes changeImg {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
