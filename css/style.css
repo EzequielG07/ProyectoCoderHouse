@@ -39,7 +39,7 @@ body {
     transition-duration: 0.4s;
     cursor: pointer; }
 
-.titleNeon {
+.titleNeon, .pageTitle {
   font-family: "Fredoka One", cursive;
   font-size: 80px;
   color: #043e39;
@@ -691,7 +691,7 @@ header {
     align-items: center; }
   .slider img {
     height: 300px; }
-  .titleNeon {
+  .titleNeon, .pageTitle {
     font-size: 60px; }
   .sectionVideo p {
     font-size: 25px; }
@@ -800,7 +800,7 @@ header {
     font-size: 25px; }
   .slider img {
     height: 230px; }
-  .titleNeon {
+  .titleNeon, .pageTitle {
     font-size: 50px; }
   .sectionVideo p {
     font-size: 15px; }

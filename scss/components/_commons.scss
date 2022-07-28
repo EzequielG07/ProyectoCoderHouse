@@ -22,6 +22,7 @@
     cursor: pointer;
   }
 }
+
 .titleNeon {
   font-family: $titleFont;
   font-size: 80px;
@@ -29,7 +30,9 @@
   text-shadow: $neonEffect;
   text-align: center;
 }
+
 .pageTitle {
+  @extend .titleNeon;
   text-decoration: underline;
   font-style: italic;
 }
