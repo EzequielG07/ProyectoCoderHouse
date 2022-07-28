@@ -6,7 +6,7 @@
   border: $btnBorderColor;
   border-radius: 5px;
   background-color: $btnBgColor;
-  font-family: "Roboto", sans-serif;
+  font-family: $mainFont;
   font-weight: bold;
   font-size: 16px;
   color: $btnTextColor;
@@ -23,13 +23,13 @@
   }
 }
 .titleNeon {
-  font-family: "Fredoka One", cursive;
+  font-family: $titleFont;
   font-size: 80px;
   color: $mainTitlesColor;
   text-shadow: $neonEffect;
   text-align: center;
 }
-.nosotrosTitle {
+.pageTitle {
   text-decoration: underline;
   font-style: italic;
 }

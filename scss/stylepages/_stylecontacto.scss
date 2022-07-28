@@ -9,7 +9,7 @@
   background-color: $mainBgColor;
   border: $mainBorderColor;
   border-radius: 10px;
-  font-family: "Roboto", sans-serif;
+  font-family: $mainFont;
   font-weight: bold;
   font-size: 30px;
   color: $mainTextColor;
@@ -20,7 +20,7 @@
     margin: 10px 0;
     height: 50px;
     background-color: $imputBgColor;
-    font-family: "Heebo", sans-serif;
+    font-family: $secondaryFont;
     font-size: large;
   }
 }
@@ -32,7 +32,7 @@
     border: $btnBorderColor;
     border-radius: 5px;
     background-color: $btnBgColor;
-    font-family: "Roboto", sans-serif;
+    font-family: $mainFont;
     font-size: 18px;
     color: $mainTextColor;
   }
@@ -43,7 +43,7 @@
   border: $btnBorderColor;
   border-radius: 5px;
   background-color: $btnBgColor;
-  font-family: "Roboto", sans-serif;
+  font-family: $mainFont;
   font-weight: bold;
   font-size: 20px;
   color: $mainTextColor;
@@ -54,7 +54,7 @@
     width: 100%;
     margin-bottom: 5px;
     border-radius: 3px;
-    font-family: "Heebo", sans-serif;
+    font-family: $secondaryFont;
     font-size: 20px;
     background-color: $imputBgColor;
   }

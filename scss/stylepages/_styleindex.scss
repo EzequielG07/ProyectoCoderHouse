@@ -10,7 +10,7 @@
   background-color: $videoBgColor;
   p {
     margin-top: 20px;
-    font-family: "Roboto", sans-serif;
+    font-family: $mainFont;
     font-size: x-large;
     font-style: italic;
     font-weight: bold;
@@ -27,13 +27,13 @@
     transition: transform 0.5s;
   }
   h5 {
-    font-family: "Fredoka One", cursive;
+    font-family: $titleFont;
     text-shadow: $textShadows;
     font-size: large;
   }
   p {
     margin: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: $mainFont;
     font-size: medium;
     font-style: normal;
     font-weight: 500;
@@ -88,7 +88,7 @@
   width: 22rem;
   border: $secondaryBorderColor;
   background-color: $mainBgColor;
-  font-family: "Heebo", sans-serif;
+  font-family: $secondaryFont;
   font-size: 1.5em;
   text-align: justify;
   a {

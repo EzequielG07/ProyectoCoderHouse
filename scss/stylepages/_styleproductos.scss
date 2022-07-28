@@ -7,7 +7,7 @@
   background: $filterBgGradient;
   border: $borderSecondColor;
   legend {
-    font-family: "Ubuntu", sans-serif;
+    font-family: $thirdFont;
     font-style: italic;
     font-size: 5.5em;
     color: $mainDarkColor;
@@ -60,7 +60,7 @@
   }
   label {
     font-size: 2em;
-    font-family: "Ubuntu", sans-serif;
+    font-family: $thirdFont;
     color: $mainTextColor;
     cursor: pointer;
   }
@@ -75,7 +75,7 @@
   align-items: center;
   button {
     font-size: 2em;
-    font-family: "Ubuntu", sans-serif;
+    font-family: $thirdFont;
     color: $mainTextColor;
   }
   ul {
@@ -153,14 +153,14 @@
     background-color: $mainBgColor;
     border: $mainBorderColor;
     border-radius: 5px;
-    font-family: "Roboto", sans-serif;
+    font-family: $mainFont;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
     color: rgb(0, 0, 0);
     p {
       background-color: $mainDarkColor;
-      font-family: "Ubuntu", sans-serif;
+      font-family: $thirdFont;
       font-size: 20px;
       color: $mainTextColor;
     }

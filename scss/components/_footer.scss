@@ -15,7 +15,7 @@
     h4 {
       width: 100%;
       margin-bottom: 5px;
-      font-family: "Quantico", sans-serif;
+      font-family: $footFont;
       font-size: 25px;
       text-align: center;
       color: $mainTextColor;
@@ -31,7 +31,7 @@
     height: auto;
     padding: 0 2px;
     li {
-      font-family: "Quantico", sans-serif;
+      font-family: $footFont;
       font-size: 20px;
       text-align: left;
       color: $footerTextColor;
@@ -42,7 +42,7 @@
     height: auto;
     padding: 0 2px;
     li {
-      font-family: "Quantico", sans-serif;
+      font-family: $footFont;
       font-size: 20px;
       text-align: left;
       color: $footerTextColor;
@@ -60,7 +60,7 @@
   background-color: $copyrightBgColor;
   text-align: center;
   p {
-    font-family: "Roboto", sans-serif;
+    font-family: $mainFont;
     font-size: 15px;
     color: $footerTextColor;
   }
