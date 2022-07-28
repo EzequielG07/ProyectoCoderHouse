@@ -5,7 +5,7 @@
   width: 100%;
   height: auto;
   padding-top: 15px;
-  border-top: $sepatarionFootColor;
+  border-top: $dividerColor;
   background-color: $footerBgColor;
 }
 .footData {
@@ -18,7 +18,7 @@
       font-family: "Quantico", sans-serif;
       font-size: 25px;
       text-align: center;
-      color: $textMenuColor;
+      color: $mainTextColor;
       text-shadow: $textShadows;
     }
     div {

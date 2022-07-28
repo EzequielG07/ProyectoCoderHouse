@@ -2,13 +2,13 @@
 
 .proyectContainer {
   width: 90%;
-  background-color: $proyectBgColor;
+  background-color: $secondaryBgColor;
   border: solid $proyectBorderColor;
   border-radius: 10px;
   p {
     height: 350px;
     background-color: $textBgProyect;
-    border: $videoBorderColor;
+    border: $mainBorderColor;
     border-radius: 5px;
     font-family: "Ubuntu", sans-serif;
     font-size: 50px;

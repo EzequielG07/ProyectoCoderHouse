@@ -6,13 +6,13 @@
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
-  background-color: $mainColor;
-  border: $borderMainColor;
+  background-color: $mainBgColor;
+  border: $mainBorderColor;
   border-radius: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 30px;
-  color: $textMenuColor;
+  color: $mainTextColor;
 }
 
 .clientData {
@@ -29,24 +29,24 @@
   input {
     height: 32px;
     padding: 1px;
-    border: $borderButtonColor;
+    border: $btnBorderColor;
     border-radius: 5px;
     background-color: $btnBgColor;
     font-family: "Roboto", sans-serif;
     font-size: 18px;
-    color: $textMenuColor;
+    color: $mainTextColor;
   }
 }
 
 .selectMatter {
   height: 50px;
-  border: $borderButtonColor;
+  border: $btnBorderColor;
   border-radius: 5px;
   background-color: $btnBgColor;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 20px;
-  color: $textMenuColor;
+  color: $mainTextColor;
 }
 
 .textDetails {

@@ -31,9 +31,9 @@ header {
   height: 60px;
   padding: 0 12px;
   margin-bottom: 50px;
-  border: $borderMainColor;
+  border: $mainBorderColor;
   border-radius: 10px;
-  background-color: $mainColor;
+  background-color: $mainBgColor;
 }
 .inputSearch {
   width: 260px;
@@ -48,19 +48,19 @@ header {
 .containerMenu {
   width: 100%;
   padding: 5px 0px;
-  background-color: $mainColor;
-  border-top: $separationColor;
-  border-bottom: $separationColor;
+  background-color: $mainBgColor;
+  border-top: $dividerColor;
+  border-bottom: $dividerColor;
   list-style: none;
   text-align: center;
   li {
     margin: 0px 70px;
-    background-color: $mainColor;
+    background-color: $mainBgColor;
     font-family: "Ubuntu", sans-serif;
     font-style: italic;
     font-size: 30px;
     a {
-      color: $textMenuColor;
+      color: $mainTextColor;
       text-decoration: none;
     }
     &:hover {

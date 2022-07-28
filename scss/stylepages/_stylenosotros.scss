@@ -7,7 +7,7 @@
   article {
     padding: 5px;
     margin: 20px 0;
-    background-color: $articlesBgColor;
+    background-color: $secondaryBgColor;
     border: $borderSecondColor;
     border-radius: 5px;
   }
@@ -18,9 +18,9 @@
     text-align: left;
     animation-name: textUs;
     animation-duration: 3s;
-    color: $textMenuColor;
+    color: $mainTextColor;
     background-color: $mainDarkColor;
-    border: $separationColor;
+    border: $dividerColor;
   }
   p {
     font-family: "Ubuntu", sans-serif;
@@ -38,7 +38,7 @@
   height: auto;
   padding: 10px 0;
   h3 {
-    border-top: $sepatarionFootColor;
+    border-top: $dividerColor;
     font-size: 30px;
     margin: 10px 0;
   }
@@ -53,7 +53,7 @@
 }
 
 .profileCard {
-  background-color: $cardsBgColor;
+  background-color: $mainBgColor;
   border-radius: 5px;
   text-align: center;
   animation-name: colorLoop;
@@ -63,7 +63,7 @@
   animation-delay: 0;
   animation-direction: alternate;
   h5 {
-    color: $textMenuColor;
+    color: $mainTextColor;
     font-family: "Ubuntu", sans-serif;
     font-size: 20px;
     background-color: $mainDarkColor;
@@ -73,7 +73,7 @@
     margin-top: 5px;
     font-family: "Ubuntu", sans-serif;
     font-size: 20px;
-    color: $textMenuColor;
+    color: $mainTextColor;
     text-align: justify;
   }
 }

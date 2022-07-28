@@ -1,42 +1,35 @@
-$mainColor: rgb(41, 119, 125);
-$borderMainColor: solid rgb(4, 62, 57) 5px;
+$mainBgColor: rgb(41, 119, 125);
+$mainBorderColor: solid rgb(4, 62, 57) 5px;
+$mainTextColor: rgb(255, 255, 255);
+$mainDarkColor: rgb(0, 56, 60);
+$borderSecondColor: solid rgb(15, 48, 88) 5px;
+$secondaryBgColor:rgba(0, 253, 181, 0.146);
+$secondaryBtnColor:rgb(16, 84, 89);
+$secondaryBorderColor: solid rgb(16, 84, 89) 2px;
+
 $imputBgColor: rgba(255, 255, 255, 0.713);
-
-$borderButtonColor: solid rgb(143, 143, 143) 1px;
-
 $imputTextColor: rgb(143, 143, 143);
 $btnBgColor: rgb(4, 62, 57);
-$textBtnColor: rgb(143, 143, 143);
-$textMenuColor: rgb(255, 255, 255);
-$separationColor: solid rgb(255, 255, 255) 1px;
+$btnBorderColor: solid rgb(143, 143, 143) 1px;
+$btnTextColor: rgb(143, 143, 143);
 
-$sepatarionFootColor: solid rgb(255, 255, 255) 2px;
+$dividerColor: solid rgb(255, 255, 255) 2px;
 $footerBgColor: rgba(4, 62, 57, 0.531);
-$copyrightBgColor: rgba(4, 62, 57, 0.679);
 $footerTextColor: rgb(219, 219, 219);
+$copyrightBgColor: rgba(4, 62, 57, 0.679);
+
+$videoBgColor: rgba(184, 248, 248, 0.323);
+$mapBgColor: rgb(250, 235, 215);
+
+$mainTitlesColor: rgb(4, 62, 57);
+$neonEffect: 0 0 0.4em rgb(92, 254, 71);
 
 $textShadows: 2px 2px 2px rgb(94, 94, 94);
 
-$videoBgColor: rgba(184, 248, 248, 0.323);
-$mainTitlesColor: rgb(4, 62, 57);
-$neonEffect: 0 0 0.4em rgb(92, 254, 71);
-$videoBorderColor: solid rgb(41, 119, 125) 5px;
-$mapBgColor: rgb(250, 235, 215);
-$borderMap: dashed rgb(41, 119, 125) 2px;
-
-//nosotros
-$mainDarkColor: rgb(0, 56, 60);
-$articlesBgColor: rgba(0, 253, 181, 0.146);
-$borderSecondColor: solid rgb(15, 48, 88) 5px;
-$cardsBorderColor: solid rgb(16, 84, 89) 2px;
-$cardsBgColor: rgb(41, 119, 125);
-$cardsBtnColor: rgb(16, 84, 89);
-//proyectos
-$proyectBgColor: rgba(0, 253, 181, 0.146);
 $proyectBorderColor: rgba(23, 75, 61, 0.352) 10px;
 $textBgProyect: rgb(196, 235, 196);
+$textProductColor: rgb(0, 0, 0);
 
-//productos
 $filterBgGradient: linear-gradient(
     45deg,
     rgba(2, 0, 36, 1) 0%,
@@ -44,12 +37,9 @@ $filterBgGradient: linear-gradient(
     rgba(0, 212, 255, 1) 100%
   )
   2px;
-  $filterBgGradientBreak:linear-gradient(
-      -45deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(0, 253, 181, 1) 55%,
-      rgba(0, 212, 255, 1) 100%
-    );
-$textBgProyect: rgb(196, 235, 196);
-$btnFilterColor: rgb(16, 84, 89);
-$textProductColor: rgb(0, 0, 0);
+$filterBgGradientBreak: linear-gradient(
+  -45deg,
+  rgba(2, 0, 36, 1) 0%,
+  rgba(0, 253, 181, 1) 55%,
+  rgba(0, 212, 255, 1) 100%
+);

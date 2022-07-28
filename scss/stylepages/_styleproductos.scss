@@ -46,7 +46,7 @@
 }
 
 .switchBox-prueba {
-  background-color: $btnFilterColor;
+  background-color: $secondaryBtnColor;
   border-radius: 5px;
   width: 80%;
   height: 50px;
@@ -61,13 +61,13 @@
   label {
     font-size: 2em;
     font-family: "Ubuntu", sans-serif;
-    color: $textMenuColor;
+    color: $mainTextColor;
     cursor: pointer;
   }
 }
 
 .drop-prueba {
-  background-color: $btnFilterColor;
+  background-color: $secondaryBtnColor;
   border-radius: 5px;
   width: 80%;
   height: 50px;
@@ -76,32 +76,32 @@
   button {
     font-size: 2em;
     font-family: "Ubuntu", sans-serif;
-    color: $textMenuColor;
+    color: $mainTextColor;
   }
   ul {
     font-size: 2em;
-    background-color: $mainColor;
-    border: $sepatarionFootColor;
-    color: $textMenuColor;
+    background-color: $mainBgColor;
+    border: $dividerColor;
+    color: $mainTextColor;
     text-shadow: $textShadows;
   }
 }
 
 .offcanvasButtonLink {
-  background-color: $btnFilterColor;
+  background-color: $secondaryBtnColor;
   border-radius: 5px;
   width: 80%;
   height: 50px;
   padding: auto;
   display: flex;
   align-items: center;
-  color: $textMenuColor;
+  color: $mainTextColor;
   font-size: 2em;
   font-weight: 500;
 }
 
 .offcanvasOpen {
-  border: $separationColor;
+  border: $dividerColor;
 }
 
 .offcanvasName {
@@ -109,7 +109,7 @@
   font-size: 45px;
   h3 {
     font-size: 1em;
-    color: $textMenuColor;
+    color: $mainTextColor;
   }
 }
 
@@ -126,7 +126,7 @@
     label {
       font-size: 2em;
       font-weight: bold;
-      color: $textMenuColor;
+      color: $mainTextColor;
       text-shadow: $textShadows;
     }
     img {
@@ -150,8 +150,8 @@
     height: 420px;
     padding: 10px 10px 70px 10px;
     margin: 20px 50px;
-    background-color: $mainColor;
-    border: $borderMainColor;
+    background-color: $mainBgColor;
+    border: $mainBorderColor;
     border-radius: 5px;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
@@ -162,7 +162,7 @@
       background-color: $mainDarkColor;
       font-family: "Ubuntu", sans-serif;
       font-size: 20px;
-      color: $textMenuColor;
+      color: $mainTextColor;
     }
     img {
       width: 100%;
