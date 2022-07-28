@@ -10,27 +10,31 @@
     align-items: center;
   }
   /*----------------- PRODUCTOS AJUSTES----------------- */
-  .filterArea legend {
-    font-size: 35px;
+  .filterArea {
+    legend {
+      font-size: 35px;
+    }
   }
-  .filterContainer label {
-    font-size: 20px;
+  .filterContainer {
+    label {
+      font-size: 20px;
+    }
   }
   .switchBox-prueba {
     width: 95%;
-  }
-  .switchBox-prueba input {
-    font-size: 2em;
-  }
-  .switchBox-prueba label {
-    font-size: 1.3em;
+    input {
+      font-size: 2em;
+    }
+    label {
+      font-size: 1.3em;
+    }
   }
   .drop-prueba {
     width: 95%;
-  }
-  .drop-prueba button {
-    font-size: 1.2em;
-    overflow: hidden;
+    button {
+      font-size: 1.2em;
+      overflow: hidden;
+    }
   }
   .offcanvasButtonLink {
     width: 95%;
@@ -89,7 +93,6 @@
       font-size: small;
     }
   }
-
   .sectionMap {
     margin: 30px 0;
     div {
@@ -111,27 +114,28 @@
       text-align: center;
     }
   }
-
   .cardNews {
     width: 34rem;
   }
   .footArea {
     height: auto;
-    .footData {
-      flex-direction: column;
-      align-items: center;
-      .contactFooter {
-        margin: 10px 0;
-      }
+  }
+  .footData {
+    flex-direction: column;
+    align-items: center;
+    .contactFooter {
+      margin: 10px 0;
     }
   }
 
   /*----------------- NOSOTROS TABLET----------------- */
-  .sectionUs button {
-    font-size: 30px;
-  }
-  .sectionUs p {
-    font-size: 25px;
+  .sectionUs {
+    button {
+      font-size: 30px;
+    }
+    p {
+      font-size: 25px;
+    }
   }
   .teamContainer {
     flex-direction: column;
@@ -139,11 +143,15 @@
   }
 
   /*----------------- PROYECTOS TABLET----------------- */
-  .proyectContainer p {
-    font-size: 35px;
+  .proyectContainer {
+    p {
+      font-size: 35px;
+    }
   }
-  .proyectPicture img {
-    width: 90%;
+  .proyectPicture {
+    img {
+      width: 90%;
+    }
   }
 
   /*----------------- PRODUCTOS TABLET----------------- */
@@ -156,13 +164,7 @@
       "catalogue";
   }
   .filterArea {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(
-      -45deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(0, 253, 181, 1) 55%,
-      rgba(0, 212, 255, 1) 100%
-    );
+    background: $filterBgGradientBreak;
   }
 
   .filterContainer {
@@ -170,8 +172,10 @@
     justify-content: space-around;
   }
 
-  .filterArea legend {
-    font-size: 4em;
+  .filterArea {
+    legend {
+      font-size: 4em;
+    }
   }
   .switchBox-prueba {
     width: 100%;
@@ -183,26 +187,30 @@
     width: 100%;
   }
 
-  .contenedorProductos .catalogueArea {
-    column-gap: 10px;
-    justify-content: center;
-    overflow: auto;
-    height: 800px;
-  }
-  .contenedorProductos .catalogueArea figure {
-    margin: 20px 0;
-    width: 235px;
-    height: 355px;
-    font-size: 15px;
+  .contenedorProductos {
+    .catalogueArea {
+      column-gap: 10px;
+      justify-content: center;
+      overflow: auto;
+      height: 800px;
+      figure {
+        margin: 20px 0;
+        width: 235px;
+        height: 355px;
+        font-size: 15px;
+      }
+    }
   }
 
   /*----------------- CONTACTO TABLET----------------- */
   .formContainer {
     font-size: 23px;
   }
-  .clientData input {
-    height: 40px;
-    width: 100%;
+  .clientData {
+    input {
+      height: 40px;
+      width: 100%;
+    }
   }
   .formButton {
     display: flex;
@@ -243,8 +251,10 @@
       font-size: 25px;
     }
   }
-  header .slider img {
-    height: 230px;
+  .slider {
+    img {
+      height: 230px;
+    }
   }
   .titleNeon {
     font-size: 50px;
@@ -284,20 +294,26 @@
   }
 
   /*----------------- NOSOTROS MOBILE----------------- */
-  .sectionUs button {
-    font-size: 20px;
-  }
-  .sectionUs p {
-    font-size: 20px;
+  .sectionUs {
+    button {
+      font-size: 20px;
+    }
+    p {
+      font-size: 20px;
+    }
   }
 
   /*----------------- PROYECTOS MOBILE----------------- */
-  .proyectContainer p {
-    font-size: 25px;
+  .proyectContainer {
+    p {
+      font-size: 25px;
+    }
   }
-  .proyectPicture img {
-    width: 90%;
-    height: 70%;
+  .proyectPicture {
+    img {
+      width: 90%;
+      height: 70%;
+    }
   }
 
   /*----------------- PRODUCTOS MOBILE----------------- */
@@ -311,15 +327,20 @@
   }
   .switchBox-prueba {
     width: 95%;
+    label {
+      font-size: 1.2em;
+    }
   }
+
   .filterContainer .filterButtons .switchBox-prueba label {
     font-size: 1.2em;
   }
+
   .drop-prueba {
     width: 95%;
-  }
-  .drop-prueba button {
-    font-size: 1.2em;
+    button {
+      font-size: 1.2em;
+    }
   }
   .offcanvasButtonLink {
     width: 95%;
@@ -333,26 +354,32 @@
     margin: 10px 0;
   }
 
-  .contenedorProductos .filterContainer label {
-    font-size: 20px;
+  .filterContainer {
+    div {
+      label {
+        font-size: 20px;
+      }
+    }
   }
-  .contenedorProductos .catalogueArea {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: nowrap;
-    height: 500px;
-    overflow: auto;
-  }
-  .contenedorProductos .catalogueArea figure {
-    margin: 20px 0;
-    width: 260px;
-    height: 380px;
-    font-size: 16px;
-  }
-  .contenedorProductos .catalogueArea figure p {
-    margin-top: 5px;
-    font-size: 18px;
+  .contenedorProductos {
+    .catalogueArea {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: nowrap;
+      height: 500px;
+      overflow: auto;
+      figure {
+        margin: 20px 0;
+        width: 260px;
+        height: 380px;
+        font-size: 16px;
+        p {
+          margin-top: 5px;
+          font-size: 18px;
+        }
+      }
+    }
   }
 
   /*----------------- CONTACTO MOBILE----------------- */

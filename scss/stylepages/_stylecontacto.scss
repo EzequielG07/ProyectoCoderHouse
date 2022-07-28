@@ -6,52 +6,58 @@
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
-  background-color: rgb(41, 119, 125);
-  border: solid rgb(4, 62, 57) 5px;
+  background-color: $mainColor;
+  border: $borderMainColor;
   border-radius: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 30px;
-  color: rgb(255, 255, 255);
+  color: $textMenuColor;
 }
 
-.clientData input {
-  margin: 10px 0;
-  height: 50px;
-  background-color: rgba(255, 255, 255, 0.713);
-  font-family: "Heebo", sans-serif;
-  font-size: large;
+.clientData {
+  input {
+    margin: 10px 0;
+    height: 50px;
+    background-color: $imputBgColor;
+    font-family: "Heebo", sans-serif;
+    font-size: large;
+  }
 }
 
-.selectFile input {
-  height: 32px;
-  padding: 1px;
-  border: solid rgb(4, 62, 57) 1px;
-  border-radius: 5px;
-  background-color: rgb(4, 62, 57);
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  color: rgb(255, 255, 255);
+.selectFile {
+  input {
+    height: 32px;
+    padding: 1px;
+    border: $borderButtonColor;
+    border-radius: 5px;
+    background-color: $btnBgColor;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color: $textMenuColor;
+  }
 }
 
 .selectMatter {
   height: 50px;
-  border: solid rgb(143, 143, 143) 1px;
+  border: $borderButtonColor;
   border-radius: 5px;
-  background-color: rgb(4, 62, 57);
+  background-color: $btnBgColor;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 20px;
-  color: rgb(255, 255, 255);
+  color: $textMenuColor;
 }
 
-.textDetails textarea {
-  width: 100%;
-  margin-bottom: 5px;
-  border-radius: 3px;
-  font-family: "Heebo", sans-serif;
-  font-size: 20px;
-  background-color: rgba(255, 255, 255, 0.713);
+.textDetails {
+  textarea {
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    font-family: "Heebo", sans-serif;
+    font-size: 20px;
+    background-color: $imputBgColor;
+  }
 }
 
 .contenedorContacto {

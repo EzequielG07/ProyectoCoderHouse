@@ -2,19 +2,18 @@
 
 .proyectContainer {
   width: 90%;
-  background-color: rgba(0, 253, 181, 0.146);
-  border: solid rgba(23, 75, 61, 0.352) 10px;
+  background-color: $proyectBgColor;
+  border: solid $proyectBorderColor;
   border-radius: 10px;
-}
-
-.proyectContainer p {
-  height: 350px;
-  background-color: rgb(196, 235, 196);
-  border: solid rgb(41, 119, 125) 5px;
-  border-radius: 5px;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 50px;
-  overflow: auto;
+  p {
+    height: 350px;
+    background-color: $textBgProyect;
+    border: $videoBorderColor;
+    border-radius: 5px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 50px;
+    overflow: auto;
+  }
 }
 
 .proyectPicture {
@@ -22,14 +21,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(0, 56, 60);
-  border: solid rgb(41, 119, 125) 5px;
+  background-color: $mainDarkColor;
+  border: $textBgProyect;
   border-radius: 5px;
-}
-
-.proyectPicture img {
-  width: 80%;
-  height: 80%;
+  img {
+    width: 80%;
+    height: 80%;
+  }
 }
 
 .contenedorProyectos {

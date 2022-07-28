@@ -4,21 +4,14 @@
   width: 100%;
   height: auto;
   padding: 0 2%;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    45deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(0, 253, 181, 1) 55%,
-    rgba(0, 212, 255, 1) 100%
-  );
-  border: solid rgb(0, 56, 60) 5px;
-}
-
-.filterArea legend {
-  font-family: "Ubuntu", sans-serif;
-  font-style: italic;
-  font-size: 5.5em;
-  color: rgb(0, 56, 60);
+  background: $filterBgGradient;
+  border: $borderSecondColor;
+  legend {
+    font-family: "Ubuntu", sans-serif;
+    font-style: italic;
+    font-size: 5.5em;
+    color: $mainDarkColor;
+  }
 }
 
 .filterContainer {
@@ -29,130 +22,118 @@
   flex-direction: column;
 }
 
-.filterChecks div {
-  display: flex;
-  flex-direction: row;
-  padding-left: 1px;
-  margin: 5px;
-}
-
-.filterChecks input {
-  transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  padding: 10px;
-  margin: 5px;
-  cursor: pointer;
-}
-
-.filterChecks label {
-  font-size: 2em;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 2px rgb(94, 94, 94);
+.filterChecks {
+  div {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1px;
+    margin: 5px;
+  }
+  input {
+    transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  label {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: $textShadows;
+  }
 }
 
 .switchBox-prueba {
-  background-color: rgb(16, 84, 89);
+  background-color: $btnFilterColor;
   border-radius: 5px;
   width: 80%;
   height: 50px;
   padding-left: 65px;
   display: flex;
   align-items: center;
-}
-
-.switchBox-prueba input {
-  height: 25px;
-  font-size: 2em;
-  cursor: pointer;
-}
-
-.switchBox-prueba label {
-  font-size: 2em;
-  font-family: "Ubuntu", sans-serif;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
+  input {
+    height: 25px;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  label {
+    font-size: 2em;
+    font-family: "Ubuntu", sans-serif;
+    color: $textMenuColor;
+    cursor: pointer;
+  }
 }
 
 .drop-prueba {
-  background-color: rgb(16, 84, 89);
+  background-color: $btnFilterColor;
   border-radius: 5px;
   width: 80%;
   height: 50px;
   display: flex;
   align-items: center;
-}
-
-.drop-prueba button {
-  font-size: 2em;
-  font-family: "Ubuntu", sans-serif;
-  color: rgb(255, 255, 255);
-}
-
-.drop-prueba ul {
-  font-size: 2em;
-  background-color: rgb(41, 119, 125);
-  border: solid rgb(255, 255, 255) 2px;
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 2px rgb(94, 94, 94);
+  button {
+    font-size: 2em;
+    font-family: "Ubuntu", sans-serif;
+    color: $textMenuColor;
+  }
+  ul {
+    font-size: 2em;
+    background-color: $mainColor;
+    border: $sepatarionFootColor;
+    color: $textMenuColor;
+    text-shadow: $textShadows;
+  }
 }
 
 .offcanvasButtonLink {
-  background-color: rgb(16, 84, 89);
+  background-color: $btnFilterColor;
   border-radius: 5px;
   width: 80%;
   height: 50px;
   padding: auto;
   display: flex;
   align-items: center;
-  color: rgb(255, 255, 255);
+  color: $textMenuColor;
   font-size: 2em;
   font-weight: 500;
 }
 
 .offcanvasOpen {
-  border: solid rgb(255, 255, 255) 1px;
+  border: $separationColor;
 }
 
 .offcanvasName {
-  background-color: rgb(16, 84, 89);
+  background-color: $mainDarkColor;
   font-size: 45px;
-}
-
-.offcanvasName h3 {
-  font-size: 1em;
-  color: rgb(255, 255, 255);
+  h3 {
+    font-size: 1em;
+    color: $textMenuColor;
+  }
 }
 
 .offcanvasChecks {
-  background: linear-gradient(
-      45deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(0, 253, 181, 1) 55%,
-      rgba(0, 212, 255, 1) 100%
-    )
-    2px;
+  background: $filterBgGradient;
+  div {
+    input {
+      transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      -webkit-transform: scale(1.5);
+      padding: 10px;
+      margin: 5px;
+    }
+    label {
+      font-size: 2em;
+      font-weight: bold;
+      color: $textMenuColor;
+      text-shadow: $textShadows;
+    }
+    img {
+      vertical-align: bottom;
+    }
+  }
 }
-
-.offcanvasChecks div input {
-  transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  padding: 10px;
-  margin: 5px;
-}
-
-.offcanvasChecks div label {
-  font-size: 2em;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 2px rgb(94, 94, 94);
-}
-.offcanvasChecks div img {
-  vertical-align: bottom;
-}
-
 /* fin seccion filtros */
 
 /* inicio seccion catalogo */
@@ -164,33 +145,30 @@
   width: 100%;
   height: auto;
   padding-bottom: 20px;
-}
-
-.catalogueArea figure {
-  width: 300px;
-  height: 420px;
-  padding: 10px 10px 70px 10px;
-  margin: 20px 50px;
-  background-color: rgb(41, 119, 125);
-  border: solid rgb(4, 62, 57) 5px;
-  border-radius: 5px;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
-  color: rgb(0, 0, 0);
-}
-
-.catalogueArea figure p {
-  background-color: rgb(0, 56, 60);
-  font-family: "Ubuntu", sans-serif;
-  font-size: 20px;
-  color: rgb(255, 255, 255);
-}
-
-.catalogueArea figure img {
-  width: 100%;
-  height: 100%;
+  figure {
+    width: 300px;
+    height: 420px;
+    padding: 10px 10px 70px 10px;
+    margin: 20px 50px;
+    background-color: $mainColor;
+    border: $borderMainColor;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    p {
+      background-color: $mainDarkColor;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 20px;
+      color: $textMenuColor;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 /* fin seccion catalogo */
 

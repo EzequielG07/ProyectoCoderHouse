@@ -46,6 +46,10 @@ body {
   text-shadow: 0 0 0.4em #5cfe47;
   text-align: center; }
 
+.nosotrosTitle {
+  text-decoration: underline;
+  font-style: italic; }
+
 header {
   display: flex;
   flex-direction: column;
@@ -78,7 +82,7 @@ header {
   height: 60px;
   padding: 0 12px;
   margin-bottom: 50px;
-  border: solid solid #043e39 5px;
+  border: solid #043e39 5px;
   border-radius: 10px;
   background-color: #29777d; }
 
@@ -218,7 +222,7 @@ header {
 .videoExample video {
   width: 100%;
   height: 500px;
-  border: solid #29777d;
+  border: solid #29777d 5px;
   border-radius: 3px;
   transition: transform 0.5s; }
 
@@ -302,37 +306,30 @@ header {
 
 /*----------------- NOSOTROS----------------- */
 /* inicio seccion articulos */
-.nosotrosTitle {
-  text-decoration: underline;
-  font-style: italic; }
-
 .sectionUs {
   padding: 5px 20px; }
-
-.sectionUs article {
-  padding: 5px;
-  margin: 20px 0;
-  background-color: rgba(0, 253, 181, 0.146);
-  border: solid #0f3058 5px;
-  border-radius: 5px; }
-
-.sectionUs button {
-  font-family: "Heebo", sans-serif;
-  font-style: italic;
-  font-size: 40px;
-  text-align: left;
-  animation-name: textUs;
-  animation-duration: 3s;
-  color: white;
-  background-color: #00383c;
-  border: solid white 1px; }
-
-.sectionUs p {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 35px;
-  text-align: justify;
-  animation-name: textUs;
-  animation-duration: 4s; }
+  .sectionUs article {
+    padding: 5px;
+    margin: 20px 0;
+    background-color: rgba(0, 253, 181, 0.146);
+    border: solid #0f3058 5px;
+    border-radius: 5px; }
+  .sectionUs button {
+    font-family: "Heebo", sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    text-align: left;
+    animation-name: textUs;
+    animation-duration: 3s;
+    color: white;
+    background-color: #00383c;
+    border: solid white 1px; }
+  .sectionUs p {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 35px;
+    text-align: justify;
+    animation-name: textUs;
+    animation-duration: 4s; }
 
 /* fin seccion articulos */
 /* inicio seccion team */
@@ -340,11 +337,10 @@ header {
   width: 100%;
   height: auto;
   padding: 10px 0; }
-
-.sectionTeam h3 {
-  border-top: solid white 2px;
-  font-size: 30px;
-  margin: 10px 0; }
+  .sectionTeam h3 {
+    border-top: solid white 2px;
+    font-size: 30px;
+    margin: 10px 0; }
 
 .teamContainer {
   width: 100%;
@@ -363,20 +359,18 @@ header {
   animation-duration: 5s;
   animation-delay: 0;
   animation-direction: alternate; }
-
-.profileCard h5 {
-  color: white;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 20px;
-  background-color: #00383c; }
-
-.profileCard p {
-  padding: 2px;
-  margin-top: 5px;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 20px;
-  color: white;
-  text-align: justify; }
+  .profileCard h5 {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    background-color: #00383c; }
+  .profileCard p {
+    padding: 2px;
+    margin-top: 5px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: justify; }
 
 /* fin seccion team */
 .contenedorNosotros {
@@ -397,15 +391,14 @@ header {
   background-color: rgba(0, 253, 181, 0.146);
   border: solid rgba(23, 75, 61, 0.352) 10px;
   border-radius: 10px; }
-
-.proyectContainer p {
-  height: 350px;
-  background-color: #c4ebc4;
-  border: solid #29777d 5px;
-  border-radius: 5px;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 50px;
-  overflow: auto; }
+  .proyectContainer p {
+    height: 350px;
+    background-color: #c4ebc4;
+    border: solid #29777d 5px;
+    border-radius: 5px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 50px;
+    overflow: auto; }
 
 .proyectPicture {
   height: 350px;
@@ -413,12 +406,11 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #00383c;
-  border: solid #29777d 5px;
+  border: #c4ebc4;
   border-radius: 5px; }
-
-.proyectPicture img {
-  width: 80%;
-  height: 80%; }
+  .proyectPicture img {
+    width: 80%;
+    height: 80%; }
 
 .contenedorProyectos {
   display: grid;
@@ -435,15 +427,13 @@ header {
   width: 100%;
   height: auto;
   padding: 0 2%;
-  background: #020024;
-  background: linear-gradient(45deg, #020024 0%, #00fdb5 55%, #00d4ff 100%);
-  border: solid #00383c 5px; }
-
-.filterArea legend {
-  font-family: "Ubuntu", sans-serif;
-  font-style: italic;
-  font-size: 5.5em;
-  color: #00383c; }
+  background: linear-gradient(45deg, #020024 0%, #00fdb5 55%, #00d4ff 100%) 2px;
+  border: solid #0f3058 5px; }
+  .filterArea legend {
+    font-family: "Ubuntu", sans-serif;
+    font-style: italic;
+    font-size: 5.5em;
+    color: #00383c; }
 
 .filterContainer {
   top: 30px;
@@ -480,17 +470,15 @@ header {
   padding-left: 65px;
   display: flex;
   align-items: center; }
-
-.switchBox-prueba input {
-  height: 25px;
-  font-size: 2em;
-  cursor: pointer; }
-
-.switchBox-prueba label {
-  font-size: 2em;
-  font-family: "Ubuntu", sans-serif;
-  color: white;
-  cursor: pointer; }
+  .switchBox-prueba input {
+    height: 25px;
+    font-size: 2em;
+    cursor: pointer; }
+  .switchBox-prueba label {
+    font-size: 2em;
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+    cursor: pointer; }
 
 .drop-prueba {
   background-color: #105459;
@@ -499,18 +487,16 @@ header {
   height: 50px;
   display: flex;
   align-items: center; }
-
-.drop-prueba button {
-  font-size: 2em;
-  font-family: "Ubuntu", sans-serif;
-  color: white; }
-
-.drop-prueba ul {
-  font-size: 2em;
-  background-color: #29777d;
-  border: solid white 2px;
-  color: white;
-  text-shadow: 2px 2px 2px #5e5e5e; }
+  .drop-prueba button {
+    font-size: 2em;
+    font-family: "Ubuntu", sans-serif;
+    color: white; }
+  .drop-prueba ul {
+    font-size: 2em;
+    background-color: #29777d;
+    border: solid white 2px;
+    color: white;
+    text-shadow: 2px 2px 2px #5e5e5e; }
 
 .offcanvasButtonLink {
   background-color: #105459;
@@ -528,31 +514,27 @@ header {
   border: solid white 1px; }
 
 .offcanvasName {
-  background-color: #105459;
+  background-color: #00383c;
   font-size: 45px; }
-
-.offcanvasName h3 {
-  font-size: 1em;
-  color: white; }
+  .offcanvasName h3 {
+    font-size: 1em;
+    color: white; }
 
 .offcanvasChecks {
   background: linear-gradient(45deg, #020024 0%, #00fdb5 55%, #00d4ff 100%) 2px; }
-
-.offcanvasChecks div input {
-  transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  padding: 10px;
-  margin: 5px; }
-
-.offcanvasChecks div label {
-  font-size: 2em;
-  font-weight: bold;
-  color: white;
-  text-shadow: 2px 2px 2px #5e5e5e; }
-
-.offcanvasChecks div img {
-  vertical-align: bottom; }
+  .offcanvasChecks div input {
+    transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    padding: 10px;
+    margin: 5px; }
+  .offcanvasChecks div label {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px #5e5e5e; }
+  .offcanvasChecks div img {
+    vertical-align: bottom; }
 
 /* fin seccion filtros */
 /* inicio seccion catalogo */
@@ -564,30 +546,27 @@ header {
   width: 100%;
   height: auto;
   padding-bottom: 20px; }
-
-.catalogueArea figure {
-  width: 300px;
-  height: 420px;
-  padding: 10px 10px 70px 10px;
-  margin: 20px 50px;
-  background-color: #29777d;
-  border: solid #043e39 5px;
-  border-radius: 5px;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
-  color: black; }
-
-.catalogueArea figure p {
-  background-color: #00383c;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 20px;
-  color: white; }
-
-.catalogueArea figure img {
-  width: 100%;
-  height: 100%; }
+  .catalogueArea figure {
+    width: 300px;
+    height: 420px;
+    padding: 10px 10px 70px 10px;
+    margin: 20px 50px;
+    background-color: #29777d;
+    border: solid #043e39 5px;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: black; }
+    .catalogueArea figure p {
+      background-color: #00383c;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 20px;
+      color: white; }
+    .catalogueArea figure img {
+      width: 100%;
+      height: 100%; }
 
 /* fin seccion catalogo */
 .contenedorProductos {
@@ -630,7 +609,7 @@ header {
 .selectFile input {
   height: 32px;
   padding: 1px;
-  border: solid #043e39 1px;
+  border: solid #8f8f8f 1px;
   border-radius: 5px;
   background-color: #043e39;
   font-family: "Roboto", sans-serif;
@@ -681,15 +660,15 @@ header {
     font-size: 20px; }
   .switchBox-prueba {
     width: 95%; }
-  .switchBox-prueba input {
-    font-size: 2em; }
-  .switchBox-prueba label {
-    font-size: 1.3em; }
+    .switchBox-prueba input {
+      font-size: 2em; }
+    .switchBox-prueba label {
+      font-size: 1.3em; }
   .drop-prueba {
     width: 95%; }
-  .drop-prueba button {
-    font-size: 1.2em;
-    overflow: hidden; }
+    .drop-prueba button {
+      font-size: 1.2em;
+      overflow: hidden; }
   .offcanvasButtonLink {
     width: 95%;
     font-size: 1.2em; } }
@@ -742,11 +721,11 @@ header {
     width: 34rem; }
   .footArea {
     height: auto; }
-    .footArea .footData {
-      flex-direction: column;
-      align-items: center; }
-      .footArea .footData .contactFooter {
-        margin: 10px 0; }
+  .footData {
+    flex-direction: column;
+    align-items: center; }
+    .footData .contactFooter {
+      margin: 10px 0; }
   /*----------------- NOSOTROS TABLET----------------- */
   .sectionUs button {
     font-size: 30px; }
@@ -766,7 +745,6 @@ header {
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "productos" "filter" "catalogue"; }
   .filterArea {
-    background: #020024;
     background: linear-gradient(-45deg, #020024 0%, #00fdb5 55%, #00d4ff 100%); }
   .filterContainer {
     flex-direction: row;
@@ -784,11 +762,11 @@ header {
     justify-content: center;
     overflow: auto;
     height: 800px; }
-  .contenedorProductos .catalogueArea figure {
-    margin: 20px 0;
-    width: 235px;
-    height: 355px;
-    font-size: 15px; }
+    .contenedorProductos .catalogueArea figure {
+      margin: 20px 0;
+      width: 235px;
+      height: 355px;
+      font-size: 15px; }
   /*----------------- CONTACTO TABLET----------------- */
   .formContainer {
     font-size: 23px; }
@@ -820,7 +798,7 @@ header {
   .containerMenu li {
     margin: 0;
     font-size: 25px; }
-  header .slider img {
+  .slider img {
     height: 230px; }
   .titleNeon {
     font-size: 50px; }
@@ -859,12 +837,14 @@ header {
     grid-template-areas: "productos" "filter" "catalogue"; }
   .switchBox-prueba {
     width: 95%; }
+    .switchBox-prueba label {
+      font-size: 1.2em; }
   .filterContainer .filterButtons .switchBox-prueba label {
     font-size: 1.2em; }
   .drop-prueba {
     width: 95%; }
-  .drop-prueba button {
-    font-size: 1.2em; }
+    .drop-prueba button {
+      font-size: 1.2em; }
   .offcanvasButtonLink {
     width: 95%;
     font-size: 1.2em; }
@@ -873,7 +853,7 @@ header {
   .contenedorProductos .filterArea {
     text-align: center;
     margin: 10px 0; }
-  .contenedorProductos .filterContainer label {
+  .filterContainer div label {
     font-size: 20px; }
   .contenedorProductos .catalogueArea {
     flex-direction: column;
@@ -882,14 +862,14 @@ header {
     flex-wrap: nowrap;
     height: 500px;
     overflow: auto; }
-  .contenedorProductos .catalogueArea figure {
-    margin: 20px 0;
-    width: 260px;
-    height: 380px;
-    font-size: 16px; }
-  .contenedorProductos .catalogueArea figure p {
-    margin-top: 5px;
-    font-size: 18px; }
+    .contenedorProductos .catalogueArea figure {
+      margin: 20px 0;
+      width: 260px;
+      height: 380px;
+      font-size: 16px; }
+      .contenedorProductos .catalogueArea figure p {
+        margin-top: 5px;
+        font-size: 18px; }
   /*----------------- CONTACTO MOBILE----------------- */
   .formContainer {
     padding: 10px;
