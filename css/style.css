@@ -22,6 +22,14 @@
   border: solid #8f8f8f 1px;
   border-radius: none; }
 
+.prueba-anima {
+  animation-name: changeImg;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-timing-function: ease-out; }
+
 /*
 @mixin shadow() {
   -webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
@@ -45,6 +53,13 @@ div {
   background-color: red;
   border: solid blue 2px;
   border-radius: none; }
+
+/* map */
+.mapa-prueba {
+  background-color: #b3b6b9; }
+
+.mapa-prueba-verde {
+  border: solid springgreen 5px; }
 
 * {
   margin: 0;
@@ -453,11 +468,11 @@ header {
   border-radius: 5px;
   text-align: center;
   animation-name: colorLoop;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-duration: 5s;
   animation-delay: 0;
-  animation-direction: alternate; }
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out; }
   .profileCard h5 {
     font-family: "Ubuntu", sans-serif;
     font-style: normal;
@@ -1057,17 +1072,27 @@ header {
 
 @keyframes colorLoop {
   0% {
-    border: solid #004d52 5px; }
+    border: solid springgreen 5px; }
+  10% {
+    border: solid mediumspringgreen 5px; }
   20% {
-    border: solid #005733 5px; }
+    border: solid lightgreen 5px; }
+  30% {
+    border: solid palegreen 5px; }
   40% {
-    border: solid #002a3c 5px; }
+    border: solid darkseagreen 5px; }
+  50% {
+    border: solid limegreen 5px; }
   60% {
-    border: solid #24003c 5px; }
+    border: solid forestgreen 5px; }
+  70% {
+    border: solid lightseagreen 5px; }
   80% {
-    border: solid #006567 5px; }
+    border: solid mediumseagreen 5px; }
+  90% {
+    border: solid seagreen 5px; }
   100% {
-    border: solid #004352 5px; } }
+    border: solid darkgreen 5px; } }
 
 @keyframes changeImg {
   0% {

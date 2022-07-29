@@ -66,12 +66,7 @@ header {
     display: flex;
     padding: 0;
     width: 400%;
-    animation-name: changeImg;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-timing-function: ease-out;
+   @include anima(changeImg, 20s, infinite, 0, alternate, ease-out);
   }
   li {
     width: 100%;

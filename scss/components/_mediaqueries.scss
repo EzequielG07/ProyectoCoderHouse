@@ -400,22 +400,37 @@
 }
 @keyframes colorLoop {
   0% {
-    border: solid rgb(0, 77, 82) 5px;
+    border: map-get($greenscale, "100");
+  }
+  10% {
+    border: map-get($greenscale, "200");
   }
   20% {
-    border: solid rgb(0, 87, 51) 5px;
+    border: map-get($greenscale, "300");
+  }
+  30% {
+    border: map-get($greenscale, "400");
   }
   40% {
-    border: solid rgb(0, 42, 60) 5px;
+    border: map-get($greenscale, "500");
+  }
+  50% {
+    border: map-get($greenscale, "600");
   }
   60% {
-    border: solid rgb(36, 0, 60) 5px;
+    border: map-get($greenscale, "700");
+  }
+  70% {
+    border: map-get($greenscale, "800");
   }
   80% {
-    border: solid rgb(0, 101, 103) 5px;
+    border: map-get($greenscale, "900");
+  }
+  90% {
+    border: map-get($greenscale, "1000");
   }
   100% {
-    border: solid rgb(0, 67, 82) 5px;
+    border: map-get($greenscale, "1100");
   }
 }
 @keyframes changeImg {

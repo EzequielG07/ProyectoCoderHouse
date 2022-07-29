@@ -43,12 +43,7 @@
 .profileCard {
   @include box($mainBgColor, none, 5px);
   text-align: center;
-  animation-name: colorLoop;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-duration: 5s;
-  animation-delay: 0;
-  animation-direction: alternate;
+  @include anima(colorLoop, 10s, infinite, 0, alternate, ease-in-out);
   h5 {
     @include text($thirdFont, normal, normal, 20px, center, $mainTextColor);
     background-color: $mainDarkColor;
