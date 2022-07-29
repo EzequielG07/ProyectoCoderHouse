@@ -5,7 +5,8 @@
 .prueba-text {
   font-family: "Roboto", sans-serif;
   font-style: italic;
-  font-size: 50px;
+  font-weight: 50px;
+  font-size: bold;
   text-align: center;
   color: white; }
 
@@ -18,7 +19,7 @@
 
 .prueba-box {
   background-color: red;
-  border: solid blue 2px;
+  border: solid #8f8f8f 1px;
   border-radius: none; }
 
 /*
@@ -40,6 +41,11 @@ div {
 .prueba-grid{
    @include d-grid(65% 35%,)
 }*/
+.prueba-box {
+  background-color: red;
+  border: solid blue 2px;
+  border-radius: none; }
+
 * {
   margin: 0;
   padding: 0;
@@ -59,12 +65,14 @@ body {
   height: 45px;
   padding: 0 2px;
   margin-left: 20px;
+  background-color: #043e39;
   border: solid #8f8f8f 1px;
   border-radius: 5px;
-  background-color: #043e39;
   font-family: "Roboto", sans-serif;
+  font-style: normal;
   font-weight: bold;
   font-size: 16px;
+  text-align: none;
   color: #8f8f8f;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
@@ -72,6 +80,7 @@ body {
   .buttonsEffect:hover {
     background-color: #29777d;
     border: solid white 1px;
+    border-radius: 5px;
     color: white;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
@@ -79,22 +88,25 @@ body {
 
 .titleNeon, .pageTitle {
   font-family: "Fredoka One", cursive;
+  font-style: normal;
+  font-weight: normal;
   font-size: 80px;
+  text-align: center;
   color: #043e39;
-  text-shadow: 0 0 0.4em #5cfe47;
-  text-align: center; }
+  text-shadow: 0 0 0.4em #5cfe47; }
 
 .pageTitle {
   text-decoration: underline;
   font-style: italic; }
 
 header {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
   width: 100%;
-  height: auto; }
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: column;
+  flex-wrap: wrap; }
 
 .containerLogo {
   display: flex;
@@ -104,8 +116,7 @@ header {
   width: 300px;
   height: 300px;
   border-radius: 100%;
-  margin-top: 25px;
-  margin-bottom: 25px; }
+  margin: 25px 0; }
   .headerLogo:hover {
     transform: rotatez(360deg);
     cursor: pointer;
@@ -113,24 +124,31 @@ header {
 
 /* inicio buscador */
 .searchBox {
-  display: flex;
-  align-items: center;
-  align-self: flex-end;
   width: 375px;
   height: 60px;
-  padding: 0 12px;
-  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #29777d;
   border: solid #043e39 5px;
   border-radius: 10px;
-  background-color: #29777d; }
+  align-self: flex-end;
+  padding: 0 12px;
+  margin-bottom: 50px; }
 
 .inputSearch {
   width: 260px;
   height: 40px;
-  padding: 0 5px;
-  background-color: rgba(255, 255, 255, 0.713);
   font-family: "Heebo", sans-serif;
-  font-size: large; }
+  font-style: normal;
+  font-weight: normal;
+  font-size: large;
+  text-align: left;
+  color: black;
+  padding: 0 5px;
+  background-color: rgba(255, 255, 255, 0.713); }
 
 /* fin buscador */
 /* inico menu */
@@ -147,9 +165,11 @@ header {
     background-color: #29777d;
     font-family: "Ubuntu", sans-serif;
     font-style: italic;
-    font-size: 30px; }
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+    color: white; }
     .containerMenu li a {
-      color: white;
       text-decoration: none; }
     .containerMenu li:hover {
       text-decoration: underline;
@@ -184,7 +204,10 @@ header {
 /* inicio pie de pagina */
 .footArea {
   display: flex;
+  justify-content: space-around;
+  align-items: stretch;
   flex-direction: column;
+  flex-wrap: nowrap;
   width: 100%;
   height: auto;
   padding-top: 15px;
@@ -198,6 +221,8 @@ header {
     width: 100%;
     margin-bottom: 5px;
     font-family: "Quantico", sans-serif;
+    font-style: normal;
+    font-weight: normal;
     font-size: 25px;
     text-align: center;
     color: white;
@@ -211,6 +236,8 @@ header {
     padding: 0 2px; }
     .footData .infoFooter li {
       font-family: "Quantico", sans-serif;
+      font-style: normal;
+      font-weight: normal;
       font-size: 20px;
       text-align: left;
       color: #dbdbdb; }
@@ -220,6 +247,8 @@ header {
     padding: 0 2px; }
     .footData .contactFooter li {
       font-family: "Quantico", sans-serif;
+      font-style: normal;
+      font-weight: normal;
       font-size: 20px;
       text-align: left;
       color: #dbdbdb; }
@@ -231,11 +260,13 @@ header {
 .footCopyright {
   margin-top: 20px;
   padding-top: 10px;
-  background-color: rgba(4, 62, 57, 0.679);
-  text-align: center; }
+  background-color: rgba(4, 62, 57, 0.679); }
   .footCopyright p {
     font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
     font-size: 15px;
+    text-align: center;
     color: #dbdbdb; }
 
 /* fin pie de pagina */
@@ -243,39 +274,50 @@ header {
 /* inicio seccion videos */
 .sectionVideo {
   display: flex;
+  justify-content: space-between;
+  align-items: stretch;
   flex-direction: column;
+  flex-wrap: nowrap;
   width: 100%;
   height: auto;
-  padding: 0 20px;
+  background-color: rgba(184, 248, 248, 0.323);
+  border: none;
   border-radius: 5px;
-  background-color: rgba(184, 248, 248, 0.323); }
+  padding: 0 20px; }
   .sectionVideo p {
     margin-top: 20px;
     font-family: "Roboto", sans-serif;
-    font-size: x-large;
     font-style: italic;
     font-weight: bold;
-    text-align: center; }
+    font-size: x-large;
+    text-align: center;
+    color: black; }
 
 .videoExample video {
   width: 100%;
   height: 500px;
+  background-color: rgba(184, 248, 248, 0.323);
   border: solid #043e39 5px;
   border-radius: 3px;
   transition: transform 0.5s; }
 
 .videoExample h5 {
   font-family: "Fredoka One", cursive;
-  text-shadow: 2px 2px 2px #5e5e5e;
-  font-size: large; }
+  font-style: normal;
+  font-weight: normal;
+  font-size: large;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 2px #5e5e5e; }
 
 .videoExample p {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  font-size: medium;
   font-style: normal;
   font-weight: 500;
+  font-size: medium;
   text-align: center;
+  color: white;
   text-shadow: 2px 2px 2px #5e5e5e; }
 
 /* fin seccion videos */
@@ -284,6 +326,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
   width: 100%;
   height: auto; }
   .sectionMap div {
@@ -302,7 +346,10 @@ header {
 /* inicio nuevos ingresos */
 .containerNews {
   display: flex;
+  justify-content: space-around;
+  align-items: stretch;
   flex-direction: column;
+  flex-wrap: nowrap;
   width: 100%;
   height: auto; }
 
@@ -311,17 +358,23 @@ header {
 
 .gallery {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
   margin: 20px 0; }
 
 .cardNews {
   width: 22rem;
-  border: solid #105459 2px;
   background-color: #29777d;
+  border: solid #105459 2px;
+  border-radius: 0;
   font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 1.5em;
-  text-align: justify; }
+  text-align: justify;
+  color: black; }
   .cardNews a {
     background-color: #105459;
     color: white; }
@@ -355,17 +408,22 @@ header {
   .sectionUs button {
     font-family: "Heebo", sans-serif;
     font-style: italic;
+    font-weight: normal;
     font-size: 40px;
     text-align: left;
-    animation-name: textUs;
-    animation-duration: 3s;
     color: white;
     background-color: #00383c;
-    border: solid white 2px; }
+    border: solid white 2px;
+    border-radius: 0;
+    animation-name: textUs;
+    animation-duration: 3s; }
   .sectionUs p {
     font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    font-weight: normal;
     font-size: 35px;
     text-align: justify;
+    color: black;
     animation-name: textUs;
     animation-duration: 4s; }
 
@@ -381,14 +439,17 @@ header {
     margin: 10px 0; }
 
 .teamContainer {
-  width: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
   margin-bottom: 10px; }
 
 .profileCard {
   background-color: #29777d;
+  border: none;
   border-radius: 5px;
   text-align: center;
   animation-name: colorLoop;
@@ -398,17 +459,22 @@ header {
   animation-delay: 0;
   animation-direction: alternate; }
   .profileCard h5 {
-    color: white;
     font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    font-weight: normal;
     font-size: 20px;
+    text-align: center;
+    color: white;
     background-color: #00383c; }
   .profileCard p {
     padding: 2px;
     margin-top: 5px;
     font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    font-weight: normal;
     font-size: 20px;
-    color: white;
-    text-align: justify; }
+    text-align: justify;
+    color: white; }
 
 /* fin seccion team */
 .contenedorNosotros {
@@ -633,8 +699,10 @@ header {
   border: solid #043e39 5px;
   border-radius: 10px;
   font-family: "Roboto", sans-serif;
+  font-style: normal;
   font-weight: bold;
   font-size: 30px;
+  text-align: left;
   color: white; }
 
 .clientData input {
@@ -642,35 +710,48 @@ header {
   height: 50px;
   background-color: rgba(255, 255, 255, 0.713);
   font-family: "Heebo", sans-serif;
-  font-size: large; }
+  font-style: normal;
+  font-weight: normal;
+  font-size: large;
+  text-align: left;
+  color: black; }
 
 .selectFile input {
   height: 32px;
   padding: 1px;
+  background-color: #043e39;
   border: solid #8f8f8f 1px;
   border-radius: 5px;
-  background-color: #043e39;
   font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 18px;
+  text-align: left;
   color: white; }
 
 .selectMatter {
   height: 50px;
+  background-color: #043e39;
   border: solid #8f8f8f 1px;
   border-radius: 5px;
-  background-color: #043e39;
   font-family: "Roboto", sans-serif;
+  font-style: normal;
   font-weight: bold;
   font-size: 20px;
+  text-align: left;
   color: white; }
 
 .textDetails textarea {
   width: 100%;
   margin-bottom: 5px;
+  background-color: rgba(255, 255, 255, 0.713);
   border-radius: 3px;
   font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 20px;
-  background-color: rgba(255, 255, 255, 0.713); }
+  text-align: left;
+  color: black; }
 
 .contenedorContacto {
   display: grid;

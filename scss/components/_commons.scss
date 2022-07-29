@@ -1,22 +1,15 @@
 .buttonsEffect {
-  width: 70px;
-  height: 45px;
+  @include size(70px, 45px);
   padding: 0 2px;
   margin-left: 20px;
-  border: $btnBorderColor;
-  border-radius: 5px;
-  background-color: $btnBgColor;
-  font-family: $mainFont;
-  font-weight: bold;
-  font-size: 16px;
-  color: $btnTextColor;
+  @include box($btnBgColor, $btnBorderColor, 5px);
+  @include text($mainFont, normal, bold, 16px, none, $btnTextColor);
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   cursor: pointer;
   &:hover {
-    background-color: rgb(41, 119, 125);
-    border: solid rgb(255, 255, 255) 1px;
-    color: rgb(255, 255, 255);
+    @include boxExtra($mainBgColor, solid, rgb(255, 255, 255), 1px, 5px);
+    color: $mainTextColor;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -24,11 +17,8 @@
 }
 
 .titleNeon {
-  font-family: $titleFont;
-  font-size: 80px;
-  color: $mainTitlesColor;
+  @include text($titleFont, normal, normal, 80px, center, $mainTitlesColor);
   text-shadow: $neonEffect;
-  text-align: center;
 }
 
 .pageTitle {

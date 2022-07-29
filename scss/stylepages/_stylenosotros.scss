@@ -7,25 +7,16 @@
   article {
     padding: 5px;
     margin: 20px 0;
-    background-color: $secondaryBgColor;
-    border: $borderSecondColor;
-    border-radius: 5px;
+    @include box($secondaryBgColor, $borderSecondColor, 5px);
   }
   button {
-    font-family: $secondaryFont;
-    font-style: italic;
-    font-size: 40px;
-    text-align: left;
+    @include text($secondaryFont, italic, normal, 40px, left, $mainTextColor);
+    @include box($mainDarkColor, $dividerColor, 0);
     animation-name: textUs;
     animation-duration: 3s;
-    color: $mainTextColor;
-    background-color: $mainDarkColor;
-    border: $dividerColor;
   }
   p {
-    font-family: $thirdFont;
-    font-size: 35px;
-    text-align: justify;
+    @include text($thirdFont, normal, normal, 35px, justify, rgb(0, 0, 0));
     animation-name: textUs;
     animation-duration: 4s;
   }
@@ -34,8 +25,7 @@
 
 /* inicio seccion team */
 .sectionTeam {
-  width: 100%;
-  height: auto;
+  @include size(100%, auto);
   padding: 10px 0;
   h3 {
     border-top: $dividerColor;
@@ -45,16 +35,13 @@
 }
 
 .teamContainer {
+  @include d-flex(space-around, stretch, row, nowrap);
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   margin-bottom: 10px;
 }
 
 .profileCard {
-  background-color: $mainBgColor;
-  border-radius: 5px;
+  @include box($mainBgColor, none, 5px);
   text-align: center;
   animation-name: colorLoop;
   animation-iteration-count: infinite;
@@ -63,18 +50,13 @@
   animation-delay: 0;
   animation-direction: alternate;
   h5 {
-    color: $mainTextColor;
-    font-family: $thirdFont;
-    font-size: 20px;
+    @include text($thirdFont, normal, normal, 20px, center, $mainTextColor);
     background-color: $mainDarkColor;
   }
   p {
     padding: 2px;
     margin-top: 5px;
-    font-family: $thirdFont;
-    font-size: 20px;
-    color: $mainTextColor;
-    text-align: justify;
+    @include text($thirdFont, normal, normal, 20px, justify, $mainTextColor);
   }
 }
 /* fin seccion team */

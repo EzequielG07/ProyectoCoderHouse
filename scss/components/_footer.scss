@@ -1,9 +1,7 @@
 /* inicio pie de pagina */
 .footArea {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
+  @include d-flex(space-around, stretch, column, nowrap);
+  @include size(100%, auto);
   padding-top: 15px;
   border-top: $dividerColor;
   background-color: $footerBgColor;
@@ -15,10 +13,7 @@
     h4 {
       width: 100%;
       margin-bottom: 5px;
-      font-family: $footFont;
-      font-size: 25px;
-      text-align: center;
-      color: $mainTextColor;
+      @include text($footFont, normal, normal, 25px, center, $mainTextColor);
       text-shadow: $textShadows;
     }
     div {
@@ -27,30 +22,21 @@
     }
   }
   .infoFooter {
-    width: 250px;
-    height: auto;
+    @include size(250px, auto);
     padding: 0 2px;
     li {
-      font-family: $footFont;
-      font-size: 20px;
-      text-align: left;
-      color: $footerTextColor;
+      @include text($footFont, normal, normal, 20px, left, $footerTextColor);
     }
   }
   .contactFooter {
-    width: 250px;
-    height: auto;
+    @include size(250px, auto);
     padding: 0 2px;
     li {
-      font-family: $footFont;
-      font-size: 20px;
-      text-align: left;
-      color: $footerTextColor;
+      @include text($footFont, normal, normal, 20px, left, $footerTextColor);
     }
   }
   .redesFooter {
-    width: 250px;
-    height: auto;
+    @include size(250px, auto);
     padding: 0 2px;
   }
 }
@@ -58,11 +44,8 @@
   margin-top: 20px;
   padding-top: 10px;
   background-color: $copyrightBgColor;
-  text-align: center;
   p {
-    font-family: $mainFont;
-    font-size: 15px;
-    color: $footerTextColor;
+    @include text($mainFont, normal, normal, 15px, center, $footerTextColor);
   }
 }
 /* fin pie de pagina */

@@ -6,13 +6,8 @@
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
-  background-color: $mainBgColor;
-  border: $mainBorderColor;
-  border-radius: 10px;
-  font-family: $mainFont;
-  font-weight: bold;
-  font-size: 30px;
-  color: $mainTextColor;
+  @include box($mainBgColor, $mainBorderColor, 10px);
+  @include text($mainFont, normal, bold, 30px, left, $mainTextColor);
 }
 
 .clientData {
@@ -20,8 +15,7 @@
     margin: 10px 0;
     height: 50px;
     background-color: $imputBgColor;
-    font-family: $secondaryFont;
-    font-size: large;
+    @include text($secondaryFont, normal, normal, large, left, rgb(0, 0, 0));
   }
 }
 
@@ -29,34 +23,24 @@
   input {
     height: 32px;
     padding: 1px;
-    border: $btnBorderColor;
-    border-radius: 5px;
-    background-color: $btnBgColor;
-    font-family: $mainFont;
-    font-size: 18px;
-    color: $mainTextColor;
+    @include box($btnBgColor, $btnBorderColor, 5px);
+    @include text($mainFont, normal, normal, 18px, left, $mainTextColor);
   }
 }
 
 .selectMatter {
   height: 50px;
-  border: $btnBorderColor;
-  border-radius: 5px;
-  background-color: $btnBgColor;
-  font-family: $mainFont;
-  font-weight: bold;
-  font-size: 20px;
-  color: $mainTextColor;
+  @include box($btnBgColor, $btnBorderColor, 5px);
+  @include text($mainFont, normal, bold, 20px, left, $mainTextColor);
 }
 
 .textDetails {
   textarea {
     width: 100%;
     margin-bottom: 5px;
-    border-radius: 3px;
-    font-family: $secondaryFont;
-    font-size: 20px;
     background-color: $imputBgColor;
+    border-radius: 3px;
+    @include text($secondaryFont, normal, normal, 20px, left, rgb(0, 0, 0));
   }
 }
 

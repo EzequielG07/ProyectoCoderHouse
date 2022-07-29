@@ -1,62 +1,41 @@
 /*----------------- INDEX----------------- */
 /* inicio seccion videos */
 .sectionVideo {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
+  @include d-flex(space-between, stretch, column, nowrap);
+  @include size(100%, auto);
+  @include box($videoBgColor, none, 5px);
   padding: 0 20px;
-  border-radius: 5px;
-  background-color: $videoBgColor;
   p {
     margin-top: 20px;
-    font-family: $mainFont;
-    font-size: x-large;
-    font-style: italic;
-    font-weight: bold;
-    text-align: center;
+    @include text($mainFont, italic, bold, x-large, center, rgb(0, 0, 0));
   }
 }
 
 .videoExample {
   video {
-    width: 100%;
-    height: 500px;
-    border: $mainBorderColor;
-    border-radius: 3px;
+    @include size(100%, 500px);
+    @include box($videoBgColor, $mainBorderColor, 3px);
     transition: transform 0.5s;
   }
   h5 {
-    font-family: $titleFont;
+    @include text($titleFont, normal, normal, large, center, $mainTextColor);
     text-shadow: $textShadows;
-    font-size: large;
   }
   p {
     margin: 0;
-    font-family: $mainFont;
-    font-size: medium;
-    font-style: normal;
-    font-weight: 500;
-    text-align: center;
+    @include text($mainFont, normal, 500, medium, center, $mainTextColor);
     text-shadow: $textShadows;
   }
 }
-
 /* fin seccion videos */
 
 /* inicio lado mapa */
 .sectionMap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
+  @include d-flex(center, center, row, nowrap);
+  @include size(100%, auto);
   div {
-    width: 500px;
-    height: 500px;
-    background-color: $mapBgColor;
-    border: $secondaryBorderColor;
-    border-radius: 3px;
+    @include size(500px, 500px);
+    @include box($mapBgColor, $secondaryBorderColor, 3px);
     overflow: hidden;
   }
   h2 {
@@ -69,31 +48,24 @@
 
 /* inicio nuevos ingresos */
 .containerNews {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
+  @include d-flex(space-around, stretch, column, nowrap);
+  @include size(100%, auto);
 }
 
 .titleNews {
   margin-top: 5px;
 }
 .gallery {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  @include d-flex(space-around, stretch, row, nowrap);
   margin: 20px 0;
 }
 .cardNews {
   width: 22rem;
-  border: $secondaryBorderColor;
-  background-color: $mainBgColor;
-  font-family: $secondaryFont;
-  font-size: 1.5em;
-  text-align: justify;
+  @include box($mainBgColor, $secondaryBorderColor, 0);
+  @include text($secondaryFont, normal, normal, 1.5em, justify, rgb(0, 0, 0));
   a {
     background-color: $secondaryBtnColor;
-    color: rgb(255, 255, 255);
+    color: $mainTextColor;
   }
 }
 /* fin nuevos ingresos */

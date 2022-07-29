@@ -1,21 +1,15 @@
 header {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-  height: auto;
+  @include size(100%, auto);
+  @include d-flex(space-between, stretch, column, wrap);
 }
 .containerLogo {
   display: flex;
   justify-content: space-around;
 }
 .headerLogo {
-  width: 300px;
-  height: 300px;
+  @include size(300px, 300px);
   border-radius: 100%;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 25px 0;
   &:hover {
     transform: rotatez(360deg);
     cursor: pointer;
@@ -24,24 +18,18 @@ header {
 }
 /* inicio buscador */
 .searchBox {
-  display: flex;
-  align-items: center;
+  @include size(375px, 60px);
+  @include d-flex(space-between, center, row, nowrap);
+  @include box($mainBgColor, $mainBorderColor, 10px);
   align-self: flex-end;
-  width: 375px;
-  height: 60px;
   padding: 0 12px;
   margin-bottom: 50px;
-  border: $mainBorderColor;
-  border-radius: 10px;
-  background-color: $mainBgColor;
 }
 .inputSearch {
-  width: 260px;
-  height: 40px;
+  @include size(260px, 40px);
+  @include text($secondaryFont, normal, normal, large, left, rgb(0, 0, 0));
   padding: 0 5px;
   background-color: $imputBgColor;
-  font-family: $secondaryFont;
-  font-size: large;
 }
 /* fin buscador */
 /* inico menu */
@@ -56,11 +44,8 @@ header {
   li {
     margin: 0px 70px;
     background-color: $mainBgColor;
-    font-family: $thirdFont;
-    font-style: italic;
-    font-size: 30px;
+    @include text($thirdFont, italic, normal, 30px, center, $mainTextColor);
     a {
-      color: $mainTextColor;
       text-decoration: none;
     }
     &:hover {
@@ -93,8 +78,7 @@ header {
     list-style: none;
   }
   img {
-    width: 100%;
-    height: 500px;
+    @include size(100%, 500px);
   }
 }
 /*fin de slider*/

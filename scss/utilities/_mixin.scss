@@ -1,13 +1,14 @@
 //mixins
-@mixin text($family, $style, $size, $align, $color) {
+@mixin text($family, $style, $fontWeight, $size, $align, $color) {
   font-family: $family;
   font-style: $style;
+  font-weight: $fontWeight;
   font-size: $size;
   text-align: $align;
   color: $color;
 }
 .prueba-text {
-  @include text($mainFont, italic, 50px, center, $mainTextColor);
+  @include text($mainFont, italic, 50px, bold, center, $mainTextColor);
 }
 
 @mixin d-flex($justify, $align, $dire, $wrap) {
@@ -21,13 +22,13 @@
   @include d-flex(space-between, center, row, nowrap);
 }
 
-@mixin box($backGround, $border,$brColor, $edge, $radius) {
+@mixin box($backGround, $border, $radius) {
    background-color: $backGround;
-   border: $border $brColor $edge;
+   border: $border;
    border-radius: $radius;
 }
 .prueba-box {
-   @include box(red, solid, blue, 2px, none);
+   @include box(red, $btnBorderColor, none);
 }
 
 @mixin size ($width, $height, ) {
@@ -54,3 +55,11 @@ div {
 .prueba-grid{
    @include d-grid(65% 35%,)
 }*/
+@mixin boxExtra($backGround, $border,$brColor, $edge, $radius) {
+   background-color: $backGround;
+   border: $border $brColor $edge;
+   border-radius: $radius;
+}
+.prueba-box {
+   @include boxExtra(red, solid, blue, 2px, none);
+}
