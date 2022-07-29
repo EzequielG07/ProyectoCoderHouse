@@ -1,0 +1,56 @@
+//mixins
+@mixin text($family, $style, $size, $align, $color) {
+  font-family: $family;
+  font-style: $style;
+  font-size: $size;
+  text-align: $align;
+  color: $color;
+}
+.prueba-text {
+  @include text($mainFont, italic, 50px, center, $mainTextColor);
+}
+
+@mixin d-flex($justify, $align, $dire, $wrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $dire;
+  flex-wrap: $wrap;
+}
+.prueba-flex {
+  @include d-flex(space-between, center, row, nowrap);
+}
+
+@mixin box($backGround, $border,$brColor, $edge, $radius) {
+   background-color: $backGround;
+   border: $border $brColor $edge;
+   border-radius: $radius;
+}
+.prueba-box {
+   @include box(red, solid, blue, 2px, none);
+}
+
+@mixin size ($width, $height, ) {
+   width: $width;
+   height: $height;
+}
+
+/*
+@mixin shadow() {
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+}
+div {
+  @include shadow();
+}
+
+@mixin d-grid($columns, $rows, $areas ) {
+   display: grid;
+   grid-template-columns: ($columns $columns);
+   grid-template-rows: $rows;
+   grid-template-areas: $areas;
+}
+.prueba-grid{
+   @include d-grid(65% 35%,)
+}*/

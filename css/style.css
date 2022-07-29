@@ -2,6 +2,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Quantico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quantico&display=swap");
+.prueba-text {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 50px;
+  text-align: center;
+  color: white; }
+
+.prueba-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+
+.prueba-box {
+  background-color: red;
+  border: solid blue 2px;
+  border-radius: none; }
+
+/*
+@mixin shadow() {
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+}
+div {
+  @include shadow();
+}
+
+@mixin d-grid($columns, $rows, $areas ) {
+   display: grid;
+   grid-template-columns: ($columns $columns);
+   grid-template-rows: $rows;
+   grid-template-areas: $areas;
+}
+.prueba-grid{
+   @include d-grid(65% 35%,)
+}*/
 * {
   margin: 0;
   padding: 0;
