@@ -1,16 +1,12 @@
 /*----------------- PRODUCTOS----------------- */
 /* inicio seccion filtros */
 .filterArea {
-  width: 100%;
-  height: auto;
+  @include size(100%, auto);
   padding: 0 2%;
   background: $filterBgGradient;
   border: $borderSecondColor;
   legend {
-    font-family: $thirdFont;
-    font-style: italic;
-    font-size: 5.5em;
-    color: $mainDarkColor;
+    @include text($thirdFont, italic, normal, 5.5em, left, $mainDarkColor);
   }
 }
 
@@ -18,14 +14,12 @@
   top: 30px;
   position: sticky;
   height: auto;
-  display: flex;
-  flex-direction: column;
+  @include d-flex(start, stretch, column, nowrap);
 }
 
 .filterChecks {
   div {
-    display: flex;
-    flex-direction: row;
+    @include d-flex(start, stretch, row, nowrap);
     padding-left: 1px;
     margin: 5px;
   }
@@ -38,66 +32,47 @@
     cursor: pointer;
   }
   label {
-    font-size: 2em;
-    font-weight: bold;
-    color: $mainTextColor;
+    @include text($thirdFont, normal, bold, 2em, left, $mainTextColor);
     text-shadow: $textShadows;
   }
 }
 
 .switchBox-prueba {
-  background-color: $secondaryBtnColor;
-  border-radius: 5px;
-  width: 80%;
-  height: 50px;
+  @include size(80%, 50px);
+  @include box($secondaryBtnColor, none, 5px);
+  @include d-flex(start, center, row, nowrap);
   padding-left: 65px;
-  display: flex;
-  align-items: center;
   input {
     height: 25px;
     font-size: 2em;
     cursor: pointer;
   }
   label {
-    font-size: 2em;
-    font-family: $thirdFont;
-    color: $mainTextColor;
+    @include text($thirdFont, normal, normal, 2em, left, $mainTextColor);
     cursor: pointer;
   }
 }
 
 .drop-prueba {
-  background-color: $secondaryBtnColor;
-  border-radius: 5px;
-  width: 80%;
-  height: 50px;
-  display: flex;
-  align-items: center;
+  @include box($secondaryBtnColor, none, 5px);
+  @include size(80%, 50px);
+  @include d-flex(start, center, row, nowrap);
   button {
-    font-size: 2em;
-    font-family: $thirdFont;
-    color: $mainTextColor;
+    @include text($thirdFont, normal, normal, 2em, left, $mainTextColor);
   }
   ul {
-    font-size: 2em;
-    background-color: $mainBgColor;
-    border: $dividerColor;
-    color: $mainTextColor;
+    @include box($mainBgColor, $dividerColor, 0);
+    @include text(arial, normal, normal, 2em, left, $mainTextColor);
     text-shadow: $textShadows;
   }
 }
 
 .offcanvasButtonLink {
-  background-color: $secondaryBtnColor;
-  border-radius: 5px;
-  width: 80%;
-  height: 50px;
+  @include box($secondaryBtnColor, none, 5px);
+  @include size(80%, 50px);
+  @include d-flex(start, center, row, nowrap);
+  @include text($thirdFont, normal, 500, 2em, left, $mainTextColor);
   padding: auto;
-  display: flex;
-  align-items: center;
-  color: $mainTextColor;
-  font-size: 2em;
-  font-weight: 500;
 }
 
 .offcanvasOpen {
@@ -124,9 +99,7 @@
       margin: 5px;
     }
     label {
-      font-size: 2em;
-      font-weight: bold;
-      color: $mainTextColor;
+      @include text(arial, normal, bold, 2em, left, $mainTextColor);
       text-shadow: $textShadows;
     }
     img {
@@ -138,35 +111,24 @@
 
 /* inicio seccion catalogo */
 .catalogueArea {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 100%;
-  height: auto;
+  @include d-flex(space-around, stretch, row, wrap);
+  @include size(100%, auto);
   padding-bottom: 20px;
   figure {
-    width: 300px;
-    height: 420px;
+    @include size(300px, 420px);
     padding: 10px 10px 70px 10px;
     margin: 20px 50px;
-    background-color: $mainBgColor;
+    /*background-color: $mainBgColor;
     border: $mainBorderColor;
-    border-radius: 5px;
-    font-family: $mainFont;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-    color: rgb(0, 0, 0);
+    border-radius: 5px;*/
+    @include box($mainBgColor, $mainBorderColor, 5px);
+    @include text($mainFont, normal, bold, 20px, center, $secondTextColor);
     p {
       background-color: $mainDarkColor;
-      font-family: $thirdFont;
-      font-size: 20px;
-      color: $mainTextColor;
+      @include text($thirdFont, normal, bold, 20px, center, $mainTextColor);
     }
     img {
-      width: 100%;
-      height: 100%;
+      @include size(100%, 100%);
     }
   }
 }

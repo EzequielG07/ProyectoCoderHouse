@@ -493,7 +493,7 @@ header {
 .proyectContainer {
   width: 90%;
   background-color: rgba(0, 253, 181, 0.146);
-  border: solid rgba(23, 75, 61, 0.352) 10px;
+  border: rgba(23, 75, 61, 0.352) 10px;
   border-radius: 10px; }
   .proyectContainer p {
     height: 350px;
@@ -501,7 +501,11 @@ header {
     border: solid #043e39 5px;
     border-radius: 5px;
     font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    font-weight: normal;
     font-size: 50px;
+    text-align: left;
+    color: black;
     overflow: auto; }
 
 .proyectPicture {
@@ -509,6 +513,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
   background-color: #00383c;
   border: #c4ebc4;
   border-radius: 5px; }
@@ -536,7 +542,9 @@ header {
   .filterArea legend {
     font-family: "Ubuntu", sans-serif;
     font-style: italic;
+    font-weight: normal;
     font-size: 5.5em;
+    text-align: left;
     color: #00383c; }
 
 .filterContainer {
@@ -544,11 +552,17 @@ header {
   position: sticky;
   height: auto;
   display: flex;
-  flex-direction: column; }
+  justify-content: start;
+  align-items: stretch;
+  flex-direction: column;
+  flex-wrap: nowrap; }
 
 .filterChecks div {
   display: flex;
+  justify-content: start;
+  align-items: stretch;
   flex-direction: row;
+  flex-wrap: nowrap;
   padding-left: 1px;
   margin: 5px; }
 
@@ -561,58 +575,87 @@ header {
   cursor: pointer; }
 
 .filterChecks label {
-  font-size: 2em;
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
   font-weight: bold;
+  font-size: 2em;
+  text-align: left;
   color: white;
   text-shadow: 2px 2px 2px #5e5e5e; }
 
 .switchBox-prueba {
-  background-color: #105459;
-  border-radius: 5px;
   width: 80%;
   height: 50px;
-  padding-left: 65px;
+  background-color: #105459;
+  border: none;
+  border-radius: 5px;
   display: flex;
-  align-items: center; }
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-left: 65px; }
   .switchBox-prueba input {
     height: 25px;
     font-size: 2em;
     cursor: pointer; }
   .switchBox-prueba label {
-    font-size: 2em;
     font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+    text-align: left;
     color: white;
     cursor: pointer; }
 
 .drop-prueba {
   background-color: #105459;
+  border: none;
   border-radius: 5px;
   width: 80%;
   height: 50px;
   display: flex;
-  align-items: center; }
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap; }
   .drop-prueba button {
-    font-size: 2em;
     font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+    text-align: left;
     color: white; }
   .drop-prueba ul {
-    font-size: 2em;
     background-color: #29777d;
     border: solid white 2px;
+    border-radius: 0;
+    font-family: arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+    text-align: left;
     color: white;
     text-shadow: 2px 2px 2px #5e5e5e; }
 
 .offcanvasButtonLink {
   background-color: #105459;
+  border: none;
   border-radius: 5px;
   width: 80%;
   height: 50px;
-  padding: auto;
   display: flex;
+  justify-content: start;
   align-items: center;
-  color: white;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 500;
   font-size: 2em;
-  font-weight: 500; }
+  text-align: left;
+  color: white;
+  padding: auto; }
 
 .offcanvasOpen {
   border: solid white 2px; }
@@ -633,8 +676,11 @@ header {
     padding: 10px;
     margin: 5px; }
   .offcanvasChecks div label {
-    font-size: 2em;
+    font-family: arial;
+    font-style: normal;
     font-weight: bold;
+    font-size: 2em;
+    text-align: left;
     color: white;
     text-shadow: 2px 2px 2px #5e5e5e; }
   .offcanvasChecks div img {
@@ -644,8 +690,9 @@ header {
 /* inicio seccion catalogo */
 .catalogueArea {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
+  align-items: stretch;
+  flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
@@ -655,10 +702,14 @@ header {
     height: 420px;
     padding: 10px 10px 70px 10px;
     margin: 20px 50px;
+    /*background-color: $mainBgColor;
+    border: $mainBorderColor;
+    border-radius: 5px;*/
     background-color: #29777d;
     border: solid #043e39 5px;
     border-radius: 5px;
     font-family: "Roboto", sans-serif;
+    font-style: normal;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
@@ -666,7 +717,10 @@ header {
     .catalogueArea figure p {
       background-color: #00383c;
       font-family: "Ubuntu", sans-serif;
+      font-style: normal;
+      font-weight: bold;
       font-size: 20px;
+      text-align: center;
       color: white; }
     .catalogueArea figure img {
       width: 100%;

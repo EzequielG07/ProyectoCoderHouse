@@ -15,7 +15,7 @@
     margin: 10px 0;
     height: 50px;
     background-color: $imputBgColor;
-    @include text($secondaryFont, normal, normal, large, left, rgb(0, 0, 0));
+    @include text($secondaryFont, normal, normal, large, left, $secondTextColor);
   }
 }
 
@@ -40,7 +40,7 @@
     margin-bottom: 5px;
     background-color: $imputBgColor;
     border-radius: 3px;
-    @include text($secondaryFont, normal, normal, 20px, left, rgb(0, 0, 0));
+    @include text($secondaryFont, normal, normal, 20px, left, $secondTextColor);
   }
 }
 

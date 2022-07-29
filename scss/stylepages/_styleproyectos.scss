@@ -2,31 +2,21 @@
 
 .proyectContainer {
   width: 90%;
-  background-color: $secondaryBgColor;
-  border: solid $proyectBorderColor;
-  border-radius: 10px;
+  @include box($secondaryBgColor, $proyectBorderColor, 10px);
   p {
     height: 350px;
-    background-color: $textBgProyect;
-    border: $mainBorderColor;
-    border-radius: 5px;
-    font-family: $thirdFont;
-    font-size: 50px;
+    @include box($textBgProyect, $mainBorderColor, 5px);
+    @include text($thirdFont, normal, normal, 50px, left, $secondTextColor);
     overflow: auto;
   }
 }
 
 .proyectPicture {
   height: 350px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $mainDarkColor;
-  border: $textBgProyect;
-  border-radius: 5px;
+  @include d-flex(center, center, row, nowrap);
+  @include box($mainDarkColor, $textBgProyect, 5px);
   img {
-    width: 80%;
-    height: 80%;
+    @include size(80%, 80%);
   }
 }
 

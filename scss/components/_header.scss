@@ -27,7 +27,7 @@ header {
 }
 .inputSearch {
   @include size(260px, 40px);
-  @include text($secondaryFont, normal, normal, large, left, rgb(0, 0, 0));
+  @include text($secondaryFont, normal, normal, large, left, $secondTextColor);
   padding: 0 5px;
   background-color: $imputBgColor;
 }

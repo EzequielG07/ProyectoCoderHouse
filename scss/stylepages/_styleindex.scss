@@ -7,7 +7,7 @@
   padding: 0 20px;
   p {
     margin-top: 20px;
-    @include text($mainFont, italic, bold, x-large, center, rgb(0, 0, 0));
+    @include text($mainFont, italic, bold, x-large, center, $secondTextColor);
   }
 }
 
@@ -62,7 +62,7 @@
 .cardNews {
   width: 22rem;
   @include box($mainBgColor, $secondaryBorderColor, 0);
-  @include text($secondaryFont, normal, normal, 1.5em, justify, rgb(0, 0, 0));
+  @include text($secondaryFont, normal, normal, 1.5em, justify, $secondTextColor);
   a {
     background-color: $secondaryBtnColor;
     color: $mainTextColor;
