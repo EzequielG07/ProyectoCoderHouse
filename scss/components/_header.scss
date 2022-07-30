@@ -74,6 +74,9 @@ header {
       margin: 0px 70px;
       background-color: $mainBgColor;
       @include text($thirdFont, italic, normal, 30px, center, $mainTextColor);
+      @include media(ajust) {
+        margin: 0 10px;
+      }
       @include media(mobile) {
         margin: 0;
         font-size: 25px;

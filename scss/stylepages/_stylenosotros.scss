@@ -14,11 +14,23 @@
     @include box($mainDarkColor, $dividerColor, 0);
     animation-name: textUs;
     animation-duration: 3s;
+    @include media(tablet) {
+      font-size: 30px;
+    }
+    @include media(mobile) {
+      font-size: 20px;
+    }
   }
   p {
     @include text($thirdFont, normal, normal, 35px, justify, $secondTextColor);
     animation-name: textUs;
     animation-duration: 4s;
+    @include media(tablet) {
+      font-size: 25px;
+    }
+    @include media(mobile) {
+      font-size: 20px;
+    }
   }
 }
 /* fin seccion articulos */
@@ -38,6 +50,12 @@
   @include d-flex(space-around, stretch, row, nowrap);
   width: 100%;
   margin-bottom: 10px;
+  @include media(ajust) {
+    @include d-flex(space-around, center, column, nowrap);
+  }
+  @include media(tablet) {
+    @include d-flex(space-around, center, column, nowrap);
+  }
 }
 
 .profileCard {

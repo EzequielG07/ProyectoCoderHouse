@@ -8,6 +8,12 @@
     @include box($textBgProyect, $mainBorderColor, 5px);
     @include text($thirdFont, normal, normal, 50px, left, $secondTextColor);
     overflow: auto;
+    @include media(tablet) {
+      font-size: 35px;
+    }
+    @include media(mobile) {
+      font-size: 25px;
+    }
   }
 }
 
@@ -17,6 +23,12 @@
   @include box($mainDarkColor, $textBgProyect, 5px);
   img {
     @include size(80%, 80%);
+    @include media(tablet) {
+      width: 90%;
+    }
+    @include media(mobile) {
+      @include size(90%, 70%);
+    }
   }
 }
 

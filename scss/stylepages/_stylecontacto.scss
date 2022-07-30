@@ -8,6 +8,13 @@
   padding: 10px;
   @include box($mainBgColor, $mainBorderColor, 10px);
   @include text($mainFont, normal, bold, 30px, left, $mainTextColor);
+  @include media(tablet) {
+    font-size: 23px;
+  }
+  @include media(mobile) {
+    padding: 10px;
+    font-size: 20px;
+  }
 }
 
 .clientData {
@@ -15,7 +22,17 @@
     margin: 10px 0;
     height: 50px;
     background-color: $imputBgColor;
-    @include text($secondaryFont, normal, normal, large, left, $secondTextColor);
+    @include text(
+      $secondaryFont,
+      normal,
+      normal,
+      large,
+      left,
+      $secondTextColor
+    );
+    @include media(tablet) {
+      @include size(100%, 40px);
+    }
   }
 }
 
@@ -41,6 +58,13 @@
     background-color: $imputBgColor;
     border-radius: 3px;
     @include text($secondaryFont, normal, normal, 20px, left, $secondTextColor);
+  }
+}
+
+.formButton {
+  @include media(tablet) {
+    display: flex;
+    justify-content: space-around;
   }
 }
 

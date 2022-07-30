@@ -5,8 +5,21 @@
   padding: 0 2%;
   background: $filterBgGradient;
   border: $borderSecondColor;
+  @include media(tablet) {
+    background: $filterBgGradientBreak;
+  }
+  @include media(mobile) {
+    text-align: center;
+    margin: 10px 0;
+  }
   legend {
     @include text($thirdFont, italic, normal, 5.5em, left, $mainDarkColor);
+    @include media(ajust) {
+      font-size: 35px;
+    }
+    @include media(tablet) {
+      font-size: 4em;
+    }
   }
 }
 
@@ -15,6 +28,19 @@
   position: sticky;
   height: auto;
   @include d-flex(start, stretch, column, nowrap);
+  @include media(tablet) {
+    @include d-flex(space-around, stretch, row, nowrap);
+  }
+  div {
+    label {
+      @include media(ajust) {
+        font-size: 20px;
+      }
+      @include media(mobile) {
+        font-size: 20px;
+      }
+    }
+  }
 }
 
 .filterChecks {
@@ -36,20 +62,43 @@
     text-shadow: $textShadows;
   }
 }
-
+.filterButtons {
+  .switchBox-prueba {
+    label {
+      @include media(mobile) {
+        font-size: 1.2em;
+      }
+    }
+  }
+}
 .switchBox-prueba {
   @include size(80%, 50px);
   @include box($secondaryBtnColor, none, 5px);
   @include d-flex(start, center, row, nowrap);
   padding-left: 65px;
+  @include media(ajust) {
+    width: 95%;
+  }
+  @include media(tablet) {
+    width: 100%;
+  }
+  @include media(mobile) {
+    width: 95%;
+  }
   input {
     height: 25px;
     font-size: 2em;
     cursor: pointer;
+    @include media(ajust) {
+      font-size: 25px;
+    }
   }
   label {
     @include text($thirdFont, normal, normal, 2em, left, $mainTextColor);
     cursor: pointer;
+    @include media(mobile) {
+      font-size: 1.2em;
+    }
   }
 }
 
@@ -57,8 +106,24 @@
   @include box($secondaryBtnColor, none, 5px);
   @include size(80%, 50px);
   @include d-flex(start, center, row, nowrap);
+  @include media(ajust) {
+    width: 95%;
+  }
+  @include media(tablet) {
+    width: 100%;
+  }
+  @include media(mobile) {
+    width: 95%;
+  }
   button {
     @include text($thirdFont, normal, normal, 2em, left, $mainTextColor);
+    @include media(ajust) {
+      font-size: 15px;
+      overflow: hidden;
+    }
+    @include media(mobile) {
+      font-size: 1.2em;
+    }
   }
   ul {
     @include box($mainBgColor, $dividerColor, 0);
@@ -73,6 +138,17 @@
   @include d-flex(start, center, row, nowrap);
   @include text($thirdFont, normal, 500, 2em, left, $mainTextColor);
   padding: auto;
+  @include media(ajust) {
+    width: 95%;
+    font-size: 15px;
+  }
+  @include media(tablet) {
+    width: 100%;
+  }
+  @include media(mobile) {
+    width: 95%;
+    font-size: 1.2em;
+  }
 }
 
 .offcanvasOpen {
@@ -90,6 +166,9 @@
 
 .offcanvasChecks {
   background: $filterBgGradient;
+  @include media(mobile) {
+    text-align: left;
+  }
   div {
     input {
       transform: scale(1.5);
@@ -114,18 +193,41 @@
   @include d-flex(space-around, stretch, row, wrap);
   @include size(100%, auto);
   padding-bottom: 20px;
+  @include media(tablet) {
+    height: 800px;
+    column-gap: 10px;
+    justify-content: center;
+    overflow: auto;
+  }
+  @include media(mobile) {
+    @include d-flex(flex-start, center, column, nowrap);
+    height: 500px;
+    overflow: auto;
+  }
+
   figure {
     @include size(300px, 420px);
     padding: 10px 10px 70px 10px;
     margin: 20px 50px;
-    /*background-color: $mainBgColor;
-    border: $mainBorderColor;
-    border-radius: 5px;*/
     @include box($mainBgColor, $mainBorderColor, 5px);
     @include text($mainFont, normal, bold, 20px, center, $secondTextColor);
+    @include media(tablet) {
+      @include size(235px, 355px);
+      margin: 20px 0;
+      font-size: 15px;
+    }
+    @include media(mobile) {
+      @include size(260px, 380px);
+      margin: 20px 0;
+      font-size: 16px;
+    }
     p {
       background-color: $mainDarkColor;
       @include text($thirdFont, normal, bold, 20px, center, $mainTextColor);
+      @include media(mobile) {
+        margin-top: 5px;
+        font-size: 18px;
+      }
     }
     img {
       @include size(100%, 100%);
