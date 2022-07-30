@@ -1,16 +1,18 @@
-@import "utilities/fonts";
 @import "utilities/variables";
-@import "utilities/mixin";
+@import "utilities/fonts";
+@import "utilities/mixins";
+@import "utilities/maps";
+@import "components/commons";
+@import "utilities/extends";
 
 @import "base/reset";
 
-@import "components/commons";
 @import "components/header";
 @import "components/footer";
+@import "components/animations";
 
 @import "stylepages/styleindex";
 @import "stylepages/stylenosotros";
 @import "stylepages/styleproyectos";
 @import "stylepages/styleproductos";
 @import "stylepages/stylecontacto";
-@import "components/mediaqueries";

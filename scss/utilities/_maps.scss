@@ -1,0 +1,18 @@
+//map
+$greenscale: (
+  "100": solid rgb(0, 255, 127) 5px,
+  "200": solid rgb(0, 250, 154) 5px,
+  "300": solid rgb(144, 238, 144) 5px,
+  "400": solid rgb(152, 251, 152) 5px,
+  "500": solid rgb(143, 188, 143) 5px,
+  "600": solid rgb(50, 205, 50) 5px,
+  "700": solid rgb(34, 139, 34) 5px,
+  "800": solid rgb(32, 178, 170) 5px,
+  "900": solid rgb(60, 179, 113) 5px,
+  "1000": solid rgb(46, 139, 87) 5px,
+  "1100": solid rgb(0, 100, 0) 5px,
+);
+//como se utiliza "greenscale"
+/*.mapa-prueba-verde {
+  border: map-get($greenscale, "100");
+}*/

@@ -7,9 +7,10 @@
   text-align: $align;
   color: $color;
 }
-.prueba-text {
-  @include text($mainFont, italic, 50px, bold, center, $mainTextColor);
-}
+//como se utiliza "text"
+/*.llamada-text {
+  @include text('Roboto', italic, bold, 50px, center, black);
+}*/
 
 @mixin d-flex($justify, $align, $dire, $wrap) {
   display: flex;
@@ -18,32 +19,39 @@
   flex-direction: $dire;
   flex-wrap: $wrap;
 }
-.prueba-flex {
+//como se utiliza "d-flex"
+/*.llamada-flex {
   @include d-flex(space-between, center, row, nowrap);
-}
+}*/
 
 @mixin box($backGround, $border, $radius) {
   background-color: $backGround;
   border: $border;
   border-radius: $radius;
 }
-.prueba-box {
+//como se utiliza "box"
+/*.llamada-box {
   @include box(red, $btnBorderColor, none);
-}
+}*/
 
 @mixin boxExtra($backGround, $border, $brColor, $edge, $radius) {
   background-color: $backGround;
   border: $border $brColor $edge;
   border-radius: $radius;
 }
-.prueba-box {
+//como se utiliza "box"
+/*.llamada-boxExtra {
   @include boxExtra(red, solid, blue, 2px, none);
-}
+}*/
 
 @mixin size($width, $height) {
   width: $width;
   height: $height;
 }
+//como se utiliza "size"
+/*.llamada-size{
+   @include size(50px, 50px);
+}*/
 
 @mixin anima(
   $nameAnimation,
@@ -60,10 +68,10 @@
   animation-direction: $direction;
   animation-timing-function: $timing;
 }
-
-.prueba-anima {
+//como se utiliza "size"
+/*.llamada-anima {
   @include anima(changeImg, 20s, infinite, 0, alternate, ease-out);
-}
+}*/
 
 @mixin media($breakpoint) {
   @if $breakpoint == mobile {
@@ -82,8 +90,8 @@
     }
   }
 }
-
-.prueba-break {
+//como se utiliza "size"
+/*.llamada-break {
   @include media(mobile) {
     background-color: violet;
   }
@@ -92,40 +100,11 @@
     width: 50%;
   }
   @include media(ajust) {
-    background-color: #af40f6;
+    font-size: 15px;
   }
-}
-//map
-$greenscale: (
-  "100": solid rgb(0, 255, 127) 5px,
-  "200": solid rgb(0, 250, 154) 5px,
-  "300": solid rgb(144, 238, 144) 5px,
-  "400": solid rgb(152, 251, 152) 5px,
-  "500": solid rgb(143, 188, 143) 5px,
-  "600": solid rgb(50, 205, 50) 5px,
-  "700": solid rgb(34, 139, 34) 5px,
-  "800": solid rgb(32, 178, 170) 5px,
-  "900": solid rgb(60, 179, 113) 5px,
-  "1000": solid rgb(46, 139, 87) 5px,
-  "1100": solid rgb(0, 100, 0) 5px,
-);
-
-.mapa-prueba-verde {
-  border: map-get($greenscale, "100");
-}
-
-//pruebas--------------------------------------------------
-/*
-@mixin d-grid($columns, $rows, $areas ) {
-   display: grid;
-   grid-template-columns: ($columns $columns);
-   grid-template-rows: $rows;
-   grid-template-areas: $areas;
-}
-.prueba-grid{
-   @include d-grid(65% 35%,)
 }*/
 
+//pruebas--------------------------------------------------
 /*
 @mixin shadow() {
   -webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
@@ -136,9 +115,7 @@ div {
   @include shadow();
 }
 */
-/*
-
-$grayscale: (
+/*$grayscale: (
   "100": #eef1f4,
   "200": #dfe3e7,
   "300": #cbcfd2,

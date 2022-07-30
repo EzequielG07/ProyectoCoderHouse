@@ -27,13 +27,4 @@
   }
 }
 
-.titleNews {
-  @extend .titleNeon;
-  margin-top: 5px;
-}
 
-.pageTitle {
-  @extend .titleNeon;
-  text-decoration: underline;
-  font-style: italic;
-}
