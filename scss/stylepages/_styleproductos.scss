@@ -244,6 +244,22 @@
     "productos productos "
     "filter catalogue "
     "filter catalogue ";
+  @include media(tablet) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "productos"
+      "filter"
+      "catalogue";
+  }
+  @include media(mobile) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "productos"
+      "filter"
+      "catalogue";
+  }
 }
 #catalogue {
   grid-area: catalogue;

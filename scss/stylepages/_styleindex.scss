@@ -78,7 +78,7 @@
     @include media(tablet) {
       font-size: 30px;
     }
-      @include media(mobile) {
+    @include media(mobile) {
       font-size: 20px;
     }
   }
@@ -91,9 +91,6 @@
   @include size(100%, auto);
 }
 
-.titleNews {
-  margin-top: 5px;
-}
 .gallery {
   @include d-flex(space-around, stretch, row, nowrap);
   margin: 20px 0;
@@ -127,7 +124,7 @@
   @include media(tablet) {
     width: 34rem;
   }
-   @include media(mobile) {
+  @include media(mobile) {
     width: 25rem;
   }
   a {
@@ -144,6 +141,22 @@
   grid-template-areas:
     "videos map"
     "news news";
+  @include media(tablet) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "videos"
+      "map"
+      "news";
+  }
+    @include media(mobile) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "videos"
+      "map"
+      "news";
+  }
 }
 
 #videos {

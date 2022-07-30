@@ -22,6 +22,11 @@
   border: solid #8f8f8f 1px;
   border-radius: none; }
 
+.prueba-box {
+  background-color: red;
+  border: solid blue 2px;
+  border-radius: none; }
+
 .prueba-anima {
   animation-name: changeImg;
   animation-duration: 20s;
@@ -29,37 +34,6 @@
   animation-delay: 0;
   animation-direction: alternate;
   animation-timing-function: ease-out; }
-
-/*
-@mixin shadow() {
-  -webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
-  box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
-}
-div {
-  @include shadow();
-}
-
-@mixin d-grid($columns, $rows, $areas ) {
-   display: grid;
-   grid-template-columns: ($columns $columns);
-   grid-template-rows: $rows;
-   grid-template-areas: $areas;
-}
-.prueba-grid{
-   @include d-grid(65% 35%,)
-}*/
-.prueba-box {
-  background-color: red;
-  border: solid blue 2px;
-  border-radius: none; }
-
-/* map */
-.mapa-prueba {
-  background-color: #b3b6b9; }
-
-.mapa-prueba-verde {
-  border: solid springgreen 5px; }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .prueba-break {
@@ -74,6 +48,46 @@ div {
   .prueba-break {
     background-color: #af40f6; } }
 
+.mapa-prueba-verde {
+  border: solid springgreen 5px; }
+
+/*
+@mixin d-grid($columns, $rows, $areas ) {
+   display: grid;
+   grid-template-columns: ($columns $columns);
+   grid-template-rows: $rows;
+   grid-template-areas: $areas;
+}
+.prueba-grid{
+   @include d-grid(65% 35%,)
+}*/
+/*
+@mixin shadow() {
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+}
+div {
+  @include shadow();
+}
+*/
+/*
+
+$grayscale: (
+  "100": #eef1f4,
+  "200": #dfe3e7,
+  "300": #cbcfd2,
+  "400": #b3b6b9,
+  "500": #9ca0a3,
+  "600": #7c7f82,
+  "700": #606365,
+  "800": #4a4c4f,
+  "900": #333536,
+);
+
+.mapa-prueba {
+  background-color: map-get($grayscale, "400");
+}*/
 * {
   margin: 0;
   padding: 0;
@@ -114,7 +128,7 @@ body {
     transition-duration: 0.4s;
     cursor: pointer; }
 
-.titleNeon, .pageTitle {
+.titleNeon, .titleNews, .pageTitle {
   font-family: "Fredoka One", cursive;
   font-style: normal;
   font-weight: normal;
@@ -123,11 +137,14 @@ body {
   color: #043e39;
   text-shadow: 0 0 0.4em #5cfe47; }
   @media (max-width: 768px) {
-    .titleNeon, .pageTitle {
+    .titleNeon, .titleNews, .pageTitle {
       font-size: 60px; } }
   @media (min-width: 320px) and (max-width: 480px) {
-    .titleNeon, .pageTitle {
+    .titleNeon, .titleNews, .pageTitle {
       font-size: 50px; } }
+
+.titleNews {
+  margin-top: 5px; }
 
 .pageTitle {
   text-decoration: underline;
@@ -481,9 +498,6 @@ header {
   width: 100%;
   height: auto; }
 
-.titleNews {
-  margin-top: 5px; }
-
 .gallery {
   display: flex;
   justify-content: space-around;
@@ -536,6 +550,16 @@ header {
   grid-template-columns: 65% 35%;
   grid-template-rows: repeat(2, auto);
   grid-template-areas: "videos map" "news news"; }
+  @media (max-width: 768px) {
+    .contenedor {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas: "videos" "map" "news"; } }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .contenedor {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas: "videos" "map" "news"; } }
 
 #videos {
   grid-area: videos; }
@@ -1025,6 +1049,16 @@ header {
   grid-template-columns: 1fr 4fr;
   grid-template-rows: repeat(3, auto);
   grid-template-areas: "productos productos " "filter catalogue " "filter catalogue "; }
+  @media (max-width: 768px) {
+    .contenedorProductos {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas: "productos" "filter" "catalogue"; } }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .contenedorProductos {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas: "productos" "filter" "catalogue"; } }
 
 #catalogue {
   grid-area: catalogue; }
