@@ -52,6 +52,7 @@
       "map"
       "news";
   }
+  /*
   header {
     .containerLogo {
       flex-direction: column;
@@ -83,7 +84,7 @@
     }
   }
   .videoExample {
-    video {
+   video {
       width: 65%;
     }
     h5 {
@@ -105,8 +106,8 @@
   }
   .gallery {
     flex-direction: column;
-    row-gap: 20px;
     align-items: center;
+    row-gap: 20px;
     padding: 20px 0;
     p {
       margin: 0;
@@ -126,7 +127,7 @@
     .contactFooter {
       margin: 10px 0;
     }
-  }
+  }*/
 
   /*----------------- NOSOTROS TABLET----------------- */
   .sectionUs {
@@ -227,7 +228,7 @@
       "videos"
       "map"
       "news";
-  }
+  } /*
   .containerLogo {
     align-items: center;
   }
@@ -291,7 +292,7 @@
   }
   .cardNews {
     width: 25rem;
-  }
+  }*/
 
   /*----------------- NOSOTROS MOBILE----------------- */
   .sectionUs {

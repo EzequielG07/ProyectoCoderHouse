@@ -8,6 +8,12 @@
   p {
     margin-top: 20px;
     @include text($mainFont, italic, bold, x-large, center, $secondTextColor);
+    @include media(tablet) {
+      font-size: 25px;
+    }
+    @include media(mobile) {
+      font-size: 15px;
+    }
   }
 }
 
@@ -16,15 +22,33 @@
     @include size(100%, 500px);
     @include box($videoBgColor, $mainBorderColor, 3px);
     transition: transform 0.5s;
+    @include media(tablet) {
+      width: 65%;
+    }
+    @include media(mobile) {
+      width: 100%;
+    }
   }
   h5 {
     @include text($titleFont, normal, normal, large, center, $mainTextColor);
     text-shadow: $textShadows;
+    @include media(tablet) {
+      font-size: medium;
+    }
+    @include media(mobile) {
+      font-size: small;
+    }
   }
   p {
     margin: 0;
     @include text($mainFont, normal, 500, medium, center, $mainTextColor);
     text-shadow: $textShadows;
+    @include media(tablet) {
+      font-size: small;
+    }
+    @include media(tablet) {
+      font-size: xx-small;
+    }
   }
 }
 /* fin seccion videos */
@@ -33,15 +57,30 @@
 .sectionMap {
   @include d-flex(center, center, row, nowrap);
   @include size(100%, auto);
+  @include media(tablet) {
+    margin: 30px 0;
+  }
   div {
     @include size(500px, 500px);
     @include box($mapBgColor, $secondaryBorderColor, 3px);
     overflow: hidden;
+    @include media(tablet) {
+      @include size(480px, 480px);
+    }
+    @include media(mobile) {
+      @include size(320px, 320px);
+    }
   }
   h2 {
     margin-bottom: 20px;
     font-size: xx-large;
     text-decoration: underline;
+    @include media(tablet) {
+      font-size: 30px;
+    }
+      @include media(mobile) {
+      font-size: 20px;
+    }
   }
 }
 /* fin lado mapa */
@@ -58,11 +97,39 @@
 .gallery {
   @include d-flex(space-around, stretch, row, nowrap);
   margin: 20px 0;
+  @include media(tablet) {
+    @include d-flex(space-around, center, column, nowrap);
+    row-gap: 20px;
+    padding: 20px 0;
+  }
+  p {
+    @include media(tablet) {
+      margin: 0;
+      font-size: 20px;
+      text-align: center;
+    }
+    @include media(mobile) {
+      font-size: 15px;
+    }
+  }
 }
 .cardNews {
   width: 22rem;
   @include box($mainBgColor, $secondaryBorderColor, 0);
-  @include text($secondaryFont, normal, normal, 1.5em, justify, $secondTextColor);
+  @include text(
+    $secondaryFont,
+    normal,
+    normal,
+    1.5em,
+    justify,
+    $secondTextColor
+  );
+  @include media(tablet) {
+    width: 34rem;
+  }
+   @include media(mobile) {
+    width: 25rem;
+  }
   a {
     background-color: $secondaryBtnColor;
     color: $mainTextColor;

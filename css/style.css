@@ -61,6 +61,19 @@ div {
 .mapa-prueba-verde {
   border: solid springgreen 5px; }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .prueba-break {
+    background-color: violet; } }
+
+@media (max-width: 768px) {
+  .prueba-break {
+    background-color: deeppink;
+    width: 50%; } }
+
+@media (min-width: 768px) and (max-width: 1450px) {
+  .prueba-break {
+    background-color: #af40f6; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -109,6 +122,12 @@ body {
   text-align: center;
   color: #043e39;
   text-shadow: 0 0 0.4em #5cfe47; }
+  @media (max-width: 768px) {
+    .titleNeon, .pageTitle {
+      font-size: 60px; } }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .titleNeon, .pageTitle {
+      font-size: 50px; } }
 
 .pageTitle {
   text-decoration: underline;
@@ -126,12 +145,24 @@ header {
 .containerLogo {
   display: flex;
   justify-content: space-around; }
+  @media (max-width: 768px) {
+    .containerLogo {
+      flex-direction: column;
+      justify-content: space-evenly; } }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .containerLogo {
+      align-items: center; } }
 
 .headerLogo {
   width: 300px;
   height: 300px;
   border-radius: 100%;
   margin: 25px 0; }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .headerLogo {
+      width: 250px;
+      height: 250px;
+      margin: 30px 0; } }
   .headerLogo:hover {
     transform: rotatez(360deg);
     cursor: pointer;
@@ -152,6 +183,13 @@ header {
   align-self: flex-end;
   padding: 0 12px;
   margin-bottom: 50px; }
+  @media (max-width: 768px) {
+    .searchBox {
+      align-self: center;
+      margin: 0 0 10px 0; } }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .searchBox {
+      width: 320px; } }
 
 .inputSearch {
   width: 260px;
@@ -164,6 +202,9 @@ header {
   color: black;
   padding: 0 5px;
   background-color: rgba(255, 255, 255, 0.713); }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .inputSearch {
+      width: 70%; } }
 
 /* fin buscador */
 /* inico menu */
@@ -175,7 +216,12 @@ header {
   border-bottom: solid white 2px;
   list-style: none;
   text-align: center; }
-  .containerMenu li {
+  @media (max-width: 768px) {
+    .containerMenu ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
+  .containerMenu ul li {
     margin: 0px 70px;
     background-color: #29777d;
     font-family: "Ubuntu", sans-serif;
@@ -184,9 +230,13 @@ header {
     font-size: 30px;
     text-align: center;
     color: white; }
-    .containerMenu li a {
+    @media (min-width: 320px) and (max-width: 480px) {
+      .containerMenu ul li {
+        margin: 0;
+        font-size: 25px; } }
+    .containerMenu ul li a {
       text-decoration: none; }
-    .containerMenu li:hover {
+    .containerMenu ul li:hover {
       text-decoration: underline;
       border-radius: 10px;
       transform: scale(1.2);
@@ -214,6 +264,12 @@ header {
   .slider img {
     width: 100%;
     height: 500px; }
+    @media (max-width: 768px) {
+      .slider img {
+        height: 300px; } }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .slider img {
+        height: 230px; } }
 
 /*fin de slider*/
 /* inicio pie de pagina */
@@ -228,10 +284,20 @@ header {
   padding-top: 15px;
   border-top: solid white 2px;
   background-color: rgba(4, 62, 57, 0.531); }
+  @media (max-width: 768px) {
+    .footArea {
+      height: auto; } }
 
 .footData {
   display: flex;
   justify-content: space-around; }
+  @media (max-width: 768px) {
+    .footData {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: nowrap; } }
   .footData div h4 {
     width: 100%;
     margin-bottom: 5px;
@@ -260,6 +326,9 @@ header {
     width: 250px;
     height: auto;
     padding: 0 2px; }
+    @media (max-width: 768px) {
+      .footData .contactFooter {
+        margin: 10px 0; } }
     .footData .contactFooter li {
       font-family: "Quantico", sans-serif;
       font-style: normal;
@@ -307,6 +376,12 @@ header {
     font-size: x-large;
     text-align: center;
     color: black; }
+    @media (max-width: 768px) {
+      .sectionVideo p {
+        font-size: 25px; } }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .sectionVideo p {
+        font-size: 15px; } }
 
 .videoExample video {
   width: 100%;
@@ -315,6 +390,12 @@ header {
   border: solid #043e39 5px;
   border-radius: 3px;
   transition: transform 0.5s; }
+  @media (max-width: 768px) {
+    .videoExample video {
+      width: 65%; } }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .videoExample video {
+      width: 100%; } }
 
 .videoExample h5 {
   font-family: "Fredoka One", cursive;
@@ -324,6 +405,12 @@ header {
   text-align: center;
   color: white;
   text-shadow: 2px 2px 2px #5e5e5e; }
+  @media (max-width: 768px) {
+    .videoExample h5 {
+      font-size: medium; } }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .videoExample h5 {
+      font-size: small; } }
 
 .videoExample p {
   margin: 0;
@@ -334,6 +421,12 @@ header {
   text-align: center;
   color: white;
   text-shadow: 2px 2px 2px #5e5e5e; }
+  @media (max-width: 768px) {
+    .videoExample p {
+      font-size: small; } }
+  @media (max-width: 768px) {
+    .videoExample p {
+      font-size: xx-small; } }
 
 /* fin seccion videos */
 /* inicio lado mapa */
@@ -345,6 +438,9 @@ header {
   flex-wrap: nowrap;
   width: 100%;
   height: auto; }
+  @media (max-width: 768px) {
+    .sectionMap {
+      margin: 30px 0; } }
   .sectionMap div {
     width: 500px;
     height: 500px;
@@ -352,10 +448,24 @@ header {
     border: solid #105459 2px;
     border-radius: 3px;
     overflow: hidden; }
+    @media (max-width: 768px) {
+      .sectionMap div {
+        width: 480px;
+        height: 480px; } }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .sectionMap div {
+        width: 320px;
+        height: 320px; } }
   .sectionMap h2 {
     margin-bottom: 20px;
     font-size: xx-large;
     text-decoration: underline; }
+    @media (max-width: 768px) {
+      .sectionMap h2 {
+        font-size: 30px; } }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .sectionMap h2 {
+        font-size: 20px; } }
 
 /* fin lado mapa */
 /* inicio nuevos ingresos */
@@ -378,6 +488,23 @@ header {
   flex-direction: row;
   flex-wrap: nowrap;
   margin: 20px 0; }
+  @media (max-width: 768px) {
+    .gallery {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      row-gap: 20px;
+      padding: 20px 0; } }
+  @media (max-width: 768px) {
+    .gallery p {
+      margin: 0;
+      font-size: 20px;
+      text-align: center; } }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .gallery p {
+      font-size: 15px; } }
 
 .cardNews {
   width: 22rem;
@@ -390,6 +517,12 @@ header {
   font-size: 1.5em;
   text-align: justify;
   color: black; }
+  @media (max-width: 768px) {
+    .cardNews {
+      width: 34rem; } }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .cardNews {
+      width: 25rem; } }
   .cardNews a {
     background-color: #105459;
     color: white; }
@@ -867,53 +1000,82 @@ header {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "videos" "map" "news"; }
-  header .containerLogo {
-    flex-direction: column;
-    justify-content: space-evenly; }
+  /*
+  header {
+    .containerLogo {
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+  }
   .searchBox {
     align-self: center;
-    margin: 0 0 10px 0; }
-  .containerMenu ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .slider img {
-    height: 300px; }
-  .titleNeon, .pageTitle {
-    font-size: 60px; }
-  .sectionVideo p {
-    font-size: 25px; }
-  .videoExample video {
-    width: 65%; }
-  .videoExample h5 {
-    font-size: medium; }
-  .videoExample p {
-    font-size: small; }
+    margin: 0 0 10px 0;
+  }
+  .containerMenu {
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .slider {
+    img {
+      height: 300px;
+    }
+  }
+  .titleNeon {
+    font-size: 60px;
+  }
+  .sectionVideo {
+    p {
+      font-size: 25px;
+    }
+  }
+  .videoExample {
+   video {
+      width: 65%;
+    }
+    h5 {
+      font-size: medium;
+    }
+    p {
+      font-size: small;
+    }
+  }
   .sectionMap {
-    margin: 30px 0; }
-    .sectionMap div {
+    margin: 30px 0;
+    div {
       width: 480px;
-      height: 480px; }
-    .sectionMap h2 {
-      font-size: 30px; }
+      height: 480px;
+    }
+    h2 {
+      font-size: 30px;
+    }
+  }
   .gallery {
     flex-direction: column;
-    row-gap: 20px;
     align-items: center;
-    padding: 20px 0; }
-    .gallery p {
+    row-gap: 20px;
+    padding: 20px 0;
+    p {
       margin: 0;
       font-size: 20px;
-      text-align: center; }
+      text-align: center;
+    }
+  }
   .cardNews {
-    width: 34rem; }
+    width: 34rem;
+  }
   .footArea {
-    height: auto; }
+    height: auto;
+  }
   .footData {
     flex-direction: column;
-    align-items: center; }
-    .footData .contactFooter {
-      margin: 10px 0; }
+    align-items: center;
+    .contactFooter {
+      margin: 10px 0;
+    }
+  }*/
   /*----------------- NOSOTROS TABLET----------------- */
   .sectionUs button {
     font-size: 30px; }
@@ -971,42 +1133,71 @@ header {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "videos" "map" "news"; }
+  /*
   .containerLogo {
-    align-items: center; }
+    align-items: center;
+  }
   .headerLogo {
     width: 250px;
     height: 250px;
-    margin: 30px 0; }
+    margin: 30px 0;
+  }
   .searchBox {
-    width: 320px; }
-  .inputSearch {
-    width: 70%; }
-  button {
-    width: 30%; }
-  .containerMenu li {
-    margin: 0;
-    font-size: 25px; }
-  .slider img {
-    height: 230px; }
-  .titleNeon, .pageTitle {
-    font-size: 50px; }
-  .sectionVideo p {
-    font-size: 15px; }
-  .videoExample video {
-    width: 100%; }
-  .videoExample h5 {
-    font-size: small; }
-  .videoExample p {
-    font-size: xx-small; }
-  .sectionMap div {
     width: 320px;
-    height: 320px; }
-  .sectionMap h2 {
-    font-size: 20px; }
-  .gallery p {
-    font-size: 15px; }
+  }
+  .inputSearch {
+    width: 70%;
+  }
+  button {
+    width: 30%;
+  }
+  .containerMenu {
+    li {
+      margin: 0;
+      font-size: 25px;
+    }
+  }
+  .slider {
+    img {
+      height: 230px;
+    }
+  }
+  .titleNeon {
+    font-size: 50px;
+  }
+  .sectionVideo {
+    p {
+      font-size: 15px;
+    }
+  }
+  .videoExample {
+    video {
+      width: 100%;
+    }
+    h5 {
+      font-size: small;
+    }
+    p {
+      font-size: xx-small;
+    }
+  }
+  .sectionMap {
+    div {
+      width: 320px;
+      height: 320px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+  }
+  .gallery {
+    p {
+      font-size: 15px;
+    }
+  }
   .cardNews {
-    width: 25rem; }
+    width: 25rem;
+  }*/
   /*----------------- NOSOTROS MOBILE----------------- */
   .sectionUs button {
     font-size: 20px; }

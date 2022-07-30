@@ -5,10 +5,16 @@
   padding-top: 15px;
   border-top: $dividerColor;
   background-color: $footerBgColor;
+  @include media(tablet) {
+    height: auto;
+  }
 }
 .footData {
   display: flex;
   justify-content: space-around;
+  @include media(tablet) {
+    @include d-flex(space-around, center, column, nowrap);
+  }
   div {
     h4 {
       width: 100%;
@@ -31,6 +37,9 @@
   .contactFooter {
     @include size(250px, auto);
     padding: 0 2px;
+    @include media(tablet) {
+      margin: 10px 0;
+    }
     li {
       @include text($footFont, normal, normal, 20px, left, $footerTextColor);
     }

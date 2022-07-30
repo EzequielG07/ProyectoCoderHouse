@@ -118,3 +118,34 @@ $greenscale: (
 .mapa-prueba-verde {
   border: map-get($greenscale, "100");
 }
+
+@mixin media($breakpoint){
+	@if $breakpoint == mobile{
+		@media (min-width: 320px) and (max-width: 480px){
+			@content;
+		}
+	}
+	@if $breakpoint == tablet{
+		@media (max-width: 768px){
+			@content;
+		}
+	}
+	@if $breakpoint == ajust{
+		@media (min-width: 768px) and (max-width: 1450px){
+			@content;
+		}
+	}
+}
+
+.prueba-break{
+	@include media(mobile){
+		background-color:violet;
+	}
+	@include media(tablet){
+		background-color:deeppink;
+      width: 50%;
+	}
+	@include media(ajust){
+		background-color: #af40f6;
+	}
+}

@@ -19,6 +19,12 @@
 .titleNeon {
   @include text($titleFont, normal, normal, 80px, center, $mainTitlesColor);
   text-shadow: $neonEffect;
+  @include media(tablet) {
+    font-size: 60px;
+  }
+  @include media(mobile) {
+    font-size: 50px;
+  }
 }
 
 .pageTitle {
