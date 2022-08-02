@@ -6,7 +6,7 @@
   p {
     height: 350px;
     @include box($textBgProyect, $mainBorderColor, 5px);
-    @include text($thirdFont, normal, normal, 50px, left, $secondTextColor);
+    @include text($thirdFont, normal, normal, 45px, left, $secondTextColor);
     overflow: auto;
     @include media(tablet) {
       font-size: 35px;

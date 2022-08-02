@@ -219,7 +219,7 @@ header {
     font-size: 30px;
     text-align: center;
     color: white; }
-    @media (min-width: 769px) and (max-width: 1450px) {
+    @media (min-width: 769px) and (max-width: 1300px) {
       .containerMenu ul li {
         margin: 0 10px; } }
     @media (min-width: 320px) and (max-width: 480px) {
@@ -654,7 +654,7 @@ header {
   flex-wrap: nowrap;
   width: 100%;
   margin-bottom: 10px; }
-  @media (min-width: 769px) and (max-width: 1450px) {
+  @media (min-width: 769px) and (max-width: 1300px) {
     .teamContainer {
       display: flex;
       justify-content: space-around;
@@ -697,6 +697,9 @@ header {
     font-size: 20px;
     text-align: justify;
     color: white; }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .profileCard p {
+        font-size: 18px; } }
 
 /* fin seccion team */
 .contenedorNosotros {
@@ -725,7 +728,7 @@ header {
     font-family: "Ubuntu", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 50px;
+    font-size: 45px;
     text-align: left;
     color: black;
     overflow: auto; }
@@ -788,7 +791,7 @@ header {
     font-size: 5.5em;
     text-align: left;
     color: #00383c; }
-    @media (min-width: 769px) and (max-width: 1450px) {
+    @media (min-width: 769px) and (max-width: 1300px) {
       .filterArea legend {
         font-size: 35px; } }
     @media (max-width: 768px) {
@@ -811,7 +814,7 @@ header {
       align-items: stretch;
       flex-direction: row;
       flex-wrap: nowrap; } }
-  @media (min-width: 769px) and (max-width: 1450px) {
+  @media (min-width: 769px) and (max-width: 1300px) {
     .filterContainer div label {
       font-size: 20px; } }
   @media (min-width: 320px) and (max-width: 480px) {
@@ -860,7 +863,7 @@ header {
   flex-direction: row;
   flex-wrap: nowrap;
   padding-left: 65px; }
-  @media (min-width: 769px) and (max-width: 1450px) {
+  @media (min-width: 769px) and (max-width: 1300px) {
     .switchBox-prueba {
       width: 95%; } }
   @media (max-width: 768px) {
@@ -873,7 +876,7 @@ header {
     height: 25px;
     font-size: 2em;
     cursor: pointer; }
-    @media (min-width: 769px) and (max-width: 1450px) {
+    @media (min-width: 769px) and (max-width: 1300px) {
       .switchBox-prueba input {
         font-size: 25px; } }
   .switchBox-prueba label {
@@ -899,7 +902,7 @@ header {
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap; }
-  @media (min-width: 769px) and (max-width: 1450px) {
+  @media (min-width: 769px) and (max-width: 1300px) {
     .drop-prueba {
       width: 95%; } }
   @media (max-width: 768px) {
@@ -915,7 +918,7 @@ header {
     font-size: 2em;
     text-align: left;
     color: white; }
-    @media (min-width: 769px) and (max-width: 1450px) {
+    @media (min-width: 769px) and (max-width: 1300px) {
       .drop-prueba button {
         font-size: 15px;
         overflow: hidden; } }
@@ -952,7 +955,7 @@ header {
   text-align: left;
   color: white;
   padding: auto; }
-  @media (min-width: 769px) and (max-width: 1450px) {
+  @media (min-width: 769px) and (max-width: 1300px) {
     .offcanvasButtonLink {
       width: 95%;
       font-size: 15px; } }

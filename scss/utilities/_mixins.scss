@@ -85,7 +85,7 @@
     }
   }
   @if $breakpoint == ajust {
-    @media (min-width: 769px) and (max-width: 1450px) {
+    @media (min-width: 769px) and (max-width: 1300px) {
       @content;
     }
   }
