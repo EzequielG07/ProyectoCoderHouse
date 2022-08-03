@@ -39,7 +39,7 @@
   border: $border $brColor $edge;
   border-radius: $radius;
 }
-//como se utiliza "box"
+//como se utiliza "boxExtra"
 /*.llamada-boxExtra {
   @include boxExtra(red, solid, blue, 2px, none);
 }*/
@@ -68,7 +68,7 @@
   animation-direction: $direction;
   animation-timing-function: $timing;
 }
-//como se utiliza "size"
+//como se utiliza "anima"
 /*.llamada-anima {
   @include anima(changeImg, 20s, infinite, 0, alternate, ease-out);
 }*/
@@ -90,7 +90,7 @@
     }
   }
 }
-//como se utiliza "size"
+//como se utiliza "media"
 /*.llamada-break {
   @include media(mobile) {
     background-color: violet;
@@ -104,29 +104,4 @@
   }
 }*/
 
-//pruebas--------------------------------------------------
-/*
-@mixin shadow() {
-  -webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
-  box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
-}
-div {
-  @include shadow();
-}
-*/
-/*$grayscale: (
-  "100": #eef1f4,
-  "200": #dfe3e7,
-  "300": #cbcfd2,
-  "400": #b3b6b9,
-  "500": #9ca0a3,
-  "600": #7c7f82,
-  "700": #606365,
-  "800": #4a4c4f,
-  "900": #333536,
-);
 
-.mapa-prueba {
-  background-color: map-get($grayscale, "400");
-}*/

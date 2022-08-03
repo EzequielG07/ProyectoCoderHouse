@@ -6,6 +6,9 @@
 
 .pageTitle {
   @extend .titleNeon;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-size: 50px;
   text-decoration: underline;
   font-style: italic;
 }

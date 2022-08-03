@@ -32,31 +32,6 @@
     font-size: 15px;
   }
 }*/
-/*
-@mixin shadow() {
-  -webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
-  box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
-}
-div {
-  @include shadow();
-}
-*/
-/*$grayscale: (
-  "100": #eef1f4,
-  "200": #dfe3e7,
-  "300": #cbcfd2,
-  "400": #b3b6b9,
-  "500": #9ca0a3,
-  "600": #7c7f82,
-  "700": #606365,
-  "800": #4a4c4f,
-  "900": #333536,
-);
-
-.mapa-prueba {
-  background-color: map-get($grayscale, "400");
-}*/
 /*.mapa-prueba-verde {
   border: map-get($greenscale, "100");
 }*/
@@ -105,6 +80,9 @@ div {
   margin-top: 5px; }
 
 .pageTitle {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-size: 50px;
   text-decoration: underline;
   font-style: italic; }
 
@@ -412,14 +390,14 @@ header {
   border: none;
   border-radius: 5px;
   padding: 10px 20px; }
-  .sectionQuality h2 {
+  .sectionQuality h1 {
     font-size: xx-large;
     text-decoration: underline; }
     @media (max-width: 768px) {
-      .sectionQuality h2 {
+      .sectionQuality h1 {
         font-size: 30px; } }
     @media (min-width: 320px) and (max-width: 480px) {
-      .sectionQuality h2 {
+      .sectionQuality h1 {
         font-size: 20px; } }
   .sectionQuality .features {
     display: flex;
