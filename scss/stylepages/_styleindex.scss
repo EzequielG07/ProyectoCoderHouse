@@ -101,10 +101,10 @@
   @include d-flex(space-between, stretch, column, nowrap);
   @include size(100%, auto);
   @include box($videoBgColor, none, 5px);
-  padding: 0 20px;
+  padding: 10px 20px;
   p {
     margin-top: 20px;
-    @include text($mainFont, italic, bold, x-large, center, $secondTextColor);
+    @include text($mainFont, italic, bold, xx-large, center, $secondTextColor);
     @include media(tablet) {
       font-size: 25px;
     }
@@ -116,7 +116,7 @@
 
 .videoExample {
   video {
-    @include size(100%, 500px);
+    @include size(100%, 600px);
     @include box($videoBgColor, $mainBorderColor, 3px);
     transition: transform 0.5s;
     @include media(tablet) {
@@ -127,24 +127,24 @@
     }
   }
   h5 {
-    @include text($titleFont, normal, normal, large, center, $mainTextColor);
+    @include text($titleFont, normal, normal, x-large, center, $mainTextColor);
     text-shadow: $textShadows;
     @include media(tablet) {
-      font-size: medium;
+      font-size: large;
     }
     @include media(mobile) {
-      font-size: small;
+      font-size: medium;
     }
   }
   p {
     margin: 0;
-    @include text($mainFont, normal, 500, medium, center, $mainTextColor);
+    @include text($mainFont, normal, 500, large, center, $mainTextColor);
     text-shadow: $textShadows;
     @include media(tablet) {
-      font-size: small;
+      font-size: medium;
     }
     @include media(tablet) {
-      font-size: xx-small;
+      font-size: small;
     }
   }
 }

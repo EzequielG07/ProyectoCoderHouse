@@ -514,13 +514,13 @@ header {
   background-color: rgba(184, 248, 248, 0.323);
   border: none;
   border-radius: 5px;
-  padding: 0 20px; }
+  padding: 10px 20px; }
   .sectionVideo p {
     margin-top: 20px;
     font-family: "Roboto", sans-serif;
     font-style: italic;
     font-weight: bold;
-    font-size: x-large;
+    font-size: xx-large;
     text-align: center;
     color: black; }
     @media (max-width: 768px) {
@@ -532,7 +532,7 @@ header {
 
 .videoExample video {
   width: 100%;
-  height: 500px;
+  height: 600px;
   background-color: rgba(184, 248, 248, 0.323);
   border: solid #043e39 5px;
   border-radius: 3px;
@@ -548,32 +548,32 @@ header {
   font-family: "Fredoka One", cursive;
   font-style: normal;
   font-weight: normal;
-  font-size: large;
+  font-size: x-large;
   text-align: center;
   color: white;
   text-shadow: 2px 2px 2px #5e5e5e; }
   @media (max-width: 768px) {
     .videoExample h5 {
-      font-size: medium; } }
+      font-size: large; } }
   @media (min-width: 320px) and (max-width: 480px) {
     .videoExample h5 {
-      font-size: small; } }
+      font-size: medium; } }
 
 .videoExample p {
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: medium;
+  font-size: large;
   text-align: center;
   color: white;
   text-shadow: 2px 2px 2px #5e5e5e; }
   @media (max-width: 768px) {
     .videoExample p {
-      font-size: small; } }
+      font-size: medium; } }
   @media (max-width: 768px) {
     .videoExample p {
-      font-size: xx-small; } }
+      font-size: small; } }
 
 /* fin seccion videos */
 /* inicio nuevos ingresos */
