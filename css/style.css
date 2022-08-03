@@ -86,7 +86,7 @@ div {
     transition-duration: 0.4s;
     cursor: pointer; }
 
-.titleNeon, .titleNews, .pageTitle {
+.titleNeon, .titleNews, .pageTitle, .titleQuality {
   font-family: "Fredoka One", cursive;
   font-style: normal;
   font-weight: normal;
@@ -95,10 +95,10 @@ div {
   color: #043e39;
   text-shadow: 0 0 0.4em #5cfe47; }
   @media (max-width: 768px) {
-    .titleNeon, .titleNews, .pageTitle {
+    .titleNeon, .titleNews, .pageTitle, .titleQuality {
       font-size: 60px; } }
   @media (min-width: 320px) and (max-width: 480px) {
-    .titleNeon, .titleNews, .pageTitle {
+    .titleNeon, .titleNews, .pageTitle, .titleQuality {
       font-size: 50px; } }
 
 .titleNews {
@@ -107,6 +107,9 @@ div {
 .pageTitle {
   text-decoration: underline;
   font-style: italic; }
+
+.titleQuality {
+  text-shadow: 0 0 0.6em #d1fdff; }
 
 * {
   margin: 0;
@@ -396,6 +399,131 @@ header {
     margin-left: -300%; } }
 
 /*----------------- INDEX----------------- */
+/*inicio seccion calidad*/
+.sectionQuality {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: auto;
+  background-color: rgba(4, 68, 68, 0.617);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px; }
+  .sectionQuality h2 {
+    font-size: xx-large;
+    text-decoration: underline; }
+    @media (max-width: 768px) {
+      .sectionQuality h2 {
+        font-size: 30px; } }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .sectionQuality h2 {
+        font-size: 20px; } }
+  .sectionQuality .features {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 90%;
+    height: auto;
+    margin: 10px 0;
+    gap: 10px; }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .sectionQuality .features {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        padding: 5px 2px;
+        margin: 5px 0;
+        gap: 0; } }
+    .sectionQuality .features figure {
+      width: 50%;
+      height: auto;
+      padding: 5px 10px;
+      text-align: center; }
+      @media (min-width: 320px) and (max-width: 480px) {
+        .sectionQuality .features figure {
+          padding: 5px 2px; } }
+    .sectionQuality .features figcaption {
+      font-family: "Fredoka One", cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 2px #5e5e5e; }
+      @media (min-width: 769px) and (max-width: 1300px) {
+        .sectionQuality .features figcaption {
+          font-size: 25px; } }
+      @media (max-width: 768px) {
+        .sectionQuality .features figcaption {
+          font-size: 25px; } }
+      @media (min-width: 320px) and (max-width: 480px) {
+        .sectionQuality .features figcaption {
+          font-size: 20px; } }
+    .sectionQuality .features p {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 25px;
+      text-align: center;
+      color: white; }
+      @media (min-width: 769px) and (max-width: 1300px) {
+        .sectionQuality .features p {
+          font-size: 20px; } }
+      @media (max-width: 768px) {
+        .sectionQuality .features p {
+          font-size: 20px; } }
+      @media (min-width: 320px) and (max-width: 480px) {
+        .sectionQuality .features p {
+          font-size: 15px; } }
+
+/*fin seccion calidad*/
+/* inicio lado mapa */
+.sectionMap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: auto; }
+  @media (max-width: 768px) {
+    .sectionMap {
+      margin: 30px 0; } }
+  .sectionMap div {
+    width: 500px;
+    height: 500px;
+    background-color: antiquewhite;
+    border: solid #105459 2px;
+    border-radius: 3px;
+    overflow: hidden; }
+    @media (max-width: 768px) {
+      .sectionMap div {
+        width: 480px;
+        height: 480px; } }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .sectionMap div {
+        width: 320px;
+        height: 320px; } }
+  .sectionMap h2 {
+    margin-bottom: 20px;
+    font-size: xx-large;
+    text-decoration: underline; }
+    @media (max-width: 768px) {
+      .sectionMap h2 {
+        font-size: 30px; } }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .sectionMap h2 {
+        font-size: 20px; } }
+
+/* fin lado mapa */
 /* inicio seccion videos */
 .sectionVideo {
   display: flex;
@@ -470,45 +598,6 @@ header {
       font-size: xx-small; } }
 
 /* fin seccion videos */
-/* inicio lado mapa */
-.sectionMap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width: 100%;
-  height: auto; }
-  @media (max-width: 768px) {
-    .sectionMap {
-      margin: 30px 0; } }
-  .sectionMap div {
-    width: 500px;
-    height: 500px;
-    background-color: antiquewhite;
-    border: solid #105459 2px;
-    border-radius: 3px;
-    overflow: hidden; }
-    @media (max-width: 768px) {
-      .sectionMap div {
-        width: 480px;
-        height: 480px; } }
-    @media (min-width: 320px) and (max-width: 480px) {
-      .sectionMap div {
-        width: 320px;
-        height: 320px; } }
-  .sectionMap h2 {
-    margin-bottom: 20px;
-    font-size: xx-large;
-    text-decoration: underline; }
-    @media (max-width: 768px) {
-      .sectionMap h2 {
-        font-size: 30px; } }
-    @media (min-width: 320px) and (max-width: 480px) {
-      .sectionMap h2 {
-        font-size: 20px; } }
-
-/* fin lado mapa */
 /* inicio nuevos ingresos */
 .containerNews {
   display: flex;
@@ -569,18 +658,18 @@ header {
 .contenedor {
   display: grid;
   grid-template-columns: 65% 35%;
-  grid-template-rows: repeat(2, auto);
-  grid-template-areas: "videos map" "news news"; }
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "quality map" "videos videos" "news news"; }
   @media (max-width: 768px) {
     .contenedor {
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, auto);
-      grid-template-areas: "videos" "map" "news"; } }
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas: "quality" "map" "videos" "news"; } }
   @media (min-width: 320px) and (max-width: 480px) {
     .contenedor {
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, auto);
-      grid-template-areas: "videos" "map" "news"; } }
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas: "quality" "map" "videos" "news"; } }
 
 #videos {
   grid-area: videos; }

@@ -9,3 +9,8 @@
   text-decoration: underline;
   font-style: italic;
 }
+
+.titleQuality {
+  @extend .titleNeon;
+  text-shadow: $neonLightEffect;
+}
