@@ -11,6 +11,12 @@
   font-size: 50px;
   text-decoration: underline;
   font-style: italic;
+    @include media(tablet) {
+    font-size: 40px;
+  }
+  @include media(mobile) {
+    font-size: 30px;
+  }
 }
 
 .titleQuality {
