@@ -28,7 +28,7 @@
     margin: 10px 0;
     gap: 10px;
     figure {
-    @include size(50%, auto);
+      @include size(50%, auto);
       padding: 5px 10px;
       text-align: center;
       @include media(mobile) {
@@ -114,20 +114,29 @@
   }
 }
 
+.carouselItem {
+  @include box($mainDarkColor, none, 0);
+
+}
 .videoExample {
-  video {
-    @include size(100%, 600px);
-    @include box($videoBgColor, $mainBorderColor, 3px);
-    transition: transform 0.5s;
-    @include media(tablet) {
-      width: 65%;
-    }
-    @include media(mobile) {
-      width: 100%;
-    }
+  margin-left: 10%;
+  @include size(30%, 500px);
+  @include box($videoBgColor, $mainBorderColor, 3px);
+  transition: transform 0.5s;
+  @include media(tablet) {
+    width: 65%;
   }
+  @include media(mobile) {
+    width: 100%;
+  }
+}
+.carouselText {
+  border: solid greenyellow 1px;
+  left: 60%;
+  bottom: 20%;
+  width: 30%;
   h5 {
-    @include text($titleFont, normal, normal, x-large, center, $mainTextColor);
+    @include text($titleFont, normal, normal, xx-large, center, $mainTextColor);
     text-shadow: $textShadows;
     @include media(tablet) {
       font-size: large;
@@ -137,8 +146,7 @@
     }
   }
   p {
-    margin: 0;
-    @include text($mainFont, normal, 500, large, center, $mainTextColor);
+    @include text($mainFont, normal, 500, xx-large, center, $mainTextColor);
     text-shadow: $textShadows;
     @include media(tablet) {
       font-size: medium;

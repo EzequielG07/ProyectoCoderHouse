@@ -536,50 +536,59 @@ header {
       .sectionVideo p {
         font-size: 15px; } }
 
-.videoExample video {
-  width: 100%;
-  height: 600px;
+.carouselItem {
+  background-color: #00383c;
+  border: none;
+  border-radius: 0; }
+
+.videoExample {
+  margin-left: 10%;
+  width: 30%;
+  height: 500px;
   background-color: rgba(184, 248, 248, 0.323);
   border: solid #043e39 5px;
   border-radius: 3px;
   transition: transform 0.5s; }
   @media (max-width: 768px) {
-    .videoExample video {
+    .videoExample {
       width: 65%; } }
   @media (min-width: 320px) and (max-width: 480px) {
-    .videoExample video {
+    .videoExample {
       width: 100%; } }
 
-.videoExample h5 {
-  font-family: "Fredoka One", cursive;
-  font-style: normal;
-  font-weight: normal;
-  font-size: x-large;
-  text-align: center;
-  color: white;
-  text-shadow: 2px 2px 2px #5e5e5e; }
-  @media (max-width: 768px) {
-    .videoExample h5 {
-      font-size: large; } }
-  @media (min-width: 320px) and (max-width: 480px) {
-    .videoExample h5 {
-      font-size: medium; } }
-
-.videoExample p {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: large;
-  text-align: center;
-  color: white;
-  text-shadow: 2px 2px 2px #5e5e5e; }
-  @media (max-width: 768px) {
-    .videoExample p {
-      font-size: medium; } }
-  @media (max-width: 768px) {
-    .videoExample p {
-      font-size: small; } }
+.carouselText {
+  border: solid greenyellow 1px;
+  left: 60%;
+  bottom: 20%;
+  width: 30%; }
+  .carouselText h5 {
+    font-family: "Fredoka One", cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: xx-large;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px #5e5e5e; }
+    @media (max-width: 768px) {
+      .carouselText h5 {
+        font-size: large; } }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .carouselText h5 {
+        font-size: medium; } }
+  .carouselText p {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: xx-large;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px #5e5e5e; }
+    @media (max-width: 768px) {
+      .carouselText p {
+        font-size: medium; } }
+    @media (max-width: 768px) {
+      .carouselText p {
+        font-size: small; } }
 
 /* fin seccion videos */
 /* inicio nuevos ingresos */
