@@ -1,0 +1,42 @@
+/*----------------- ERROR----------------- */
+
+/* inicio seccion error */
+
+.errorBackground {
+  background: $errorBgEffect
+}
+.errorCard {
+  @include size(auto, auto);
+  @include box(rgba(255, 255, 255, 0), none, 0);
+  text-align: center;
+  img {
+    @include size(100%, 100%);
+  }
+  h5 {
+    @include text($errorFont, italic, normal, 6em, left, $mainTextColor);
+    text-shadow: $textLabelShadows;
+    @include media(ajust) {
+      font-size: 4em;
+    }
+    @include media(tablet) {
+      @include text($errorFont, italic, normal, 3em, center, $mainTextColor);
+    }
+    @include media(mobile) {
+      font-size: 2em;
+    }
+  }
+  p {
+    @include text($errorFont, normal, normal, 4em, left, $mainTextColor);
+    text-shadow: $textLabelShadows;
+    @include media(ajust) {
+      font-size: 3em;
+    }
+    @include media(tablet) {
+      @include text($errorFont, normal, normal, 3em, center, $mainTextColor);
+    }
+    @include media(mobile) {
+      font-size: 1em;
+    }
+  }
+}
+/* fin seccion error */

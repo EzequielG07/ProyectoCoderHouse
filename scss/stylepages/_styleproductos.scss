@@ -13,9 +13,10 @@
     margin: 10px 0;
   }
   legend {
-    @include text($thirdFont, italic, normal, 5.5em, left, $mainDarkColor);
+    @include text($titleFont, italic, normal, 5em, left, $mainTextColor);
+    text-shadow: $textShadows;
     @include media(ajust) {
-      font-size: 35px;
+      font-size: 3em;
     }
     @include media(tablet) {
       font-size: 4em;
@@ -59,7 +60,8 @@
   }
   label {
     @include text($thirdFont, normal, bold, 2em, left, $mainTextColor);
-    text-shadow: $textShadows;
+    text-shadow: $textLabelShadows;
+    margin-left: 5px;
   }
 }
 .filterButtons {
@@ -73,8 +75,9 @@
 }
 .switchBox-prueba {
   @include size(80%, 50px);
-  @include box($secondaryBtnColor, none, 5px);
+  @include box($mainTextColor, none, 5px);
   @include d-flex(start, center, row, nowrap);
+  box-shadow: $boxShadows;
   padding-left: 65px;
   @include media(ajust) {
     width: 95%;
@@ -94,7 +97,7 @@
     }
   }
   label {
-    @include text($thirdFont, normal, normal, 2em, left, $mainTextColor);
+    @include text($thirdFont, normal, normal, 2em, left, $thirdTextColor);
     cursor: pointer;
     @include media(mobile) {
       font-size: 1.2em;
@@ -103,9 +106,10 @@
 }
 
 .drop-prueba {
-  @include box($secondaryBtnColor, none, 5px);
+  @include box($mainTextColor, none, 5px);
   @include size(80%, 50px);
   @include d-flex(start, center, row, nowrap);
+  box-shadow: $boxShadows;
   @include media(ajust) {
     width: 95%;
   }
@@ -116,7 +120,7 @@
     width: 95%;
   }
   button {
-    @include text($thirdFont, normal, normal, 2em, left, $mainTextColor);
+    @include text($thirdFont, normal, normal, 2em, left, $thirdTextColor);
     @include media(ajust) {
       font-size: 15px;
       overflow: hidden;
@@ -133,11 +137,12 @@
 }
 
 .offcanvasButtonLink {
-  @include box($secondaryBtnColor, none, 5px);
+  @include box($mainTextColor, none, 5px);
   @include size(80%, 50px);
   @include d-flex(start, center, row, nowrap);
-  @include text($thirdFont, normal, 500, 2em, left, $mainTextColor);
+  @include text($thirdFont, normal, 500, 2em, left, $thirdTextColor);
   padding: auto;
+  box-shadow: $boxShadows;
   @include media(ajust) {
     width: 95%;
     font-size: 15px;
@@ -156,7 +161,7 @@
 }
 
 .offcanvasName {
-  background-color: $mainDarkColor;
+  background-color: $mainBgColor;
   font-size: 45px;
   h3 {
     font-size: 1em;
@@ -179,7 +184,7 @@
     }
     label {
       @include text(arial, normal, bold, 2em, left, $mainTextColor);
-      text-shadow: $textShadows;
+      text-shadow: $textLabelShadows;
     }
     img {
       vertical-align: bottom;

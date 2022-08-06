@@ -152,6 +152,7 @@
     }
     @include media(tablet) {
       font-size: large;
+      text-shadow: $textShadows;
     }
     @include media(mobile) {
       font-size: small;
@@ -166,11 +167,11 @@
       center,
       $mainTextColor
     );
-    text-shadow: $textShadows;
     @include media(ajust) {
       font-size: large;
     }
     @include media(tablet) {
+      text-shadow: $textShadows;
       font-size: small;
     }
     @include media(mobile) {
