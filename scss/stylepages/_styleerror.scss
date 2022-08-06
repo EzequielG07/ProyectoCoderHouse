@@ -2,8 +2,22 @@
 
 /* inicio seccion error */
 
+.headerBrokenLogo {
+  border-radius: 100%;
+  margin: 25px 0;
+  @include media(mobile) {
+    @include size(315px, 236.25px);
+    margin: 30px 0;
+  }
+  &:hover {
+    transform: rotatez(15deg);
+    cursor: pointer;
+    transition: transform 5s;
+  }
+}
+
 .errorBackground {
-  background: $errorBgEffect
+  background: $errorBgEffect;
 }
 .errorCard {
   @include size(auto, auto);

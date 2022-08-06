@@ -1293,6 +1293,19 @@ header {
 
 /*----------------- ERROR----------------- */
 /* inicio seccion error */
+.headerBrokenLogo {
+  border-radius: 100%;
+  margin: 25px 0; }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .headerBrokenLogo {
+      width: 315px;
+      height: 236.25px;
+      margin: 30px 0; } }
+  .headerBrokenLogo:hover {
+    transform: rotatez(15deg);
+    cursor: pointer;
+    transition: transform 5s; }
+
 .errorBackground {
   background: radial-gradient(circle, #29777d 0%, #043e39 100%); }
 
