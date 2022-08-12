@@ -110,10 +110,10 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-image: url("https://c.wallhere.com/photos/e8/0e/1920x1080_px_Simple_Background-1222772.jpg!d");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%; }
+  /*background-image: url("../img/fondoverde.jpg");*/
+  /*background-image: url("../img/fondoblanco.jpg");*/
+  background: linear-gradient(0deg, #22aac3 24%, #3b4255 100%);
+  /*background-size: 100% 100%;*/ }
 
 header {
   width: 100%;
@@ -163,7 +163,7 @@ header {
   flex-direction: row;
   flex-wrap: nowrap;
   background-color: #29777d;
-  border: solid #043e39 5px;
+  border: solid #043e39 3px;
   border-radius: 10px;
   align-self: flex-end;
   padding: 0 12px;
@@ -558,7 +558,7 @@ header {
   width: 30%;
   height: 500px;
   background-color: rgba(184, 248, 248, 0.323);
-  border: solid #043e39 5px;
+  border: solid #043e39 3px;
   border-radius: 3px;
   transition: transform 0.5s; }
   @media (min-width: 769px) and (max-width: 1300px) {
@@ -834,7 +834,7 @@ header {
   .proyectContainer p {
     height: 400px;
     background-color: #c4ebc4;
-    border: solid #043e39 5px;
+    border: solid #043e39 3px;
     border-radius: 5px;
     font-family: "Ubuntu", sans-serif;
     font-style: normal;
@@ -1155,7 +1155,7 @@ header {
     padding: 10px 10px 70px 10px;
     margin: 20px 50px;
     background-color: #29777d;
-    border: solid #043e39 5px;
+    border: solid #043e39 3px;
     border-radius: 5px;
     font-family: "Roboto", sans-serif;
     font-style: normal;
@@ -1225,7 +1225,7 @@ header {
   margin-bottom: 10px;
   padding: 10px;
   background-color: #29777d;
-  border: solid #043e39 5px;
+  border: solid #043e39 3px;
   border-radius: 10px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -1317,8 +1317,8 @@ header {
   margin: 25px 0; }
   @media (min-width: 320px) and (max-width: 480px) {
     .headerBrokenLogo {
-      width: 70%;
-      height: 70%;
+      width: 60%;
+      height: 60%;
       margin: 30px 0; } }
   .headerBrokenLogo:hover {
     transform: rotatez(15deg);

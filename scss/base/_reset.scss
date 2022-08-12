@@ -9,8 +9,14 @@ html {
 }
 
 body {
-  background-image: url("https://c.wallhere.com/photos/e8/0e/1920x1080_px_Simple_Background-1222772.jpg!d");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
+//  background-image: url("https://c.wallhere.com/photos/e8/0e/1920x1080_px_Simple_Background-1222772.jpg!d");
+  //   background-image: url("https://st.depositphotos.com/3224447/4914/v/450/depositphotos_49144397-stock-illustration-square-grid-background-vector-illustration.jpg");
+  /*background-image: url("../img/fondoverde.jpg");*/
+//   background-image: url("../img/fondocyan.jpg");
+ /*background-image: url("../img/fondoblanco.jpg");*/
+background: linear-gradient(0deg, rgba(34,170,195,1) 24%, rgba(59,66,85,1) 100%);
+
+//   background-repeat: repeat;
+//   background-attachment: fixed;
+  /*background-size: 100% 100%;*/
 }
