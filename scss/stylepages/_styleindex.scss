@@ -72,14 +72,14 @@
     margin: 30px 0;
   }
   div {
-    @include size(100%, 500px);
+    @include size(500px, 500px);
     @include box($mapBgColor, $secondaryBorderColor, 3px);
     overflow: hidden;
     @include media(tablet) {
-      @include size(100%, 480px);
+      @include size(480px, 480px);
     }
     @include media(mobile) {
-      @include size(100%, 320px);
+      @include size(320px, 320px);
     }
   }
   h2 {

@@ -36,7 +36,7 @@
 /*.mapa-prueba-verde {
   border: map-get($greenscale, "100");
 }*/
-.buttonsEffect {
+.buttonsEffect, .searchButton {
   width: 70px;
   height: 45px;
   padding: 0 2px;
@@ -53,7 +53,7 @@
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   cursor: pointer; }
-  .buttonsEffect:hover {
+  .buttonsEffect:hover, .searchButton:hover {
     background-color: #29777d;
     border: solid white 1px;
     border-radius: 5px;
@@ -79,6 +79,11 @@
 
 .titleNews {
   margin-top: 5px; }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .searchButton {
+    height: 28px;
+    font-size: small; } }
 
 .pageTitle {
   margin-top: 15px;
@@ -122,6 +127,9 @@ header {
 .containerLogo {
   display: flex;
   justify-content: space-around; }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .containerLogo a {
+      text-align: center; } }
   @media (max-width: 768px) {
     .containerLogo {
       flex-direction: column;
@@ -137,9 +145,9 @@ header {
   margin: 25px 0; }
   @media (min-width: 320px) and (max-width: 480px) {
     .headerLogo {
-      width: 250px;
-      height: 250px;
-      margin: 30px 0; } }
+      width: 50%;
+      height: 50%;
+      margin: 20px 0; } }
   .headerLogo:hover {
     transform: rotatez(360deg);
     cursor: pointer;
@@ -166,7 +174,8 @@ header {
       margin: 0 0 10px 0; } }
   @media (min-width: 320px) and (max-width: 480px) {
     .searchBox {
-      width: 320px; } }
+      width: 320px;
+      height: 40px; } }
 
 .inputSearch {
   width: 260px;
@@ -181,7 +190,9 @@ header {
   background-color: rgba(255, 255, 255, 0.713); }
   @media (min-width: 320px) and (max-width: 480px) {
     .inputSearch {
-      width: 70%; } }
+      width: 70%;
+      height: 90%;
+      font-size: medium; } }
 
 /* fin buscador */
 /* inico menu */
@@ -249,7 +260,7 @@ header {
         height: 300px; } }
     @media (min-width: 320px) and (max-width: 480px) {
       .slider img {
-        height: 230px; } }
+        height: 200px; } }
 
 /*fin de slider*/
 /* inicio pie de pagina */
@@ -837,6 +848,7 @@ header {
         font-size: 35px; } }
     @media (min-width: 320px) and (max-width: 480px) {
       .proyectContainer p {
+        height: 300px;
         font-size: 25px; } }
 
 .proyectPicture {
@@ -1305,8 +1317,8 @@ header {
   margin: 25px 0; }
   @media (min-width: 320px) and (max-width: 480px) {
     .headerBrokenLogo {
-      width: 315px;
-      height: 236.25px;
+      width: 70%;
+      height: 70%;
       margin: 30px 0; } }
   .headerBrokenLogo:hover {
     transform: rotatez(15deg);

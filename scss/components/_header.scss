@@ -5,6 +5,11 @@ header {
 .containerLogo {
   display: flex;
   justify-content: space-around;
+  a {
+    @include media(mobile) {
+      text-align: center;
+    }
+  }
   @include media(tablet) {
     flex-direction: column;
     justify-content: space-evenly;
@@ -18,9 +23,8 @@ header {
   border-radius: 100%;
   margin: 25px 0;
   @include media(mobile) {
-    width: 250px;
-    height: 250px;
-    margin: 30px 0;
+    @include size(50%, 50%);
+    margin: 20px 0;
   }
   &:hover {
     transform: rotatez(360deg);
@@ -42,7 +46,7 @@ header {
     margin: 0 0 10px 0;
   }
   @include media(mobile) {
-    width: 320px;
+    @include size(320px, 40px);
   }
 }
 .inputSearch {
@@ -52,6 +56,8 @@ header {
   background-color: $imputBgColor;
   @include media(mobile) {
     width: 70%;
+    height: 90%;
+    font-size: medium;
   }
 }
 /* fin buscador */
@@ -115,7 +121,7 @@ header {
       height: 300px;
     }
     @include media(mobile) {
-      height: 230px;
+      height: 200px;
     }
   }
 }
