@@ -23,8 +23,16 @@ $mapBgColor: rgb(250, 235, 215);
 $videoBgColor: rgba(184, 248, 248, 0.323);
 
 $mainTitlesColor: rgb(4, 62, 57);
-$neonEffect: 0 0 0.4em rgb(92, 254, 71);
-$neonLightEffect: 0 0 0.6em rgb(209, 253, 255);
+
+$neonEffect: 2px 2px 0 rgb(0, 224, 176), 2px -2px 0 rgb(0, 224, 176), -2px 2px 0 rgb(0, 224, 176),
+  -2px -2px 0 rgb(0, 224, 176), 2px 0px 0 rgb(0, 224, 176), 0px 2px 0 rgb(0, 224, 176), -2px 0px 0 rgb(0, 224, 176),
+  0px -2px 0 rgb(0, 224, 176);
+
+
+$neonLightEffect: 1px 1px 0 rgb(207, 255, 245), 1px -1px 0 rgb(207, 255, 245), -1px 1px 0 rgb(207, 255, 245),
+  -1px -1px 0 rgb(207, 255, 245), 1px 0px 0 rgb(207, 255, 245), 0px 1px 0 rgb(207, 255, 245), -1px 0px 0 rgb(207, 255, 245),
+  0px -1px 0 rgb(207, 255, 245);
+
 
 $textShadows: 2px 2px 2px rgb(94, 94, 94);
 $textLabelShadows: 2px 2px 0 rgb(97, 97, 97), 2px -2px 0 rgb(97, 97, 97), -2px 2px 0 rgb(97, 97, 97),

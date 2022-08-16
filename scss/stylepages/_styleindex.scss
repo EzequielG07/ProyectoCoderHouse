@@ -190,6 +190,11 @@
 .gallery {
   @include d-flex(space-around, stretch, row, nowrap);
   margin: 20px 0;
+  @include media(ajust) {
+    @include d-flex(space-around, start, row, wrap);
+    padding: 10px 30px;
+    gap: 20px;
+  }
   @include media(tablet) {
     @include d-flex(space-around, center, column, nowrap);
     row-gap: 20px;
@@ -207,7 +212,7 @@
   }
 }
 .cardNews {
-  width: 22rem;
+  width: 24rem;
   @include box($mainBgColor, $secondaryBorderColor, 0);
   @include text(
     $secondaryFont,
@@ -217,6 +222,11 @@
     justify,
     $secondTextColor
   );
+  @include media(ajust) {
+    margin: 0 90px;
+    width: 28rem;
+
+  }
   @include media(tablet) {
     width: 34rem;
   }

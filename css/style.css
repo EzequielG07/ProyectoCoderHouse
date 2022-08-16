@@ -69,7 +69,7 @@
   font-size: 80px;
   text-align: center;
   color: #043e39;
-  text-shadow: 0 0 0.4em #5cfe47; }
+  text-shadow: 2px 2px 0 #00e0b0, 2px -2px 0 #00e0b0, -2px 2px 0 #00e0b0, -2px -2px 0 #00e0b0, 2px 0px 0 #00e0b0, 0px 2px 0 #00e0b0, -2px 0px 0 #00e0b0, 0px -2px 0 #00e0b0; }
   @media (max-width: 768px) {
     .titleNeon, .titleNews, .pageTitle, .titleQuality {
       font-size: 60px; } }
@@ -99,7 +99,7 @@
       font-size: 30px; } }
 
 .titleQuality {
-  text-shadow: 0 0 0.6em #d1fdff; }
+  text-shadow: 1px 1px 0 #cffff5, 1px -1px 0 #cffff5, -1px 1px 0 #cffff5, -1px -1px 0 #cffff5, 1px 0px 0 #cffff5, 0px 1px 0 #cffff5, -1px 0px 0 #cffff5, 0px -1px 0 #cffff5; }
 
 * {
   margin: 0;
@@ -110,10 +110,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  /*background-image: url("../img/fondoverde.jpg");*/
-  /*background-image: url("../img/fondoblanco.jpg");*/
-  background: linear-gradient(0deg, #22aac3 24%, #3b4255 100%);
-  /*background-size: 100% 100%;*/ }
+  background: linear-gradient(90deg, #013330 0%, #096979 32%, #00d4ff 100%); }
 
 header {
   width: 100%;
@@ -139,8 +136,8 @@ header {
       align-items: center; } }
 
 .headerLogo {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 100%;
   margin: 25px 0; }
   @media (min-width: 320px) and (max-width: 480px) {
@@ -637,6 +634,15 @@ header {
   flex-direction: row;
   flex-wrap: nowrap;
   margin: 20px 0; }
+  @media (min-width: 769px) and (max-width: 1300px) {
+    .gallery {
+      display: flex;
+      justify-content: space-around;
+      align-items: start;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 10px 30px;
+      gap: 20px; } }
   @media (max-width: 768px) {
     .gallery {
       display: flex;
@@ -656,7 +662,7 @@ header {
       font-size: 15px; } }
 
 .cardNews {
-  width: 22rem;
+  width: 24rem;
   background-color: #29777d;
   border: solid #105459 2px;
   border-radius: 0;
@@ -666,6 +672,10 @@ header {
   font-size: 1.5em;
   text-align: justify;
   color: black; }
+  @media (min-width: 769px) and (max-width: 1300px) {
+    .cardNews {
+      margin: 0 90px;
+      width: 28rem; } }
   @media (max-width: 768px) {
     .cardNews {
       width: 34rem; } }
@@ -1313,6 +1323,8 @@ header {
 /*----------------- ERROR----------------- */
 /* inicio seccion error */
 .headerBrokenLogo {
+  width: 80%;
+  height: 80%;
   border-radius: 100%;
   margin: 25px 0; }
   @media (min-width: 320px) and (max-width: 480px) {

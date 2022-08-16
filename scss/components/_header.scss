@@ -19,7 +19,7 @@ header {
   }
 }
 .headerLogo {
-  @include size(300px, 300px);
+  @include size(250px, 250px);
   border-radius: 100%;
   margin: 25px 0;
   @include media(mobile) {
