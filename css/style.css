@@ -208,13 +208,7 @@ header {
       align-items: center; } }
   .containerMenu ul li {
     margin: 0px 70px;
-    background-color: #29777d;
-    font-family: "Ubuntu", sans-serif;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 30px;
-    text-align: center;
-    color: white; }
+    background-color: #29777d; }
     @media (min-width: 769px) and (max-width: 1300px) {
       .containerMenu ul li {
         margin: 0 10px; } }
@@ -223,7 +217,15 @@ header {
         margin: 0;
         font-size: 25px; } }
     .containerMenu ul li a {
-      text-decoration: none; }
+      text-decoration: none;
+      font-family: "Ubuntu", sans-serif;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 30px;
+      text-align: center;
+      color: white; }
+      .containerMenu ul li a:hover {
+        color: white; }
     .containerMenu ul li:hover {
       text-decoration: underline;
       border-radius: 10px;
@@ -774,7 +776,8 @@ header {
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  padding-left: 13.5px; }
   @media (min-width: 769px) and (max-width: 1300px) {
     .teamContainer {
       display: flex;

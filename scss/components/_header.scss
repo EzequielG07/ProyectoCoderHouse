@@ -79,7 +79,6 @@ header {
     li {
       margin: 0px 70px;
       background-color: $mainBgColor;
-      @include text($thirdFont, italic, normal, 30px, center, $mainTextColor);
       @include media(ajust) {
         margin: 0 10px;
       }
@@ -89,6 +88,10 @@ header {
       }
       a {
         text-decoration: none;
+        @include text($thirdFont, italic, normal, 30px, center, $mainTextColor);
+        &:hover {
+          color: $mainTextColor;
+        }
       }
       &:hover {
         text-decoration: underline;

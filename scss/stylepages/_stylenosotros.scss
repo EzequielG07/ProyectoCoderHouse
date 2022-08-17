@@ -50,6 +50,7 @@
   @include d-flex(space-around, stretch, row, nowrap);
   width: 100%;
   margin-bottom: 10px;
+  padding-left: 13.5px;
   @include media(ajust) {
     @include d-flex(space-around, center, column, nowrap);
   }
