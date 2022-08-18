@@ -19,12 +19,13 @@ header {
   }
 }
 .headerLogo {
-  @include size(250px, 250px);
+@include size(95%, 95%);
+
   border-radius: 100%;
-  margin: 25px 0;
+  margin: 10px 0;
   @include media(mobile) {
-    @include size(50%, 50%);
-    margin: 20px 0;
+   @include size(60%, 60%);
+    margin: 5px 0;
   }
   &:hover {
     transform: rotatez(360deg);

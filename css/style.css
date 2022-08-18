@@ -136,15 +136,15 @@ header {
       align-items: center; } }
 
 .headerLogo {
-  width: 250px;
-  height: 250px;
+  width: 95%;
+  height: 95%;
   border-radius: 100%;
-  margin: 25px 0; }
+  margin: 10px 0; }
   @media (min-width: 320px) and (max-width: 480px) {
     .headerLogo {
-      width: 50%;
-      height: 50%;
-      margin: 20px 0; } }
+      width: 60%;
+      height: 60%;
+      margin: 5px 0; } }
   .headerLogo:hover {
     transform: rotatez(360deg);
     cursor: pointer;
@@ -1326,9 +1326,8 @@ header {
 /*----------------- ERROR----------------- */
 /* inicio seccion error */
 .headerBrokenLogo {
-  width: 80%;
-  height: 80%;
-  border-radius: 100%;
+  width: 95%;
+  height: 95%;
   margin: 25px 0; }
   @media (min-width: 320px) and (max-width: 480px) {
     .headerBrokenLogo {
@@ -1336,7 +1335,7 @@ header {
       height: 60%;
       margin: 30px 0; } }
   .headerBrokenLogo:hover {
-    transform: rotatez(15deg);
+    transform: rotatez(10deg);
     cursor: pointer;
     transition: transform 5s; }
 
