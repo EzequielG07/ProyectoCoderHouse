@@ -19,7 +19,7 @@
     h4 {
       width: 100%;
       margin-bottom: 5px;
-      @include text($footFont, normal, normal, 25px, center, $mainTextColor);
+      @include text($footFont, normal, normal, 2.5em, center, $mainTextColor);
       text-shadow: $textShadows;
     }
     div {
@@ -31,7 +31,7 @@
     @include size(250px, auto);
     padding: 0 2px;
     li {
-      @include text($footFont, normal, normal, 20px, left, $footerTextColor);
+      @include text($footFont, normal, normal, 2em, left, $footerTextColor);
     }
   }
   .contactFooter {
@@ -41,7 +41,7 @@
       margin: 10px 0;
     }
     li {
-      @include text($footFont, normal, normal, 20px, left, $footerTextColor);
+      @include text($footFont, normal, normal, 2em, left, $footerTextColor);
     }
   }
   .redesFooter {
@@ -54,7 +54,7 @@
   padding-top: 10px;
   background-color: $copyrightBgColor;
   p {
-    @include text($mainFont, normal, normal, 15px, center, $footerTextColor);
+    @include text($mainFont, normal, normal, 1.5em, center, $footerTextColor);
   }
 }
 /* fin pie de pagina */

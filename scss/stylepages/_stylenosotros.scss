@@ -10,26 +10,26 @@
     @include box($secondaryBgColor, $borderSecondColor, 5px);
   }
   button {
-    @include text($secondaryFont, italic, normal, 40px, left, $mainTextColor);
+    @include text($secondaryFont, italic, normal, 2em, left, $mainTextColor);
     @include box($mainDarkColor, $dividerColor, 0);
     animation-name: textUs;
     animation-duration: 3s;
     @include media(tablet) {
-      font-size: 30px;
+      font-size: 1.5em;
     }
     @include media(mobile) {
-      font-size: 20px;
+      font-size: 1em;
     }
   }
   p {
-    @include text($thirdFont, normal, normal, 35px, justify, $secondTextColor);
+    @include text($thirdFont, normal, normal, 3.5em, justify, $secondTextColor);
     animation-name: textUs;
     animation-duration: 4s;
     @include media(tablet) {
-      font-size: 25px;
+      font-size: 2.5em;
     }
     @include media(mobile) {
-      font-size: 20px;
+      font-size: 1.5em;
     }
   }
 }
@@ -41,7 +41,7 @@
   padding: 10px 0;
   h3 {
     border-top: $dividerColor;
-    font-size: 30px;
+    font-size: 3em;
     margin: 10px 0;
   }
 }
@@ -64,15 +64,18 @@
   text-align: center;
   @include anima(colorLoop, 10s, infinite, 0, alternate, ease-in-out);
   h5 {
-    @include text($thirdFont, normal, normal, 20px, center, $mainTextColor);
+    @include text($thirdFont, normal, normal, 2em, center, $mainTextColor);
     background-color: $mainDarkColor;
   }
   p {
     padding: 2px;
     margin-top: 5px;
-    @include text($thirdFont, normal, normal, 20px, justify, $mainTextColor);
+    @include text($thirdFont, normal, normal, 2em, justify, $mainTextColor);
+    @include media(ajust) {
+      font-size: 1.8em;
+    }
     @include media(mobile) {
-      font-size: 18px;
+      font-size: 1.6em;
     }
   }
 }

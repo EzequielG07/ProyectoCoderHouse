@@ -35,10 +35,10 @@
   div {
     label {
       @include media(ajust) {
-        font-size: 20px;
+        font-size: 2em;
       }
       @include media(mobile) {
-        font-size: 20px;
+        font-size: 2em;
       }
     }
   }
@@ -93,7 +93,7 @@
     font-size: 2em;
     cursor: pointer;
     @include media(ajust) {
-      font-size: 25px;
+      font-size: 2.4em;
     }
   }
   label {
@@ -122,7 +122,7 @@
   button {
     @include text($thirdFont, normal, normal, 2em, left, $thirdTextColor);
     @include media(ajust) {
-      font-size: 15px;
+      font-size: 1.5em;
       overflow: hidden;
     }
     @include media(mobile) {
@@ -145,7 +145,7 @@
   box-shadow: $boxShadows;
   @include media(ajust) {
     width: 95%;
-    font-size: 15px;
+    font-size: 1.5em;
   }
   @include media(tablet) {
     width: 100%;
@@ -162,7 +162,7 @@
 
 .offcanvasName {
   background-color: $mainBgColor;
-  font-size: 45px;
+  font-size: 4.5em;
   h3 {
     font-size: 1em;
     color: $mainTextColor;
@@ -215,23 +215,23 @@
     padding: 10px 10px 70px 10px;
     margin: 20px 50px;
     @include box($mainBgColor, $mainBorderColor, 5px);
-    @include text($mainFont, normal, bold, 20px, center, $secondTextColor);
+    @include text($mainFont, normal, bold, 2em, center, $secondTextColor);
     @include media(tablet) {
       @include size(235px, 355px);
       margin: 20px 0;
-      font-size: 15px;
+      font-size: 1.5em;
     }
     @include media(mobile) {
       @include size(260px, 380px);
       margin: 20px 0;
-      font-size: 16px;
+      font-size: 1.5em;
     }
     p {
       background-color: $mainDarkColor;
-      @include text($thirdFont, normal, bold, 20px, center, $mainTextColor);
+      @include text($thirdFont, normal, bold, 1em, center, $mainTextColor);
       @include media(mobile) {
         margin-top: 5px;
-        font-size: 18px;
+        font-size: 1.3em;
       }
     }
     img {

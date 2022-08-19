@@ -9,7 +9,7 @@
 }
 //como se utiliza "text"
 /*.llamada-text {
-  @include text('Roboto', italic, bold, 50px, center, black);
+  @include text('Roboto', italic, bold, 5em, center, black);
 }*/
 
 @mixin d-flex($justify, $align, $dire, $wrap) {
@@ -100,8 +100,6 @@
     width: 50%;
   }
   @include media(ajust) {
-    font-size: 15px;
+    font-size: 1.5em;
   }
 }*/
-
-

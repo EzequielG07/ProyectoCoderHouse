@@ -7,13 +7,12 @@
   margin-bottom: 10px;
   padding: 10px;
   @include box($mainBgColor, $mainBorderColor, 10px);
-  @include text($mainFont, normal, bold, 30px, left, $mainTextColor);
+  @include text($mainFont, normal, bold, 3em, left, $mainTextColor);
   @include media(tablet) {
-    font-size: 23px;
+    font-size: 2.8em;
   }
   @include media(mobile) {
     padding: 10px;
-    font-size: 20px;
   }
 }
 
@@ -26,7 +25,7 @@
       $secondaryFont,
       normal,
       normal,
-      large,
+     0.6em,
       left,
       $secondTextColor
     );
@@ -41,14 +40,14 @@
     height: 32px;
     padding: 1px;
     @include box($btnBgColor, $btnBorderColor, 5px);
-    @include text($mainFont, normal, normal, 18px, left, $mainTextColor);
+    @include text($mainFont, normal, normal, 0.6em, left, $mainTextColor);
   }
 }
 
 .selectMatter {
   height: 50px;
   @include box($btnBgColor, $btnBorderColor, 5px);
-  @include text($mainFont, normal, bold, 20px, left, $mainTextColor);
+  @include text($mainFont, normal, bold, 0.8em, left, $mainTextColor);
 }
 
 .textDetails {
@@ -57,7 +56,7 @@
     margin-bottom: 5px;
     background-color: $imputBgColor;
     border-radius: 3px;
-    @include text($secondaryFont, normal, normal, 20px, left, $secondTextColor);
+    @include text($secondaryFont, normal, normal, 0.8em, left, $secondTextColor);
   }
 }
 

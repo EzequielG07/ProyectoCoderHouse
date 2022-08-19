@@ -5,26 +5,26 @@ header {
 .containerLogo {
   display: flex;
   justify-content: space-around;
+  @include media(tablet) {
+    flex-direction: column;
+    align-items: center;
+  }
   a {
-    @include media(mobile) {
+    @include media(tablet) {
       text-align: center;
     }
   }
-  @include media(tablet) {
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-  @include media(mobile) {
-    align-items: center;
-  }
 }
 .headerLogo {
-@include size(95%, 95%);
-
+  @include size(95%, 95%);
   border-radius: 100%;
   margin: 10px 0;
+  @include media(tablet) {
+    align-self: center;
+    @include size(80%, 80%);
+  }
   @include media(mobile) {
-   @include size(60%, 60%);
+    @include size(60%, 60%);
     margin: 5px 0;
   }
   &:hover {
@@ -52,13 +52,13 @@ header {
 }
 .inputSearch {
   @include size(260px, 40px);
-  @include text($secondaryFont, normal, normal, large, left, $secondTextColor);
+  @include text($secondaryFont, normal, normal, 2em, left, $secondTextColor);
   padding: 0 5px;
   background-color: $imputBgColor;
   @include media(mobile) {
     width: 70%;
     height: 90%;
-    font-size: medium;
+    font-size: 1.8em;
   }
 }
 /* fin buscador */
@@ -85,11 +85,11 @@ header {
       }
       @include media(mobile) {
         margin: 0;
-        font-size: 25px;
+        font-size: 1em;
       }
       a {
         text-decoration: none;
-        @include text($thirdFont, italic, normal, 30px, center, $mainTextColor);
+        @include text($thirdFont, italic, normal, 3em, center, $mainTextColor);
         &:hover {
           color: $mainTextColor;
         }
