@@ -95,7 +95,6 @@ header {
         }
       }
       &:hover {
-        text-decoration: underline;
         border-radius: 10px;
         transform: scale(1.2);
         cursor: pointer;
@@ -107,8 +106,13 @@ header {
 /* fin menu */
 /*inicio slider*/
 .slider {
-  width: 100%;
-  overflow: hidden;
+  @include size(100%, 450px);
+  @include media(tablet) {
+    height: 300px;
+  }
+  @include media(mobile) {
+    height: 200px;
+  }
   ul {
     display: flex;
     padding: 0;
@@ -120,7 +124,9 @@ header {
     list-style: none;
   }
   img {
-    @include size(100%, 500px);
+    @include size(100%, 450px);
+    object-fit: cover;
+    object-position: 0px 100%;
     @include media(tablet) {
       height: 300px;
     }

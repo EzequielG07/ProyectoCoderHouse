@@ -233,7 +233,6 @@ header {
       .containerMenu ul li a:hover {
         color: white; }
     .containerMenu ul li:hover {
-      text-decoration: underline;
       border-radius: 10px;
       transform: scale(1.2);
       cursor: pointer;
@@ -243,7 +242,13 @@ header {
 /*inicio slider*/
 .slider {
   width: 100%;
-  overflow: hidden; }
+  height: 450px; }
+  @media (max-width: 768px) {
+    .slider {
+      height: 300px; } }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .slider {
+      height: 200px; } }
   .slider ul {
     display: flex;
     padding: 0;
@@ -259,7 +264,9 @@ header {
     list-style: none; }
   .slider img {
     width: 100%;
-    height: 500px; }
+    height: 450px;
+    object-fit: cover;
+    object-position: 0px 100%; }
     @media (max-width: 768px) {
       .slider img {
         height: 300px; } }
