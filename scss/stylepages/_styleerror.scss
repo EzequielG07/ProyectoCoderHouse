@@ -1,18 +1,21 @@
 /*----------------- ERROR----------------- */
 
 /* inicio seccion error */
-
-.headerBrokenLogo {
-  @include size(95%, 95%);
+.linkBrokenLogo {
+  @include size(400px, 280px);
   margin: 10px 0;
   @include media(tablet) {
-    align-self: center;
-    @include size(80%, 80%);
+    @include size(360px, 240px);
+    margin: 5px 0;
+    text-align: center;
   }
   @include media(mobile) {
-    @include size(60%, 60%);
-    margin: 5px 0;
+    @include size(300px, 180px);
   }
+}
+.headerBrokenLogo {
+  @include size(100%, 100%);
+  align-self: center;
   &:hover {
     transform: rotatez(10deg);
     cursor: pointer;

@@ -1,7 +1,6 @@
 .buttonsEffect {
   @include size(70px, 45px);
   padding: 0 2px;
-  margin-left: 20px;
   @include box($btnBgColor, $btnBorderColor, 5px);
   @include text($mainFont, normal, bold, 0.5em, none, $btnTextColor);
   -webkit-transition-duration: 0.4s;
@@ -26,4 +25,3 @@
     font-size: 4em;
   }
 }
-

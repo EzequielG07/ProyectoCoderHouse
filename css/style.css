@@ -40,7 +40,6 @@
   width: 70px;
   height: 45px;
   padding: 0 2px;
-  margin-left: 20px;
   background-color: #043e39;
   border: solid #8f8f8f 1px;
   border-radius: 5px;
@@ -132,25 +131,25 @@ header {
     .containerLogo {
       flex-direction: column;
       align-items: center; } }
-  @media (max-width: 768px) {
-    .containerLogo a {
-      text-align: center; } }
+  .containerLogo .linkLogo {
+    width: 280px;
+    height: 280px; }
+    @media (max-width: 768px) {
+      .containerLogo .linkLogo {
+        width: 240px;
+        height: 240px;
+        text-align: center; } }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .containerLogo .linkLogo {
+        width: 180px;
+        height: 180px;
+        margin: 5px 0; } }
 
 .headerLogo {
-  width: 95%;
-  height: 95%;
-  border-radius: 100%;
-  margin: 10px 0; }
-  @media (max-width: 768px) {
-    .headerLogo {
-      align-self: center;
-      width: 80%;
-      height: 80%; } }
-  @media (min-width: 320px) and (max-width: 480px) {
-    .headerLogo {
-      width: 60%;
-      height: 60%;
-      margin: 5px 0; } }
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  border-radius: 100%; }
   .headerLogo:hover {
     transform: rotatez(360deg);
     cursor: pointer;
@@ -238,11 +237,20 @@ header {
       cursor: pointer;
       transition: transform 1s; }
 
+/* inicio edicion menu icono hamburguer*/
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 250, 250, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+
+.navbar-toggler {
+  border: solid snow 2px; }
+
+/* fin edicion menu icono hamburguer*/
 /* fin menu */
 /*inicio slider*/
 .slider {
   width: 100%;
-  height: 450px; }
+  height: 450px;
+  overflow: hidden; }
   @media (max-width: 768px) {
     .slider {
       height: 300px; } }
@@ -931,7 +939,7 @@ header {
   @media (min-width: 320px) and (max-width: 480px) {
     .filterArea {
       text-align: center;
-      margin: 10px 0; } }
+      margin: 5px 0; } }
   .filterArea legend {
     font-family: "Fredoka One", cursive;
     font-style: italic;
@@ -946,6 +954,9 @@ header {
     @media (max-width: 768px) {
       .filterArea legend {
         font-size: 4em; } }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .filterArea legend {
+        font-size: 3em; } }
 
 .filterContainer {
   top: 30px;
@@ -1340,20 +1351,25 @@ header {
 
 /*----------------- ERROR----------------- */
 /* inicio seccion error */
-.headerBrokenLogo {
-  width: 95%;
-  height: 95%;
+.linkBrokenLogo {
+  width: 400px;
+  height: 280px;
   margin: 10px 0; }
   @media (max-width: 768px) {
-    .headerBrokenLogo {
-      align-self: center;
-      width: 80%;
-      height: 80%; } }
+    .linkBrokenLogo {
+      width: 360px;
+      height: 240px;
+      margin: 5px 0;
+      text-align: center; } }
   @media (min-width: 320px) and (max-width: 480px) {
-    .headerBrokenLogo {
-      width: 60%;
-      height: 60%;
-      margin: 5px 0; } }
+    .linkBrokenLogo {
+      width: 300px;
+      height: 180px; } }
+
+.headerBrokenLogo {
+  width: 100%;
+  height: 100%;
+  align-self: center; }
   .headerBrokenLogo:hover {
     transform: rotatez(10deg);
     cursor: pointer;

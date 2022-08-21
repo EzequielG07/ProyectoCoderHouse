@@ -25,7 +25,7 @@
       $secondaryFont,
       normal,
       normal,
-     0.6em,
+      0.6em,
       left,
       $secondTextColor
     );
@@ -56,7 +56,14 @@
     margin-bottom: 5px;
     background-color: $imputBgColor;
     border-radius: 3px;
-    @include text($secondaryFont, normal, normal, 0.8em, left, $secondTextColor);
+    @include text(
+      $secondaryFont,
+      normal,
+      normal,
+      0.8em,
+      left,
+      $secondTextColor
+    );
   }
 }
 

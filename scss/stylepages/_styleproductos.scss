@@ -10,7 +10,7 @@
   }
   @include media(mobile) {
     text-align: center;
-    margin: 10px 0;
+    margin: 5px 0;
   }
   legend {
     @include text($titleFont, italic, normal, 5em, left, $mainTextColor);
@@ -20,6 +20,9 @@
     }
     @include media(tablet) {
       font-size: 4em;
+    }
+    @include media(mobile) {
+      font-size: 3em;
     }
   }
 }
