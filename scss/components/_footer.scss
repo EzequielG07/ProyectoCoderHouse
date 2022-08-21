@@ -33,6 +33,9 @@
     li {
       @include text($footFont, normal, normal, 2em, left, $footerTextColor);
     }
+    li:last-child {
+      @include text($footFont, italic, 600, 1.5em, left, $footerTextColor);
+    }
   }
   .contactFooter {
     @include size(250px, auto);
@@ -42,6 +45,9 @@
     }
     li {
       @include text($footFont, normal, normal, 2em, left, $footerTextColor);
+    }
+    li:last-child {
+      @include text($footFont, italic, 600, 1.5em, left, $footerTextColor);
     }
   }
   .redesFooter {
